@@ -100,20 +100,62 @@ class LocalizationFormComponent extends Component {
   };
 
   /**
+   * Navigates to a language using its locale root URL.
+   *
+   * @param {string} languageCode - The language ISO code to select.
+   * @param {string} [rootUrl] - The locale root URL for the selected language.
+   */
+  #submitLanguageChange(languageCode, rootUrl) {
+    const { form, languageInput } = this.refs;
+    if (!languageInput || languageInput.value === languageCode) return;
+
+    languageInput.value = languageCode;
+
+    if (rootUrl) {
+      const hostname = window.location.hostname;
+      const isLocalDev = hostname === 'localhost' || hostname === '127.0.0.1';
+      const shopOrigin = this.dataset.shopOrigin || window.location.origin;
+      const destination = new URL(rootUrl, isLocalDev ? shopOrigin : window.location.origin);
+
+      if (isLocalDev && window.Shopify?.theme?.id) {
+        destination.searchParams.set('preview_theme_id', String(window.Shopify.theme.id));
+      }
+
+      window.location.assign(destination.toString());
+      return;
+    }
+
+    form?.submit();
+  }
+
+  /**
    * Changes the language of the localization form.
    *
    * @param {Event} event - The event object.
    */
   changeLanguage(event) {
-    const { form, languageInput } = this.refs;
     const value = event.target instanceof HTMLSelectElement ? event.target.value : null;
-
     if (value) {
-      languageInput.value = value;
-      this.resizeLanguageInput();
-      form.submit();
+      const button = this.querySelector(`[data-language-code="${value}"]`);
+      const rootUrl = button instanceof HTMLElement ? button.dataset.rootUrl : undefined;
+      this.#submitLanguageChange(value, rootUrl);
     }
   }
+
+  /**
+   * Selects a language from the flag picker.
+   *
+   * @param {string} languageCode - The language ISO code to select.
+   * @param {Event} event - The event object.
+   */
+  selectLanguage = (languageCode, event) => {
+    event.preventDefault();
+    event.stopPropagation();
+
+    const button = this.querySelector(`[data-language-code="${languageCode}"]`);
+    const rootUrl = button instanceof HTMLElement ? button.dataset.rootUrl : undefined;
+    this.#submitLanguageChange(languageCode, rootUrl);
+  };
 
   resizeLanguageInput() {
     const { languageInput } = this.refs;

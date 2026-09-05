@@ -285,8 +285,9 @@
         {%- endif -%}
 
         {%- if show_language -%}
-          <span>
-            {{ localization.language.iso_code | upcase }}
+          <span class="language-flag-button">
+            {% render 'language-flag', language_iso_code: localization.language.iso_code %}
+            <span class="language-flag-button__label">{{ localization.language.endonym_name | capitalize }}</span>
           </span>
         {%- endif -%}
         <span class="svg-wrapper icon-caret">
@@ -1068,6 +1069,12 @@
     border-radius: 50%;
   }
 
+  .language-flag-button {
+    display: inline-flex;
+    align-items: center;
+    gap: var(--gap-2xs);
+  }
+
   .dropdown-localization__button[aria-expanded='true'] .icon-caret svg {
     transform: rotate(180deg);
   }
@@ -1182,6 +1189,10 @@
   .dropdown-localization:not(dropdown-localization-component) .language-selector {
     font-family: var(--menu-localization-font);
     font-size: var(--menu-localization-font-size);
+  }
+
+  .dropdown-localization .language-flag-selector__button {
+    margin-inline: calc(-1 * var(--padding-2xs));
   }
 {% endstylesheet %}
 

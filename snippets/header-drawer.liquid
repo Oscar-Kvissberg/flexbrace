@@ -665,9 +665,10 @@
                     {%- endif -%}
 
                     {%- if show_language -%}
-                      <div class="mobile-localization mobile-localization--country">
-                        <span>
-                          {{ localization.language.iso_code | upcase }}
+                      <div class="mobile-localization mobile-localization--language">
+                        {% render 'language-flag', language_iso_code: localization.language.iso_code %}
+                        <span class="mobile-localization__language-name">
+                          {{ localization.language.endonym_name | capitalize }}
                         </span>
                       </div>
                     {%- endif -%}

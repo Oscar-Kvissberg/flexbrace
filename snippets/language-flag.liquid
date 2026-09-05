@@ -1,0 +1,26 @@
+{%- doc -%}
+  Renders a circular flag icon for a language ISO code.
+
+  @param {string} language_iso_code - The language ISO code, for example sv, de, or en
+{%- enddoc -%}
+
+{%- liquid
+  assign flag_country = language_iso_code | downcase
+
+  case language_iso_code
+    when 'sv'
+      assign flag_country = 'se'
+    when 'en'
+      assign flag_country = 'gb'
+    when 'da'
+      assign flag_country = 'dk'
+    when 'nb', 'nn', 'no'
+      assign flag_country = 'no'
+  endcase
+-%}
+
+<span
+  class="language-flag"
+  style="background-image: url('https://flagcdn.com/w40/{{ flag_country }}.png');"
+  aria-hidden="true"
+></span>
