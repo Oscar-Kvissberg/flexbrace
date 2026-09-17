@@ -1,0 +1,260 @@
+{% comment %}
+  Editorial problem → solution block for the homepage.
+  Compact media + typography-led layout (medtech / Intuitive-inspired).
+{% endcomment %}
+
+{% liquid
+  if section.settings.background_color != blank
+    render 'contrast-override', background_color: section.settings.background_color, section_id: section.id
+  endif
+%}
+
+<div
+  class="section-background{% if section.settings.background_color != blank %} color-custom-{{ section.id }}{% endif %}"
+></div>
+<div
+  class="section section--{{ section.settings.section_width }} spacing-style{% if section.settings.background_color != blank %} color-custom-{{ section.id }}{% endif %}"
+  style="{% render 'spacing-padding', settings: section.settings %}"
+>
+  <div class="fb-story" aria-label="Problem och lösning">
+    <header class="fb-story__header">
+      {% if section.settings.problem_eyebrow != blank %}
+        <p class="fb-story__eyebrow">{{ section.settings.problem_eyebrow | escape }}</p>
+      {% endif %}
+      {% if section.settings.problem_heading != blank %}
+        <h2 class="fb-story__title">{{ section.settings.problem_heading | escape }}</h2>
+      {% endif %}
+      {% if section.settings.problem_lead != blank %}
+        <p class="fb-story__lead">{{ section.settings.problem_lead | escape }}</p>
+      {% endif %}
+    </header>
+
+    <div class="fb-story__problem">
+      <div class="fb-story__media fb-story__media--problem">
+        {% if section.settings.problem_image != blank %}
+          {% assign problem_alt = section.settings.problem_image.alt | default: section.settings.problem_heading %}
+          {{
+            section.settings.problem_image
+            | image_url: width: 900
+            | image_tag:
+              loading: 'lazy',
+              widths: '360, 540, 720, 900',
+              sizes: '(min-width: 990px) 28vw, (min-width: 750px) 40vw, 88vw',
+              class: 'fb-story__img',
+              alt: problem_alt
+          }}
+        {% else %}
+          {{ 'image' | placeholder_svg_tag: 'fb-story__img fb-story__img--placeholder' }}
+        {% endif %}
+      </div>
+
+      <ol class="fb-story__pains">
+        {% assign pain_i = 0 %}
+        {% for block in section.blocks %}
+          {% if block.type == 'pain' %}
+            {% assign pain_i = pain_i | plus: 1 %}
+            <li class="fb-story__pain" {{ block.shopify_attributes }}>
+              <span class="fb-story__pain-num" aria-hidden="true">
+                {% if pain_i < 10 %}0{% endif %}{{ pain_i }}
+              </span>
+              <p>{{ block.settings.text | escape }}</p>
+            </li>
+          {% endif %}
+        {% endfor %}
+      </ol>
+    </div>
+
+    <div class="fb-story__solution">
+      <div class="fb-story__solution-copy">
+        {% if section.settings.solution_eyebrow != blank %}
+          <p class="fb-story__eyebrow">{{ section.settings.solution_eyebrow | escape }}</p>
+        {% endif %}
+        {% if section.settings.solution_heading != blank %}
+          <h3 class="fb-story__subtitle">{{ section.settings.solution_heading | escape }}</h3>
+        {% endif %}
+        {% if section.settings.solution_lead != blank %}
+          <p class="fb-story__lead fb-story__lead--short">{{ section.settings.solution_lead | escape }}</p>
+        {% endif %}
+      </div>
+
+      <div class="fb-story__solution-grid">
+        <ul class="fb-story__features">
+          {% for block in section.blocks %}
+            {% if block.type == 'feature' %}
+              <li class="fb-story__feature" {{ block.shopify_attributes }}>
+                <h4>{{ block.settings.title | escape }}</h4>
+                {% if block.settings.text != blank %}
+                  <p>{{ block.settings.text | escape }}</p>
+                {% endif %}
+              </li>
+            {% endif %}
+          {% endfor %}
+        </ul>
+
+        <div class="fb-story__media fb-story__media--solution">
+          {% if section.settings.solution_image != blank %}
+            {% assign solution_alt = section.settings.solution_image.alt | default: section.settings.solution_heading %}
+            {{
+              section.settings.solution_image
+              | image_url: width: 1000
+              | image_tag:
+                loading: 'lazy',
+                widths: '360, 540, 720, 1000',
+                sizes: '(min-width: 990px) 32vw, (min-width: 750px) 42vw, 88vw',
+                class: 'fb-story__img',
+                alt: solution_alt
+            }}
+          {% else %}
+            {{ 'image' | placeholder_svg_tag: 'fb-story__img fb-story__img--placeholder' }}
+          {% endif %}
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+{% schema %}
+{
+  "name": "Problem & lösning",
+  "tag": "section",
+  "class": "fb-story-section",
+  "settings": [
+    {
+      "type": "text",
+      "id": "problem_eyebrow",
+      "label": "Problem – etikett",
+      "default": "Känner du igen dig?"
+    },
+    {
+      "type": "text",
+      "id": "problem_heading",
+      "label": "Problem – rubrik",
+      "default": "När droppfot gör varje steg osäkert"
+    },
+    {
+      "type": "textarea",
+      "id": "problem_lead",
+      "label": "Problem – ingress",
+      "default": "Droppfot gör att foten hänger eller släpar. Många snubblar, lyfter benet högt för att klara sig fram – och balansen blir sämre."
+    },
+    {
+      "type": "image_picker",
+      "id": "problem_image",
+      "label": "Problem – bild"
+    },
+    {
+      "type": "text",
+      "id": "solution_eyebrow",
+      "label": "Lösning – etikett",
+      "default": "Lösningen"
+    },
+    {
+      "type": "text",
+      "id": "solution_heading",
+      "label": "Lösning – rubrik",
+      "default": "Så hjälper Flexbrace"
+    },
+    {
+      "type": "textarea",
+      "id": "solution_lead",
+      "label": "Lösning – ingress",
+      "default": "En lätt ankel-fot-ortos som lyfter foten, ger sidostabilitet och sitter diskret i vanliga skor."
+    },
+    {
+      "type": "image_picker",
+      "id": "solution_image",
+      "label": "Lösning – bild"
+    },
+    {
+      "type": "color",
+      "id": "background_color",
+      "label": "Bakgrund",
+      "default": "#ffffff"
+    },
+    {
+      "type": "select",
+      "id": "section_width",
+      "label": "Bredd",
+      "options": [
+        { "value": "page-width", "label": "Sidbredd" },
+        { "value": "full-width", "label": "Fullbredd" }
+      ],
+      "default": "page-width"
+    },
+    {
+      "type": "header",
+      "content": "Padding"
+    },
+    {
+      "type": "range",
+      "id": "padding-block-start",
+      "label": "Överst",
+      "min": 0,
+      "max": 100,
+      "step": 4,
+      "unit": "px",
+      "default": 88
+    },
+    {
+      "type": "range",
+      "id": "padding-block-end",
+      "label": "Nederst",
+      "min": 0,
+      "max": 100,
+      "step": 4,
+      "unit": "px",
+      "default": 88
+    }
+  ],
+  "blocks": [
+    {
+      "type": "pain",
+      "name": "Problem-punkt",
+      "settings": [
+        {
+          "type": "text",
+          "id": "text",
+          "label": "Text",
+          "default": "Foten släpar eller tippar inåt/utåt"
+        }
+      ]
+    },
+    {
+      "type": "feature",
+      "name": "Lösning-kort",
+      "settings": [
+        {
+          "type": "text",
+          "id": "title",
+          "label": "Rubrik",
+          "default": "Fotlyft"
+        },
+        {
+          "type": "text",
+          "id": "text",
+          "label": "Text",
+          "default": "Minskar släpande steg"
+        }
+      ]
+    }
+  ],
+  "presets": [
+    {
+      "name": "Problem & lösning",
+      "category": "Flexbrace",
+      "blocks": [
+        { "type": "pain", "settings": { "text": "Foten släpar eller tippar inåt/utåt" } },
+        { "type": "pain", "settings": { "text": "Du snubblar oftare, särskilt på ojämnt underlag" } },
+        { "type": "pain", "settings": { "text": "Du lyfter knät högt för att få plats åt foten" } },
+        { "type": "pain", "settings": { "text": "Gången känns ansträngande och ostadig" } },
+        { "type": "feature", "settings": { "title": "Fotlyft", "text": "Minskar släpande steg" } },
+        { "type": "feature", "settings": { "title": "Sidostabilitet", "text": "Stöd i fotleden utan klumpig skena" } },
+        { "type": "feature", "settings": { "title": "Naturligare gång", "text": "Mer avslappnat steg i vardagen" } },
+        { "type": "feature", "settings": { "title": "Tryggare balans", "text": "Bättre kontroll i varje steg" } },
+        { "type": "feature", "settings": { "title": "Ca 100 g", "text": "Låg vikt och följsam passform" } },
+        { "type": "feature", "settings": { "title": "Diskret i skor", "text": "Passar i de flesta vardagsskor" } }
+      ]
+    }
+  ]
+}
+{% endschema %}

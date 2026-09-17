@@ -59,7 +59,7 @@
           "type": "custom-liquid",
           "name": "Pris och köpknapp",
           "settings": {
-            "custom_liquid": "{% assign hero_product = all_products['afo-ortos-ankel-fotortos'] %}\n{% if hero_product != blank %}\n  <div class=\"hero-purchase\">\n    <a class=\"hero-purchase__button\" href=\"{{ hero_product.url }}\">Köp Flexbrace · {{ hero_product.price_min | money }}</a>\n    <a class=\"hero-purchase__link\" href=\"#hur-den-fungerar\">Se hur den fungerar</a>\n    <a class=\"hero-purchase__link\" href=\"/pages/contact\">Boka rådgivning</a>\n  </div>\n{% endif %}"
+            "custom_liquid": "{% assign hero_product = all_products['afo-ortos-ankel-fotortos'] %}\n{% if hero_product != blank %}\n  <div class=\"hero-purchase\">\n    <a class=\"hero-purchase__button\" href=\"{{ hero_product.url }}\">Köp Flexbrace · {{ hero_product.price_min | money }}</a>\n    <a class=\"hero-purchase__link\" href=\"#hur-den-fungerar\">Se hur den fungerar</a>\n    <a class=\"hero-purchase__link\" href=\"/pages/contact\">Kom i kontakt</a>\n  </div>\n{% endif %}"
           },
           "blocks": {}
         }
@@ -102,320 +102,102 @@
         "padding-block-end": 0
       }
     },
-    "section_rVAREi": {
-      "type": "section",
+    "problem_solution": {
+      "type": "flexbrace-problem-solution",
       "blocks": {
-        "group_pLgwhX": {
-          "type": "group",
-          "name": "problem",
+        "pain_1": {
+          "type": "pain",
           "settings": {
-            "content_direction": "column",
-            "vertical_on_mobile": true,
-            "horizontal_alignment": "flex-start",
-            "vertical_alignment": "center",
-            "align_baseline": false,
-            "horizontal_alignment_flex_direction_column": "flex-start",
-            "vertical_alignment_flex_direction_column": "center",
-            "gap": 12,
-            "width": "custom",
-            "custom_width": 100,
-            "width_mobile": "fill",
-            "custom_width_mobile": 100,
-            "height": "fit",
-            "custom_height": 100,
-            "background_media": "none",
-            "background_color": "",
-            "video_position": "cover",
-            "background_image_position": "cover",
-            "toggle_overlay": false,
-            "overlay_color": "#00000026",
-            "overlay_style": "solid",
-            "gradient_direction": "to top",
-            "border": "none",
-            "border_width": 1,
-            "border_opacity": 100,
-            "border_color": "",
-            "border_radius": 0,
-            "link": "",
-            "open_in_new_tab": false,
-            "placeholder": "",
-            "padding-block-start": 0,
-            "padding-block-end": 0,
-            "padding-inline-start": 0,
-            "padding-inline-end": 0
-          },
-          "blocks": {
-            "text_MpbLjD": {
-              "type": "text",
-              "settings": {
-                "text": "<p><strong>Känner du igen dig?</strong></p><h2>När droppfot gör varje steg osäkert</h2>",
-                "width": "fit-content",
-                "max_width": "normal",
-                "alignment": "left",
-                "type_preset": "h3",
-                "font": "var(--font-body--family)",
-                "font_size": "1rem",
-                "line_height": "normal",
-                "letter_spacing": "normal",
-                "case": "none",
-                "wrap": "pretty",
-                "text_color": "",
-                "background": false,
-                "background_color": "#00000026",
-                "corner_radius": 0,
-                "padding-block-start": 0,
-                "padding-block-end": 0,
-                "padding-inline-start": 0,
-                "padding-inline-end": 0
-              },
-              "blocks": {},
-              "name": "t:names.heading"
-            },
-            "text_hzFyF4": {
-              "type": "text",
-              "settings": {
-                "text": "<p>Droppfot gör att foten hänger eller släpar. Många snubblar, lyfter benet högt för att klara sig fram – och balansen blir sämre.</p><ul><li>Foten släpar eller tippar inåt/utåt</li><li>Du snubblar oftare, särskilt på ojämnt underlag</li><li>Du lyfter knät högt för att få plats åt foten</li><li>Gången känns ansträngande och ostadig</li></ul>",
-                "width": "fit-content",
-                "max_width": "narrow",
-                "alignment": "left",
-                "type_preset": "rte",
-                "font": "var(--font-body--family)",
-                "font_size": "1rem",
-                "line_height": "normal",
-                "letter_spacing": "normal",
-                "case": "none",
-                "wrap": "pretty",
-                "text_color": "",
-                "background": false,
-                "background_color": "#00000026",
-                "corner_radius": 0,
-                "padding-block-start": 0,
-                "padding-block-end": 0,
-                "padding-inline-start": 0,
-                "padding-inline-end": 0
-              },
-              "blocks": {}
-            }
-          },
-          "block_order": [
-            "text_MpbLjD",
-            "text_hzFyF4"
-          ]
+            "text": "Foten släpar eller tippar inåt/utåt"
+          }
         },
-        "image_WzBb6w": {
-          "type": "image",
+        "pain_2": {
+          "type": "pain",
           "settings": {
-            "image": "shopify://shop_images/images_1.jpg",
-            "link": "",
-            "image_ratio": "square",
-            "width": "fill",
-            "custom_width": 100,
-            "width_mobile": "fill",
-            "custom_width_mobile": 100,
-            "height": "fit",
-            "border": "none",
-            "border_width": 1,
-            "border_opacity": 100,
-            "border_color": "",
-            "border_radius": 24,
-            "padding-block-start": 0,
-            "padding-block-end": 0,
-            "padding-inline-start": 0,
-            "padding-inline-end": 0
-          },
-          "blocks": {}
+            "text": "Du snubblar oftare, särskilt på ojämnt underlag"
+          }
+        },
+        "pain_3": {
+          "type": "pain",
+          "settings": {
+            "text": "Du lyfter knät högt för att få plats åt foten"
+          }
+        },
+        "pain_4": {
+          "type": "pain",
+          "settings": {
+            "text": "Gången känns ansträngande och ostadig"
+          }
+        },
+        "feat_1": {
+          "type": "feature",
+          "settings": {
+            "title": "Fotlyft",
+            "text": "Minskar släpande steg"
+          }
+        },
+        "feat_2": {
+          "type": "feature",
+          "settings": {
+            "title": "Sidostabilitet",
+            "text": "Stöd i fotleden utan klumpig skena"
+          }
+        },
+        "feat_3": {
+          "type": "feature",
+          "settings": {
+            "title": "Naturligare gång",
+            "text": "Mer avslappnat steg i vardagen"
+          }
+        },
+        "feat_4": {
+          "type": "feature",
+          "settings": {
+            "title": "Tryggare balans",
+            "text": "Bättre kontroll i varje steg"
+          }
+        },
+        "feat_5": {
+          "type": "feature",
+          "settings": {
+            "title": "Ca 100 g",
+            "text": "Låg vikt och följsam passform"
+          }
+        },
+        "feat_6": {
+          "type": "feature",
+          "settings": {
+            "title": "Diskret i skor",
+            "text": "Passar i de flesta vardagsskor"
+          }
         }
       },
       "block_order": [
-        "group_pLgwhX",
-        "image_WzBb6w"
+        "pain_1",
+        "pain_2",
+        "pain_3",
+        "pain_4",
+        "feat_1",
+        "feat_2",
+        "feat_3",
+        "feat_4",
+        "feat_5",
+        "feat_6"
       ],
-      "name": "PROBLEM Bild med text",
+      "name": "Problem & lösning",
       "settings": {
-        "content_direction": "row",
-        "vertical_on_mobile": true,
-        "horizontal_alignment": "flex-start",
-        "vertical_alignment": "center",
-        "align_baseline": false,
-        "horizontal_alignment_flex_direction_column": "flex-start",
-        "vertical_alignment_flex_direction_column": "center",
-        "gap": 56,
-        "section_width": "page-width",
-        "section_height": "",
-        "section_height_custom": 50,
-        "background_media": "none",
+        "problem_eyebrow": "Känner du igen dig?",
+        "problem_heading": "När droppfot gör varje steg osäkert",
+        "problem_lead": "Droppfot gör att foten hänger eller släpar. Många snubblar, lyfter benet högt för att klara sig fram – och balansen blir sämre.",
+        "problem_image": "shopify://shop_images/images_1.jpg",
+        "solution_eyebrow": "Lösningen",
+        "solution_heading": "Så hjälper Flexbrace",
+        "solution_lead": "En lätt ankel-fot-ortos som lyfter foten, ger sidostabilitet och sitter diskret i vanliga skor.",
+        "solution_image": "shopify://shop_images/47cb0fa4-547d-41a0-93b5-60d646bab0d1.png",
         "background_color": "#ffffff",
-        "video_position": "cover",
-        "background_image_position": "cover",
-        "toggle_overlay": false,
-        "overlay_color": "#00000026",
-        "overlay_style": "solid",
-        "gradient_direction": "to top",
-        "border": "none",
-        "border_width": 1,
-        "border_opacity": 100,
-        "border_color": "",
-        "border_radius": 0,
-        "padding-block-start": 96,
-        "padding-block-end": 96
-      }
-    },
-    "section_j89FNC": {
-      "type": "section",
-      "blocks": {
-        "image_URYtVW": {
-          "type": "image",
-          "settings": {
-            "image": "shopify://shop_images/47cb0fa4-547d-41a0-93b5-60d646bab0d1.png",
-            "link": "",
-            "image_ratio": "square",
-            "width": "fill",
-            "custom_width": 100,
-            "width_mobile": "fill",
-            "custom_width_mobile": 100,
-            "height": "fit",
-            "border": "none",
-            "border_width": 1,
-            "border_opacity": 100,
-            "border_color": "",
-            "border_radius": 24,
-            "padding-block-start": 0,
-            "padding-block-end": 0,
-            "padding-inline-start": 0,
-            "padding-inline-end": 0
-          },
-          "blocks": {}
-        },
-        "group_crjbUR": {
-          "type": "group",
-          "name": "lösning",
-          "settings": {
-            "content_direction": "column",
-            "vertical_on_mobile": true,
-            "horizontal_alignment": "flex-start",
-            "vertical_alignment": "center",
-            "align_baseline": false,
-            "horizontal_alignment_flex_direction_column": "flex-start",
-            "vertical_alignment_flex_direction_column": "center",
-            "gap": 12,
-            "width": "custom",
-            "custom_width": 100,
-            "width_mobile": "fill",
-            "custom_width_mobile": 100,
-            "height": "fit",
-            "custom_height": 100,
-            "background_media": "none",
-            "background_color": "",
-            "video_position": "cover",
-            "background_image_position": "cover",
-            "toggle_overlay": false,
-            "overlay_color": "#00000026",
-            "overlay_style": "solid",
-            "gradient_direction": "to top",
-            "border": "none",
-            "border_width": 1,
-            "border_opacity": 100,
-            "border_color": "",
-            "border_radius": 0,
-            "link": "",
-            "open_in_new_tab": false,
-            "placeholder": "",
-            "padding-block-start": 0,
-            "padding-block-end": 0,
-            "padding-inline-start": 0,
-            "padding-inline-end": 0
-          },
-          "blocks": {
-            "text_TzqatE": {
-              "type": "text",
-              "settings": {
-                "text": "<p><strong>Lösningen</strong></p><h2>Så hjälper Flexbrace</h2>",
-                "width": "fit-content",
-                "max_width": "none",
-                "alignment": "left",
-                "type_preset": "h3",
-                "font": "var(--font-body--family)",
-                "font_size": "1rem",
-                "line_height": "normal",
-                "letter_spacing": "normal",
-                "case": "none",
-                "wrap": "pretty",
-                "text_color": "",
-                "background": false,
-                "background_color": "#00000026",
-                "corner_radius": 0,
-                "padding-block-start": 0,
-                "padding-block-end": 0,
-                "padding-inline-start": 0,
-                "padding-inline-end": 0
-              },
-              "blocks": {},
-              "name": "t:names.heading"
-            },
-            "text_apDtXt": {
-              "type": "text",
-              "settings": {
-                "text": "<p>En lätt ankel-fot-ortos som lyfter foten, ger sidostabilitet och sitter diskret i vanliga skor.</p><ul><li>Fotlyft som minskar släpande steg</li><li>Fotledsstabilitet i sidled</li><li>Naturligare gångmönster</li><li>Bättre balans och trygghet</li><li>Låg vikt (ca 100 g) och följsam passform</li><li>Diskret i vanliga skor · individuell anpassning</li></ul>",
-                "width": "fit-content",
-                "max_width": "narrow",
-                "alignment": "left",
-                "type_preset": "rte",
-                "font": "var(--font-body--family)",
-                "font_size": "1rem",
-                "line_height": "normal",
-                "letter_spacing": "normal",
-                "case": "none",
-                "wrap": "pretty",
-                "text_color": "",
-                "background": false,
-                "background_color": "#00000026",
-                "corner_radius": 0,
-                "padding-block-start": 0,
-                "padding-block-end": 0,
-                "padding-inline-start": 0,
-                "padding-inline-end": 0
-              },
-              "blocks": {}
-            }
-          },
-          "block_order": [
-            "text_TzqatE",
-            "text_apDtXt"
-          ]
-        }
-      },
-      "block_order": [
-        "image_URYtVW",
-        "group_crjbUR"
-      ],
-      "name": "LÖSNING Bild med text",
-      "settings": {
-        "content_direction": "row",
-        "vertical_on_mobile": true,
-        "horizontal_alignment": "flex-start",
-        "vertical_alignment": "center",
-        "align_baseline": false,
-        "horizontal_alignment_flex_direction_column": "flex-start",
-        "vertical_alignment_flex_direction_column": "center",
-        "gap": 56,
         "section_width": "page-width",
-        "section_height": "",
-        "section_height_custom": 50,
-        "background_media": "none",
-        "background_color": "#ffffff",
-        "video_position": "cover",
-        "background_image_position": "cover",
-        "toggle_overlay": false,
-        "overlay_color": "#00000026",
-        "overlay_style": "solid",
-        "gradient_direction": "to top",
-        "border": "none",
-        "border_width": 1,
-        "border_opacity": 100,
-        "border_color": "",
-        "border_radius": 0,
-        "padding-block-start": 96,
-        "padding-block-end": 96
+        "padding-block-start": 88,
+        "padding-block-end": 88
       }
     },
     "featured_product_information_4JzmUk": {
@@ -425,10 +207,10 @@
           "type": "_featured-product-information-carousel",
           "static": true,
           "settings": {
-            "aspect_ratio": "adapt",
-            "constrain_to_viewport": true,
+            "aspect_ratio": "square",
+            "constrain_to_viewport": false,
             "media_fit": "contain",
-            "media_radius": 8,
+            "media_radius": 28,
             "extend_media": false,
             "zoom": true,
             "video_loop": false,
@@ -456,8 +238,8 @@
             "custom_width_mobile": 100,
             "height": "fit",
             "details_position": "flex-start",
-            "gap": 28,
-            "sticky_details_desktop": true,
+            "gap": 20,
+            "sticky_details_desktop": false,
             "background_media": "none",
             "background_color": "",
             "video_position": "cover",
@@ -467,8 +249,8 @@
             "border_opacity": 100,
             "border_color": "",
             "border_radius": 0,
-            "padding-block-start": 24,
-            "padding-block-end": 24,
+            "padding-block-start": 0,
+            "padding-block-end": 0,
             "padding-inline-start": 0,
             "padding-inline-end": 0
           },
@@ -679,11 +461,11 @@
         "content_width": "content-center-aligned",
         "desktop_media_position": "right",
         "equal_columns": true,
-        "limit_details_width": false,
+        "limit_details_width": true,
         "gap": 48,
         "background_color": "#ffffff",
-        "padding-block-start": 96,
-        "padding-block-end": 96
+        "padding-block-start": 40,
+        "padding-block-end": 88
       }
     },
     "product_focus_intro": {
@@ -694,18 +476,7 @@
         "background_color": "#ffffff",
         "section_width": "page-width",
         "padding-block-start": 72,
-        "padding-block-end": 0
-      }
-    },
-    "process_steps": {
-      "type": "custom-liquid",
-      "name": "Så går det till",
-      "settings": {
-        "custom_liquid": "<div class=\"flexbrace-steps\" id=\"sa-gar-det-till\" aria-label=\"Så går det till\"><div class=\"flexbrace-steps__intro\"><p class=\"flexbrace-steps__eyebrow\">Processen</p><h2>Så går det till</h2><p>En tydlig svensk process – från beställning till justerad ortos som fungerar i din vardag.</p></div><ol class=\"flexbrace-steps__list\"><li><span class=\"flexbrace-steps__num\">01</span><h3>Beställ eller fyll i formulär</h3><p>Du beställer online eller kontaktar oss med dina uppgifter. Vi går igenom behov och vilken fotsida som gäller.</p></li><li><span class=\"flexbrace-steps__num\">02</span><h3>Mått eller utprovning</h3><p>Vi tar emot mått enligt anvisning, eller bokar utprovning där det behövs för rätt passform.</p></li><li><span class=\"flexbrace-steps__num\">03</span><h3>Tillverkning och anpassning</h3><p>Ortosen anpassas individuellt utifrån dina mått och behov – inte en generisk engångslösning.</p></li><li><span class=\"flexbrace-steps__num\">04</span><h3>Leverans och justering</h3><p>Du får ortosen hem och kan finjustera. Behöver du hjälp med passform finns vi kvar efter leverans.</p></li></ol></div>",
-        "background_color": "#f2f8fa",
-        "section_width": "page-width",
-        "padding-block-start": 88,
-        "padding-block-end": 88
+        "padding-block-end": 28
       }
     },
     "section_wnkGAB": {
@@ -1256,17 +1027,6 @@
         "padding-block-end": 72
       }
     },
-    "indications": {
-      "type": "custom-liquid",
-      "name": "För vem",
-      "settings": {
-        "custom_liquid": "<div class=\"flexbrace-indications\" aria-label=\"För vem Flexbrace kan passa\"><div class=\"flexbrace-indications__intro\"><p class=\"flexbrace-indications__eyebrow\">Indikationer</p><h2>För vem – och när du bör rådgöra</h2><p>Flexbrace kan vara aktuell vid nedsatt fotlyft eller osäker fotledskontroll. Det är ingen ersättning för medicinsk bedömning.</p></div><div class=\"flexbrace-indications__grid\"><div><h3>Kan passa dig om du...</h3><ul><li>Har droppfot eller svårt att lyfta foten</li><li>Har svaghet efter stroke, MS eller peroneuspares</li><li>Snubblar, lyfter benet högt eller känner dig ostadig</li><li>Vill ha stöd som sitter diskret i vanliga skor</li></ul></div><div><h3>Prata med vårdgivare om...</h3><ul><li>Du har öppna sår, kraftig svullnad eller akut skada</li><li>Du redan har en förskriven ortos eller pågående behandling</li><li>Du är osäker på om en AFO är rätt för dig</li></ul><p><strong>Prata alltid med din vårdgivare</strong> innan du ändrar hjälpmedel eller behandling.</p></div></div></div>",
-        "background_color": "#ffffff",
-        "section_width": "page-width",
-        "padding-block-start": 88,
-        "padding-block-end": 88
-      }
-    },
     "section_P87RHy": {
       "type": "section",
       "blocks": {
@@ -1673,15 +1433,12 @@
   },
   "order": [
     "hero_jVaWmY",
-    "section_rVAREi",
-    "section_j89FNC",
+    "problem_solution",
     "product_focus_intro",
     "featured_product_information_4JzmUk",
     "section_6MeQMy",
-    "process_steps",
     "section_wnkGAB",
     "section_FtVrRn",
-    "indications",
     "section_P87RHy",
     "comparison",
     "about_experience",
