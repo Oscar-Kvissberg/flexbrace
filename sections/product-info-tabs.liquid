@@ -1,0 +1,407 @@
+{% comment %}
+  Product info tabs — groups below-the-buy-box content into a horizontal tab menu.
+{% endcomment %}
+
+{% liquid
+  if section.settings.background_color != blank
+    render 'contrast-override', background_color: section.settings.background_color, section_id: section.id
+  endif
+
+  assign fb = product
+  if fb == blank
+    assign fb = all_products['afo-ortos-ankel-fotortos']
+  endif
+%}
+
+<div
+  class="section-background{% if section.settings.background_color != blank %} color-custom-{{ section.id }}{% endif %}"
+></div>
+<div
+  class="section section--{{ section.settings.section_width }} spacing-style{% if section.settings.background_color != blank %} color-custom-{{ section.id }}{% endif %}"
+  style="{% render 'spacing-padding', settings: section.settings %}"
+>
+  <div class="flexbrace-tabs" data-flexbrace-tabs>
+    <div class="flexbrace-tabs__nav-wrap">
+      <div
+        class="flexbrace-tabs__nav"
+        role="tablist"
+        aria-label="Produktinformation"
+      >
+        <button
+          type="button"
+          class="flexbrace-tabs__tab is-active"
+          role="tab"
+          id="fb-tab-overview"
+          aria-selected="true"
+          aria-controls="fb-panel-overview"
+          data-tab="overview"
+        >
+          Översikt
+        </button>
+        <button
+          type="button"
+          class="flexbrace-tabs__tab"
+          role="tab"
+          id="fb-tab-specs"
+          aria-selected="false"
+          aria-controls="fb-panel-specs"
+          data-tab="specs"
+          tabindex="-1"
+        >
+          Specifikation
+        </button>
+        <button
+          type="button"
+          class="flexbrace-tabs__tab"
+          role="tab"
+          id="fb-tab-faq"
+          aria-selected="false"
+          aria-controls="fb-panel-faq"
+          data-tab="faq"
+          tabindex="-1"
+        >
+          FAQ
+        </button>
+        <button
+          type="button"
+          class="flexbrace-tabs__tab"
+          role="tab"
+          id="fb-tab-about"
+          aria-selected="false"
+          aria-controls="fb-panel-about"
+          data-tab="about"
+          tabindex="-1"
+        >
+          Om Flexbrace
+        </button>
+      </div>
+    </div>
+
+    <div class="flexbrace-tabs__panels">
+      {%- comment -%} Översikt {%- endcomment -%}
+      <div
+        class="flexbrace-tabs__panel is-active"
+        role="tabpanel"
+        id="fb-panel-overview"
+        aria-labelledby="fb-tab-overview"
+        data-panel="overview"
+      >
+        <div class="flexbrace-tabs__stack">
+          <div class="flexbrace-product-section">
+            <div class="flexbrace-product-section__header">
+              <p class="product-page-eyebrow">Känner du igen dig?</p>
+              <h2>När droppfot gör varje steg osäkert</h2>
+              <p>Droppfot gör att foten hänger eller släpar. Många snubblar, lyfter benet högt – och balansen blir sämre.</p>
+            </div>
+            <ul class="flexbrace-checklist">
+              <li>Foten släpar eller tippar inåt/utåt</li>
+              <li>Du snubblar oftare, särskilt på ojämnt underlag</li>
+              <li>Du lyfter knät högt för att få plats åt foten</li>
+              <li>Gången känns ansträngande och ostadig</li>
+            </ul>
+          </div>
+
+          <div class="flexbrace-product-section">
+            <div class="flexbrace-product-section__header">
+              <p class="product-page-eyebrow">Lösningen</p>
+              <h2>Så hjälper Flexbrace</h2>
+              <p>Fotlyft, stabilitet och diskret stöd – utan klumpig skena.</p>
+            </div>
+            <div class="flexbrace-product-benefits">
+              <article class="flexbrace-product-benefits__card">
+                <span class="flexbrace-product-benefits__icon" aria-hidden="true">01</span>
+                <h3>Fotlyft &amp; stabilitet</h3>
+                <p>Hjälper foten att lyftas och ger sidostöd genom steget.</p>
+              </article>
+              <article class="flexbrace-product-benefits__card">
+                <span class="flexbrace-product-benefits__icon" aria-hidden="true">02</span>
+                <h3>Naturligare gång</h3>
+                <p>Bättre balans och mer avslappnad rörelse i vardagen.</p>
+              </article>
+              <article class="flexbrace-product-benefits__card">
+                <span class="flexbrace-product-benefits__icon" aria-hidden="true">03</span>
+                <h3>Lätt &amp; diskret</h3>
+                <p>Ca 100 g, följsam passform och plats i vanliga skor.</p>
+              </article>
+            </div>
+          </div>
+
+          <div class="flexbrace-compare" aria-label="Varför Flexbrace">
+            <div class="flexbrace-compare__intro">
+              <p class="flexbrace-compare__eyebrow">Jämförelse</p>
+              <h2>Varför Flexbrace framför styva skenor</h2>
+              <p>Lättare, diskretare och mer följsam – stöd utan onödig bulk.</p>
+            </div>
+            <div class="flexbrace-compare__grid">
+              <article>
+                <h3>Lättare</h3>
+                <p>Ca 100 g – stöd utan onödig bulk.</p>
+              </article>
+              <article>
+                <h3>Diskretare</h3>
+                <p>Passar i vanliga skor, under byxor.</p>
+              </article>
+              <article>
+                <h3>Följsammare</h3>
+                <p>Ger stöd i sidled utan att låsa steget helt.</p>
+              </article>
+            </div>
+          </div>
+
+          <div class="flexbrace-product-section">
+            <div class="flexbrace-product-section__header">
+              <p class="product-page-eyebrow">Kundröster</p>
+              <h2>Tryggare steg i vardagen</h2>
+            </div>
+            <div class="flexbrace-quotes">
+              <blockquote>
+                <p>”Jag har använt Flexbrace i fyra år och idag skulle jag inte vilja vara utan den – varken på jobbet eller på fritiden.”</p>
+                <footer><strong>Per</strong> · 62 år</footer>
+              </blockquote>
+              <blockquote>
+                <p>”Efter att jag fått min skena har jag inte fallit en enda gång.”</p>
+                <footer><strong>Erik</strong> · 85 år</footer>
+              </blockquote>
+              <blockquote>
+                <p>”Det känns stabilt utan att vara klumpigt. Jag kan röra mig mer naturligt.”</p>
+                <footer><strong>Anna</strong> · Vardagsbruk</footer>
+              </blockquote>
+              <blockquote>
+                <p>”Jag vågar ta längre promenader igen. Balansen känns bättre.”</p>
+                <footer><strong>Maria</strong> · Mer rörlighet</footer>
+              </blockquote>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      {%- comment -%} Specifikation {%- endcomment -%}      <div
+        class="flexbrace-tabs__panel"
+        role="tabpanel"
+        id="fb-panel-specs"
+        aria-labelledby="fb-tab-specs"
+        data-panel="specs"
+        hidden
+      >
+        <div class="flexbrace-product-section flexbrace-product-section--surface">
+          <div class="flexbrace-product-section__header">
+            <p class="product-page-eyebrow">Produkt i fokus</p>
+            <h2>Det du behöver veta</h2>
+            <p>Lätt ortos med fokus på komfort och vardagsbruk.</p>
+          </div>
+          <div class="flexbrace-product-specs">
+            <dl>
+              <div>
+                <dt>Vikt</dt>
+                <dd>Ca 100 g</dd>
+              </div>
+              <div>
+                <dt>Produkttyp</dt>
+                <dd>Ankel-fotortos (AFO)</dd>
+              </div>
+              <div>
+                <dt>Komfort</dt>
+                <dd>Följsam, låg profil</dd>
+              </div>
+              <div>
+                <dt>Skor</dt>
+                <dd>Passar i vanliga skor</dd>
+              </div>
+              <div>
+                <dt>Variant</dt>
+                <dd>Höger eller vänster fot</dd>
+              </div>
+              <div>
+                <dt>Anpassning</dt>
+                <dd>Individuell via mått/utprovning</dd>
+              </div>
+            </dl>
+          </div>
+          <div class="flexbrace-product-buybar">
+            {% if fb != blank %}
+              <a class="flexbrace-product-buybar__button" href="{{ fb.url }}">
+                Köp Flexbrace · {{ fb.price_min | money }}
+              </a>
+            {% endif %}
+          </div>
+        </div>
+      </div>
+
+      {%- comment -%} FAQ {%- endcomment -%}
+      <div
+        class="flexbrace-tabs__panel"
+        role="tabpanel"
+        id="fb-panel-faq"
+        aria-labelledby="fb-tab-faq"
+        data-panel="faq"
+        hidden
+      >
+        <div class="flexbrace-tabs-faq">
+          <div class="flexbrace-tabs-faq__intro">
+            <p class="product-page-eyebrow">Vanliga frågor</p>
+            <h2>Svar innan du beställer</h2>
+            <p>Symptom, ortostyp, heldagsbruk, mått, retur, leverans och bidrag i Sverige.</p>
+          </div>
+          <div class="flexbrace-tabs-faq__list">
+            <details class="flexbrace-tabs-faq__item">
+              <summary>Vilka symptom passar Flexbrace för?</summary>
+              <p>Flexbrace är tänkt för dig som har svårt att lyfta foten, snubblar, tippar i fotleden eller känner dig ostadig vid gång. Rådgör gärna med vårdgivare om du är osäker.</p>
+            </details>
+            <details class="flexbrace-tabs-faq__item">
+              <summary>Vilken typ av ortos är Flexbrace?</summary>
+              <p>En ankel-fot-ortos (AFO) som ger fotlyft och sidostöd. Lätt och lågprofilerad så den kan sitta inuti vanliga skor.</p>
+            </details>
+            <details class="flexbrace-tabs-faq__item">
+              <summary>Kan jag använda den hela dagen?</summary>
+              <p>Många använder Flexbrace under större delen av dagen. Börja stegvis och justera banden så stödet känns stabilt utan att klämma.</p>
+            </details>
+            <details class="flexbrace-tabs-faq__item">
+              <summary>Hur fungerar storlek och mått?</summary>
+              <p>Passformen bygger på mått eller utprovning och individuell anpassning. Välj rätt fotsida (höger/vänster) vid beställning.</p>
+            </details>
+            <details class="flexbrace-tabs-faq__item">
+              <summary>Vad gäller för retur?</summary>
+              <p>90 dagars öppet köp. Returnera enligt våra returvillkor om den inte passar.</p>
+            </details>
+            <details class="flexbrace-tabs-faq__item">
+              <summary>Hur lång är leveranstiden?</summary>
+              <p>Beror på anpassning och lagerläge. Aktuell tid visas i kassan. Fri frakt i Sverige.</p>
+            </details>
+            <details class="flexbrace-tabs-faq__item">
+              <summary>Kan jag få bidrag eller hjälpmedel i Sverige?</summary>
+              <p>Möjligheten till bidrag eller förskrivning varierar mellan regioner och din medicinska bedömning. Fråga din vårdgivare eller hjälpmedelscentral. Vi svarar på produktfrågor – men bedömer inte din rätt till bidrag.</p>
+            </details>
+          </div>
+        </div>
+      </div>
+
+      {%- comment -%} Om Flexbrace {%- endcomment -%}
+      <div
+        class="flexbrace-tabs__panel"
+        role="tabpanel"
+        id="fb-panel-about"
+        aria-labelledby="fb-tab-about"
+        data-panel="about"
+        hidden
+      >
+        <div class="flexbrace-about" aria-label="Om Flexbrace">
+          <div class="flexbrace-about__copy">
+            <p class="flexbrace-about__eyebrow">Erfarenhet</p>
+            <h2>Individuella Flexbrace i över 25 år</h2>
+            <p>
+              Flexbrace bygger på lång bandageri-erfarenhet och individuella anpassningar. Bakom produkten finns ett team
+              som hjälper dig med passform, frågor och nästa steg.
+            </p>
+            <a class="flexbrace-about__link" href="/pages/contact">Kontakta teamet</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<script>
+  (function () {
+    var root = document.querySelector('[data-flexbrace-tabs]');
+    if (!root) return;
+
+    var tabs = Array.prototype.slice.call(root.querySelectorAll('[role="tab"]'));
+    var panels = Array.prototype.slice.call(root.querySelectorAll('[role="tabpanel"]'));
+
+    function activate(tabId, focusTab) {
+      tabs.forEach(function (tab) {
+        var selected = tab.getAttribute('data-tab') === tabId;
+        tab.classList.toggle('is-active', selected);
+        tab.setAttribute('aria-selected', selected ? 'true' : 'false');
+        tab.tabIndex = selected ? 0 : -1;
+        if (selected && focusTab) tab.focus();
+      });
+
+      panels.forEach(function (panel) {
+        var selected = panel.getAttribute('data-panel') === tabId;
+        panel.classList.toggle('is-active', selected);
+        if (selected) {
+          panel.removeAttribute('hidden');
+        } else {
+          panel.setAttribute('hidden', '');
+        }
+      });
+    }
+
+    tabs.forEach(function (tab) {
+      tab.addEventListener('click', function () {
+        activate(tab.getAttribute('data-tab'), false);
+      });
+
+      tab.addEventListener('keydown', function (event) {
+        var index = tabs.indexOf(tab);
+        var next = index;
+
+        if (event.key === 'ArrowRight') next = (index + 1) % tabs.length;
+        else if (event.key === 'ArrowLeft') next = (index - 1 + tabs.length) % tabs.length;
+        else if (event.key === 'Home') next = 0;
+        else if (event.key === 'End') next = tabs.length - 1;
+        else return;
+
+        event.preventDefault();
+        activate(tabs[next].getAttribute('data-tab'), true);
+      });
+    });
+
+  })();
+</script>
+
+{% schema %}
+{
+  "name": "Produktinfo flikar",
+  "tag": "section",
+  "class": "section-wrapper",
+  "settings": [
+    {
+      "type": "color",
+      "id": "background_color",
+      "label": "Bakgrundsfärg",
+      "default": "#ffffff"
+    },
+    {
+      "type": "select",
+      "id": "section_width",
+      "label": "Bredd",
+      "options": [
+        { "value": "page-width", "label": "Sidbredd" },
+        { "value": "full-width", "label": "Full bredd" }
+      ],
+      "default": "page-width"
+    },
+    {
+      "type": "header",
+      "content": "Padding"
+    },
+    {
+      "type": "range",
+      "id": "padding-block-start",
+      "label": "Topp",
+      "min": 0,
+      "max": 100,
+      "step": 4,
+      "unit": "px",
+      "default": 24
+    },
+    {
+      "type": "range",
+      "id": "padding-block-end",
+      "label": "Botten",
+      "min": 0,
+      "max": 100,
+      "step": 4,
+      "unit": "px",
+      "default": 48
+    }
+  ],
+  "presets": [
+    {
+      "name": "Produktinfo flikar"
+    }
+  ]
+}
+{% endschema %}

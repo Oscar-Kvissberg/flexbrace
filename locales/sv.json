@@ -78,7 +78,7 @@
     "view_disclosure_information_for_product": "Visa produktupplysningar för {{ product_title }}"
   },
   "actions": {
-    "add_to_cart": "Lägg till i varukorgen",
+    "add_to_cart": "Lägg i varukorg",
     "clear_all": "Rensa alla",
     "remove": "Ta bort",
     "view_in_your_space": "Visa i din miljö",
@@ -328,7 +328,7 @@
   },
   "products": {
     "product": {
-      "add_to_cart": "Lägg till i varukorgen",
+      "add_to_cart": "Köp Flexbrace",
       "adding_to_cart": "Lägger till ...",
       "added_to_cart": "Tillagd i varukorgen",
       "add_to_cart_error": "Det uppstod ett fel när artikeln skulle läggas till i varukorgen",

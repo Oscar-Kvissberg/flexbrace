@@ -142,6 +142,8 @@
             <span>
               {%- if current_variant.available -%}
                 {{- 'products.product.add_to_cart' | t -}}
+                {{- ' · ' -}}
+                {{- current_variant.price | money -}}
               {%- elsif current_variant == blank -%}
                 {{- 'products.product.unavailable' | t -}}
               {%- else -%}

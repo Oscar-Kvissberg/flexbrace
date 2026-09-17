@@ -109,7 +109,7 @@
                   "type": "text",
                   "name": "Produktnamn",
                   "settings": {
-                    "text": "<p>Ankel-fot-ortos</p><h1>{{ closest.product.title }}</h1>",
+                    "text": "<p>Ankel-fotortos · AFO</p><h1>Flexbrace®</h1>",
                     "width": "100%",
                     "max_width": "normal",
                     "alignment": "left",
@@ -136,7 +136,7 @@
                   "settings": {
                     "show_sale_price_first": true,
                     "show_installments": false,
-                    "show_tax_info": true,
+                    "show_tax_info": false,
                     "type_preset": "h4",
                     "width": "100%",
                     "alignment": "left",
@@ -163,7 +163,7 @@
               "type": "text",
               "name": "Intro",
               "settings": {
-                "text": "<p>Flexbrace® är en lätt ankel-fot-ortos som hjälper till att hålla foten i en bättre position under steget. Välj höger eller vänster fot nedan.</p>",
+                "text": "<p>Tryggare gång utan klumpig skena. Lätt (ca 100 g), diskret i vanliga skor och utformad för att lyfta foten med kontrollerat sidostöd.</p>",
                 "width": "100%",
                 "max_width": "normal",
                 "alignment": "left",
@@ -252,9 +252,9 @@
                   "static": true,
                   "settings": {
                     "style_class": "button",
-                    "custom_button_background": "#19b8c9",
-                    "custom_button_text": "#ffffff",
-                    "custom_button_border": "#19b8c9"
+                    "custom_button_background": "#202124",
+                    "custom_button_text": "#f2f3f5",
+                    "custom_button_border": "#202124"
                   },
                   "blocks": {}
                 },
@@ -271,7 +271,7 @@
               "type": "text",
               "name": "Fördelar",
               "settings": {
-                "text": "<ul><li>Fri frakt i Sverige</li><li>90 dagars öppet köp</li><li>Personlig support före köp</li></ul>",
+                "text": "<ul><li>Fotlyft och fotledsstabilitet</li><li>Naturligare gång och bättre balans</li><li>Låg vikt · diskret · följsam</li><li>Individuell anpassning · passar i vanliga skor</li></ul>",
                 "width": "100%",
                 "max_width": "normal",
                 "alignment": "left",
@@ -326,7 +326,7 @@
                     "row_included_text": {
                       "type": "text",
                       "settings": {
-                        "text": "<p>Du får Flexbrace®-ortosen för vald fotsida (höger eller vänster), färdig att använda direkt. Produkten bärs inuti skon och levereras med justerbara kardborreband.</p>",
+                        "text": "<p>Flexbrace® AFO för vald fotsida (höger eller vänster). Låg profil som sitter inuti skon, med justerbar passform. Anpassning sker utifrån mått eller utprovning enligt vår svenska process.</p>",
                         "width": "100%",
                         "max_width": "normal",
                         "alignment": "left",
@@ -365,7 +365,7 @@
                     "row_size_text": {
                       "type": "text",
                       "settings": {
-                        "text": "<p>Flexbrace säljs i en storlek som passar de flesta vuxna. Kardborrebanden gör det enkelt att justera passformen. Vid osäkerhet – kontakta oss gärna före köp så hjälper vi dig välja rätt fotsida.</p>",
+                        "text": "<p>Passformen bygger på mått eller utprovning och individuell anpassning. Välj rätt fotsida här. Osäker? Kontakta oss före köp så guidar vi dig.</p>",
                         "width": "100%",
                         "max_width": "normal",
                         "alignment": "left",
@@ -404,7 +404,7 @@
                     "row_use_text": {
                       "type": "text",
                       "settings": {
-                        "text": "<p>Placera ortosen runt fot och underben enligt medföljande instruktioner. Spänn kardborrebanden så att stödet känns stabilt men bekvämt. Använd gärna tillsammans med en bekväm vardagssko med plats för ortosen.</p>",
+                        "text": "<p>Placera ortosen runt fot och underben. Spänn tills stödet känns stabilt utan att klämma. Använd med en bekväm vardagssko som har plats för ortosen.</p>",
                         "width": "100%",
                         "max_width": "normal",
                         "alignment": "left",
@@ -443,7 +443,7 @@
                     "row_shipping_text": {
                       "type": "text",
                       "settings": {
-                        "text": "<p>Fri frakt i Sverige. Leveranstid visas i kassan. Du har 90 dagars öppet köp för att prova produkten hemma. Returnera enligt våra returvillkor om Flexbrace inte passar dig.</p>",
+                        "text": "<p>Fri frakt i Sverige. Leveranstid syns i kassan och beror på anpassning. 90 dagars öppet köp för att utvärdera hemma.</p>",
                         "width": "100%",
                         "max_width": "normal",
                         "alignment": "left",
@@ -482,7 +482,7 @@
               "type": "text",
               "name": "Beskrivning",
               "settings": {
-                "text": "{{ closest.product.description }}",
+                "text": "<p>Flexbrace® är en lätt AFO för dig som behöver pålitligt stöd i vardagen – utan tung skena. Den hjälper foten att lyftas och hållas i en mer stabil position genom steget.</p>",
                 "width": "100%",
                 "max_width": "normal",
                 "alignment": "left",
@@ -493,7 +493,7 @@
                 "letter_spacing": "normal",
                 "case": "none",
                 "wrap": "pretty",
-                "text_color": "",
+                "text_color": "#5d7182",
                 "background": false,
                 "background_color": "#00000026",
                 "corner_radius": 0,
@@ -522,360 +522,38 @@
         "desktop_media_position": "left",
         "equal_columns": false,
         "limit_details_width": false,
-        "gap": 40,
+        "gap": 48,
         "enable_sticky_add_to_cart": true,
-        "background_color": "#f2f8fa",
-        "padding-block-start": 24,
-        "padding-block-end": 32
+        "background_color": "#ffffff",
+        "padding-block-start": 32,
+        "padding-block-end": 48
       }
     },
-    "product_trust": {
-      "type": "custom-liquid",
-      "name": "Trygghetsfördelar",
+    "product_info_tabs": {
+      "type": "product-info-tabs",
+      "name": "Produktinfo flikar",
       "settings": {
-        "custom_liquid": "<div class=\"flexbrace-trust\" aria-label=\"Fördelar med att handla hos Flexbrace\"><div class=\"flexbrace-trust__item\"><span class=\"flexbrace-trust__icon\" aria-hidden=\"true\">&#10003;</span><div><strong>Fri frakt i Sverige</strong><span>Leverans direkt hem till dig</span></div></div><div class=\"flexbrace-trust__item\"><span class=\"flexbrace-trust__icon\" aria-hidden=\"true\">&#8634;</span><div><strong>90 dagars öppet köp</strong><span>Prova i lugn och ro hemma</span></div></div><div class=\"flexbrace-trust__item\"><span class=\"flexbrace-trust__icon\" aria-hidden=\"true\">&#9679;</span><div><strong>Säker betalning</strong><span>Trygg och krypterad checkout</span></div></div><div class=\"flexbrace-trust__item\"><span class=\"flexbrace-trust__icon\" aria-hidden=\"true\">i</span><div><strong>Personlig support</strong><span>Vi hjälper dig att hitta rätt</span></div></div></div>",
-        "background_color": "#f2f8fa",
-        "section_width": "page-width",
-        "padding-block-start": 24,
-        "padding-block-end": 36
-      }
-    },
-    "product_benefits": {
-      "type": "custom-liquid",
-      "name": "Produktfördelar",
-      "settings": {
-        "custom_liquid": "<div class=\"flexbrace-product-section\"><div class=\"flexbrace-product-section__header\"><p class=\"product-page-eyebrow\">Varför Flexbrace</p><h2>Stöd där du behöver det i vardagen</h2><p>En enkel ortos med fokus på trygghet, komfort och rörelsefrihet.</p></div><div class=\"flexbrace-product-benefits\"><article class=\"flexbrace-product-benefits__card\"><span class=\"flexbrace-product-benefits__icon\" aria-hidden=\"true\">↔</span><h3>Stöd i sidled</h3><p>Hjälper foten att hållas i en bättre position genom steget.</p></article><article class=\"flexbrace-product-benefits__card\"><span class=\"flexbrace-product-benefits__icon\" aria-hidden=\"true\">◎</span><h3>Låg vikt</h3><p>Diskret att bära och enkel att ta med i vardagen.</p></article><article class=\"flexbrace-product-benefits__card\"><span class=\"flexbrace-product-benefits__icon\" aria-hidden=\"true\">↻</span><h3>Flexibel design</h3><p>Följsam konstruktion som passar vardagens rörelser.</p></article></div></div>",
         "background_color": "#ffffff",
         "section_width": "page-width",
-        "padding-block-start": 48,
-        "padding-block-end": 48
-      }
-    },
-    "product_specs": {
-      "type": "custom-liquid",
-      "name": "Specifikation",
-      "settings": {
-        "custom_liquid": "<div class=\"flexbrace-product-section flexbrace-product-section--surface\"><div class=\"flexbrace-product-section__header\"><p class=\"product-page-eyebrow\">Specifikation</p><h2>Det viktigaste att veta</h2></div><div class=\"flexbrace-product-specs\"><dl><div><dt>Produkttyp</dt><dd>Ankel-fot-ortos (AFO)</dd></div><div><dt>Variant</dt><dd>Höger eller vänster fot</dd></div><div><dt>Storlek</dt><dd>En storlek – justeras med kardborre</dd></div><div><dt>Användning</dt><dd>Vardagsgång, inuti sko</dd></div><div><dt>Material</dt><dd>Lätt och formstabil konstruktion</dd></div><div><dt>Leverans</dt><dd>Fri frakt i Sverige</dd></div></dl></div></div>",
-        "background_color": "#f2f8fa",
-        "section_width": "page-width",
-        "padding-block-start": 0,
-        "padding-block-end": 48
-      }
-    },
-    "product_faq": {
-      "type": "section",
-      "blocks": {
-        "text_Thbddc": {
-          "type": "text",
-          "name": "t:names.heading",
-          "settings": {
-            "text": "<h2>Vanliga frågor om Flexbrace</h2><p>Snabba svar om användning, leverans och retur.</p>",
-            "width": "fit-content",
-            "max_width": "narrow",
-            "alignment": "left",
-            "type_preset": "h3",
-            "font": "var(--font-body--family)",
-            "font_size": "",
-            "line_height": "normal",
-            "letter_spacing": "normal",
-            "case": "none",
-            "wrap": "pretty",
-            "text_color": "",
-            "background": false,
-            "background_color": "#00000026",
-            "corner_radius": 0,
-            "padding-block-start": 0,
-            "padding-block-end": 0,
-            "padding-inline-start": 0,
-            "padding-inline-end": 0
-          },
-          "blocks": {}
-        },
-        "accordion_mwRM4H": {
-          "type": "accordion",
-          "name": "t:names.accordion",
-          "settings": {
-            "icon": "caret",
-            "dividers": true,
-            "divider_color": "",
-            "type_preset": "h5",
-            "background_color": "",
-            "text_color": "",
-            "border": "none",
-            "border_width": 1,
-            "border_opacity": 100,
-            "border_color": "",
-            "border_radius": 0,
-            "padding-block-start": 0,
-            "padding-block-end": 0,
-            "padding-inline-start": 0,
-            "padding-inline-end": 0
-          },
-          "blocks": {
-            "accordion_row_4TAAAV": {
-              "type": "_accordion-row",
-              "settings": {
-                "heading": "Hur fungerar Flexbrace?",
-                "open_by_default": false,
-                "icon": "none",
-                "width": 20
-              },
-              "blocks": {
-                "text_AB6FcD": {
-                  "type": "text",
-                  "settings": {
-                    "text": "<p>Flexbrace är en ankel-fot-ortos som hjälper till att hålla foten i en bättre position genom steget och ger stöd i sidled.</p>",
-                    "width": "100%",
-                    "max_width": "normal",
-                    "alignment": "left",
-                    "type_preset": "rte",
-                    "font": "var(--font-body--family)",
-                    "font_size": "",
-                    "line_height": "normal",
-                    "letter_spacing": "normal",
-                    "case": "none",
-                    "wrap": "pretty",
-                    "text_color": "",
-                    "background": false,
-                    "background_color": "#00000026",
-                    "corner_radius": 0,
-                    "padding-block-start": 0,
-                    "padding-block-end": 0,
-                    "padding-inline-start": 0,
-                    "padding-inline-end": 0
-                  },
-                  "blocks": {}
-                }
-              },
-              "block_order": [
-                "text_AB6FcD"
-              ]
-            },
-            "accordion_row_YdLV4K": {
-              "type": "_accordion-row",
-              "settings": {
-                "heading": "Passar ortosen både höger och vänster fot?",
-                "open_by_default": false,
-                "icon": "none",
-                "width": 20
-              },
-              "blocks": {
-                "text_Q79Lkb": {
-                  "type": "text",
-                  "settings": {
-                    "text": "<p>Ja. Välj höger eller vänster fot på produktsidan innan du lägger varan i kundvagnen.</p>",
-                    "width": "100%",
-                    "max_width": "normal",
-                    "alignment": "left",
-                    "type_preset": "rte",
-                    "font": "var(--font-body--family)",
-                    "font_size": "",
-                    "line_height": "normal",
-                    "letter_spacing": "normal",
-                    "case": "none",
-                    "wrap": "pretty",
-                    "text_color": "",
-                    "background": false,
-                    "background_color": "#00000026",
-                    "corner_radius": 0,
-                    "padding-block-start": 0,
-                    "padding-block-end": 0,
-                    "padding-inline-start": 0,
-                    "padding-inline-end": 0
-                  },
-                  "blocks": {}
-                }
-              },
-              "block_order": [
-                "text_Q79Lkb"
-              ]
-            },
-            "accordion_row_3GFWdT": {
-              "type": "_accordion-row",
-              "name": "t:names.accordion_row",
-              "settings": {
-                "heading": "Hur lång är leveranstiden?",
-                "open_by_default": false,
-                "icon": "none",
-                "width": 20
-              },
-              "blocks": {
-                "text_ckDkP3": {
-                  "type": "text",
-                  "name": "t:names.text",
-                  "settings": {
-                    "text": "<p>Aktuell leveranstid visas i kassan. När ordern har skickats får du spårningsinformation via e-post.</p>",
-                    "width": "100%",
-                    "max_width": "normal",
-                    "alignment": "left",
-                    "type_preset": "rte",
-                    "font": "var(--font-body--family)",
-                    "font_size": "",
-                    "line_height": "normal",
-                    "letter_spacing": "normal",
-                    "case": "none",
-                    "wrap": "pretty",
-                    "text_color": "",
-                    "background": false,
-                    "background_color": "#00000026",
-                    "corner_radius": 0,
-                    "padding-block-start": 0,
-                    "padding-block-end": 0,
-                    "padding-inline-start": 0,
-                    "padding-inline-end": 0
-                  },
-                  "blocks": {}
-                }
-              },
-              "block_order": [
-                "text_ckDkP3"
-              ]
-            },
-            "accordion_row_EcmMJx": {
-              "type": "_accordion-row",
-              "name": "t:names.accordion_row",
-              "settings": {
-                "heading": "Kan jag prova Flexbrace hemma?",
-                "open_by_default": false,
-                "icon": "none",
-                "width": 20
-              },
-              "blocks": {
-                "text_KbRM8Q": {
-                  "type": "text",
-                  "name": "t:names.text",
-                  "settings": {
-                    "text": "<p>Ja. Du har 90 dagars öppet köp så att du kan prova produkten hemma. Produkten behöver returneras enligt våra returvillkor.</p>",
-                    "width": "100%",
-                    "max_width": "normal",
-                    "alignment": "left",
-                    "type_preset": "rte",
-                    "font": "var(--font-body--family)",
-                    "font_size": "",
-                    "line_height": "normal",
-                    "letter_spacing": "normal",
-                    "case": "none",
-                    "wrap": "pretty",
-                    "text_color": "",
-                    "background": false,
-                    "background_color": "#00000026",
-                    "corner_radius": 0,
-                    "padding-block-start": 0,
-                    "padding-block-end": 0,
-                    "padding-inline-start": 0,
-                    "padding-inline-end": 0
-                  },
-                  "blocks": {}
-                }
-              },
-              "block_order": [
-                "text_KbRM8Q"
-              ]
-            },
-            "accordion_row_hxpkDn": {
-              "type": "_accordion-row",
-              "name": "t:names.accordion_row",
-              "settings": {
-                "heading": "Hur får jag hjälp före köp?",
-                "open_by_default": false,
-                "icon": "none",
-                "width": 20
-              },
-              "blocks": {
-                "text_YgeEyF": {
-                  "type": "text",
-                  "name": "t:names.text",
-                  "settings": {
-                    "text": "<p>Kontakta vår support om du har frågor om produkten, val av fotsida eller beställningen. Vi hjälper dig gärna.</p>",
-                    "width": "100%",
-                    "max_width": "normal",
-                    "alignment": "left",
-                    "type_preset": "rte",
-                    "font": "var(--font-body--family)",
-                    "font_size": "",
-                    "line_height": "normal",
-                    "letter_spacing": "normal",
-                    "case": "none",
-                    "wrap": "pretty",
-                    "text_color": "",
-                    "background": false,
-                    "background_color": "#00000026",
-                    "corner_radius": 0,
-                    "padding-block-start": 0,
-                    "padding-block-end": 0,
-                    "padding-inline-start": 0,
-                    "padding-inline-end": 0
-                  },
-                  "blocks": {}
-                }
-              },
-              "block_order": [
-                "text_YgeEyF"
-              ]
-            }
-          },
-          "block_order": [
-            "accordion_row_4TAAAV",
-            "accordion_row_YdLV4K",
-            "accordion_row_3GFWdT",
-            "accordion_row_EcmMJx",
-            "accordion_row_hxpkDn"
-          ]
-        }
-      },
-      "block_order": [
-        "text_Thbddc",
-        "accordion_mwRM4H"
-      ],
-      "disabled": false,
-      "name": "t:names.faq_section",
-      "settings": {
-        "content_direction": "column",
-        "vertical_on_mobile": true,
-        "horizontal_alignment": "flex-start",
-        "vertical_alignment": "center",
-        "align_baseline": false,
-        "horizontal_alignment_flex_direction_column": "flex-start",
-        "vertical_alignment_flex_direction_column": "center",
-        "gap": 32,
-        "section_width": "page-width",
-        "section_height": "",
-        "section_height_custom": 50,
-        "background_media": "none",
-        "background_color": "#f2f8fa",
-        "video_position": "cover",
-        "background_image_position": "cover",
-        "toggle_overlay": false,
-        "overlay_color": "#00000026",
-        "overlay_style": "solid",
-        "gradient_direction": "to top",
-        "border": "none",
-        "border_width": 1,
-        "border_opacity": 100,
-        "border_color": "",
-        "border_radius": 0,
-        "padding-block-start": 48,
-        "padding-block-end": 64
+        "padding-block-start": 16,
+        "padding-block-end": 40
       }
     },
     "product_support": {
       "type": "custom-liquid",
-      "name": "Support",
+      "name": "Footer CTA",
       "settings": {
-        "custom_liquid": "<div class=\"flexbrace-product-support\"><div><h2>Behöver du hjälp att välja?</h2><p>Osäker på höger eller vänster fot, eller har frågor innan du beställer? Vi hjälper dig gärna.</p></div><a class=\"flexbrace-product-support__button\" href=\"/pages/contact\">Kontakta support</a></div>",
-        "background_color": "#f2f8fa",
+        "custom_liquid": "<div class=\"flexbrace-cta\"><div class=\"flexbrace-cta__copy\"><p class=\"flexbrace-cta__eyebrow\">Nästa steg</p><h2>Redo att beställa?</h2><p>Köp Flexbrace, kontakta oss – eller fråga om passform innan du beställer.</p></div><div class=\"flexbrace-cta__actions\">{% assign fb = product %}{% if fb == blank %}{% assign fb = all_products['afo-ortos-ankel-fotortos'] %}{% endif %}<a class=\"flexbrace-cta__button\" href=\"{% if fb != blank %}{{ fb.url }}{% else %}/products/afo-ortos-ankel-fotortos{% endif %}\">Köp Flexbrace{% if fb != blank %} · {{ fb.price_min | money }}{% endif %}</a><a class=\"flexbrace-cta__link\" href=\"/pages/contact\">Kontakta oss</a><a class=\"flexbrace-cta__link\" href=\"/pages/contact\">Frågor om passform</a></div></div>",
+        "background_color": "#ffffff",
         "section_width": "page-width",
         "padding-block-start": 40,
-        "padding-block-end": 40
+        "padding-block-end": 72
       }
     }
   },
   "order": [
     "main",
-    "product_trust",
-    "product_benefits",
-    "product_specs",
-    "product_faq",
+    "product_info_tabs",
     "product_support"
   ]
 }
