@@ -1598,7 +1598,8 @@ main[data-template='product'] [id$='__main'] .price {
   letter-spacing: -0.01em;
 }
 
-main[data-template='product'] [id$='__main'] .button,
+main[data-template='product'] [id$='__main'] .product-details .button,
+main[data-template='product'] [id$='__main'] .product-form-buttons .button,
 main[data-template='product'] [id$='__main'] .shopify-payment-button__button,
 main[data-template='product'] [id$='__main'] .add-to-cart-button {
   min-height: 42px;
@@ -1617,11 +1618,26 @@ main[data-template='product'] [id$='__main'] .add-to-cart-button {
 }
 
 main[data-template='product'] [id$='__main'] .add-to-cart-button:hover,
-main[data-template='product'] [id$='__main'] .button:hover {
+main[data-template='product'] [id$='__main'] .product-details .button:hover,
+main[data-template='product'] [id$='__main'] .product-form-buttons .button:hover {
   transform: none;
   background: var(--flexbrace-btn-bg-hover) !important;
   border-color: var(--flexbrace-btn-bg-hover) !important;
   color: var(--flexbrace-btn-text) !important;
+  box-shadow: none !important;
+}
+
+/* Zoom overlay must stay transparent — never inherit buy-button styles */
+main[data-template='product'] [id$='__main'] .product-media-container__zoom-button,
+main[data-template='product'] [id$='__main'] .product-media-container__zoom-button:hover,
+main[data-template='product'] [id$='__main'] .product-media-container__zoom-button:focus {
+  min-height: 0 !important;
+  padding: 0 !important;
+  border: 0 !important;
+  border-radius: 0 !important;
+  background: transparent !important;
+  background-color: transparent !important;
+  color: transparent !important;
   box-shadow: none !important;
 }
 
