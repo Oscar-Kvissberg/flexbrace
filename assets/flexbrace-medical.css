@@ -153,9 +153,9 @@ accordion-custom {
   position: relative;
   display: grid;
   place-items: center;
-  min-height: var(--fb-about-hero-min-height, 70vh);
+  min-height: var(--fb-about-hero-min-height, 80vh);
   overflow: hidden;
-  background: #0b1c28;
+  background: #f4f7f9;
 }
 
 .flexbrace-about-hero__media,
@@ -169,12 +169,11 @@ accordion-custom {
   width: 100%;
   height: 100%;
   object-fit: cover;
-  object-position: center 28%;
+  object-position: center center;
 }
 
 .flexbrace-about-hero__overlay {
-  background: rgb(8 20 30 / calc(var(--fb-about-hero-overlay, 0.4) * 100%));
-  background: rgb(8 20 30 / var(--fb-about-hero-overlay, 0.4));
+  background: rgb(12 28 40 / var(--fb-about-hero-overlay, 0.3));
 }
 
 .flexbrace-about-hero__content {
@@ -218,11 +217,11 @@ accordion-custom {
 
 @media screen and (max-width: 749px) {
   .flexbrace-about-hero {
-    min-height: max(58vh, 420px);
+    min-height: max(56vh, 400px);
   }
 
   .flexbrace-about-hero__img {
-    object-position: center 22%;
+    object-position: center center;
   }
 }
 

@@ -5,9 +5,14 @@
 {% liquid
   assign hero_heading = section.settings.heading | default: 'Om Flexbrace'
   assign hero_text = section.settings.text
-  assign overlay_opacity = section.settings.overlay_opacity | default: 45 | divided_by: 100.0
+  assign overlay_opacity = section.settings.overlay_opacity | default: 30 | divided_by: 100.0
+  assign show_about_hero = false
+  if page.handle == 'om-oss' or page.handle == 'about' or template.suffix == 'about'
+    assign show_about_hero = true
+  endif
 %}
 
+{% if show_about_hero %}
 <section
   class="flexbrace-about-hero"
   style="--fb-about-hero-overlay: {{ overlay_opacity }}; --fb-about-hero-min-height: {{ section.settings.min_height }}vh;"
@@ -50,6 +55,7 @@
     {% endif %}
   </div>
 </section>
+{% endif %}
 
 {% schema %}
 {
@@ -82,7 +88,7 @@
       "max": 70,
       "step": 5,
       "unit": "%",
-      "default": 40
+      "default": 30
     },
     {
       "type": "range",
