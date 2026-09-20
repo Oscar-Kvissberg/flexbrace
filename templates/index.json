@@ -821,6 +821,54 @@
         "padding-block-end": 96
       }
     },
+    "kundroster": {
+      "type": "flexbrace-testimonials",
+      "blocks": {
+        "quote_per": {
+          "type": "quote",
+          "settings": {
+            "quote": "Jag har använt Flexbrace i fyra år och idag skulle jag inte vilja vara utan den – varken på jobbet eller på fritiden.",
+            "name": "Per",
+            "meta": "62 år - Använder Flexbrace dagligen"
+          }
+        },
+        "quote_erik": {
+          "type": "quote",
+          "settings": {
+            "quote": "Efter att jag fått min skena har jag inte fallit en enda gång.",
+            "name": "Erik",
+            "meta": "85 år - Mer trygghet i varje steg"
+          }
+        },
+        "quote_anna": {
+          "type": "quote",
+          "settings": {
+            "quote": "Det känns stabilt utan att vara klumpigt. Jag kan röra mig mer naturligt – och mer avslappnat.",
+            "name": "Anna",
+            "meta": "Användare - Vardagsbruk"
+          }
+        },
+        "quote_maria": {
+          "type": "quote",
+          "settings": {
+            "quote": "Jag vågar ta längre promenader igen. Balansen känns bättre och jag tänker mindre på foten.",
+            "name": "Maria",
+            "meta": "Användare - Mer rörlighet"
+          }
+        }
+      },
+      "block_order": [
+        "quote_per",
+        "quote_erik",
+        "quote_anna",
+        "quote_maria"
+      ],
+      "name": "Kundröster",
+      "settings": {
+        "eyebrow": "Kundröster",
+        "heading": "Tryggare steg i vardagen"
+      }
+    },
     "section_6MeQMy": {
       "type": "section",
       "blocks": {
@@ -1381,6 +1429,7 @@
     "problem_solution",
     "product_focus_intro",
     "featured_product_information_4JzmUk",
+    "kundroster",
     "section_6MeQMy",
     "section_wnkGAB",
     "section_FtVrRn",

@@ -181,10 +181,12 @@ accordion-custom {
   z-index: 1;
   display: grid;
   gap: 16px;
-  justify-items: center;
+  justify-items: start;
+  justify-self: center;
   max-width: 46rem;
+  margin-inline-start: clamp(4rem, 14vw, 12rem);
   padding: 48px var(--flexbrace-page-gutter);
-  text-align: center;
+  text-align: left;
 }
 
 .flexbrace-about-hero__content::before {
@@ -202,7 +204,7 @@ accordion-custom {
   margin: 0;
   color: #000;
   font-family: var(--flexbrace-btn-font);
-  font-size: clamp(2.4rem, 6vw, 4.25rem);
+  font-size: clamp(1.55rem, 4.2vw, 4.25rem);
   font-weight: 700;
   letter-spacing: -0.035em;
   line-height: 1.05;
@@ -224,7 +226,7 @@ accordion-custom {
   margin: 0;
   max-width: 34rem;
   color: #000;
-  font-size: clamp(1.05rem, 2vw, 1.35rem);
+  font-size: clamp(0.95rem, 1.7vw, 1.35rem);
   font-weight: 400;
   line-height: 1.5;
   letter-spacing: -0.01em;
@@ -234,13 +236,53 @@ accordion-custom {
     0 0 56px rgb(255 255 255 / 80%);
 }
 
+@media screen and (max-width: 989px) {
+  .flexbrace-about-hero__content {
+    gap: 10px;
+    max-width: 28rem;
+    margin-inline-start: clamp(2rem, 8vw, 5rem);
+    padding: 28px var(--flexbrace-page-gutter);
+  }
+
+  .flexbrace-about-hero__content::before {
+    inset: -8% -6%;
+    filter: blur(20px);
+  }
+
+  .flexbrace-about-hero__title {
+    font-size: clamp(1.45rem, 5vw, 2.4rem);
+  }
+
+  .flexbrace-about-hero__text {
+    font-size: clamp(0.9rem, 2.2vw, 1.1rem);
+    max-width: 22rem;
+  }
+}
+
 @media screen and (max-width: 749px) {
   .flexbrace-about-hero {
-    min-height: max(56vh, 400px);
+    min-height: max(52vh, 360px);
   }
 
   .flexbrace-about-hero__img {
-    object-position: center center;
+    object-position: 28% center;
+  }
+
+  .flexbrace-about-hero__content {
+    gap: 8px;
+    max-width: 18rem;
+    margin-inline-start: clamp(1.25rem, 6vw, 3rem);
+    padding: 20px 16px;
+  }
+
+  .flexbrace-about-hero__title {
+    font-size: 1.4rem;
+  }
+
+  .flexbrace-about-hero__text {
+    font-size: 0.88rem;
+    line-height: 1.4;
+    max-width: 16rem;
   }
 }
 
@@ -314,6 +356,106 @@ accordion-custom {
   font-size: 1.05rem;
   font-style: italic;
   line-height: 1.55;
+}
+
+/* ── Kundröster ── */
+
+.flexbrace-testimonials-section {
+  background: #fff;
+}
+
+.flexbrace-testimonials {
+  box-sizing: border-box;
+  width: min(70rem, calc(100% - 2 * var(--flexbrace-page-gutter)));
+  margin-inline: auto;
+  padding-block: 72px 40px;
+}
+
+.flexbrace-testimonials__header {
+  text-align: center;
+  margin-bottom: 36px;
+  animation: flexbrace-fade-up 700ms cubic-bezier(0.22, 1, 0.36, 1) both;
+}
+
+.flexbrace-testimonials__eyebrow {
+  margin: 0 0 10px;
+  color: var(--flexbrace-muted);
+  font-size: 0.95rem;
+  font-weight: 500;
+  letter-spacing: 0.04em;
+}
+
+.flexbrace-testimonials__heading {
+  margin: 0;
+  color: var(--flexbrace-navy);
+  font-size: clamp(1.75rem, 3.2vw, 2.4rem);
+  font-weight: 700;
+  letter-spacing: -0.03em;
+  line-height: 1.15;
+}
+
+.flexbrace-testimonials__grid {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  gap: 16px;
+}
+
+.flexbrace-testimonials__card {
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+  margin: 0;
+  padding: 28px 24px;
+  background: var(--flexbrace-navy);
+  border-radius: var(--flexbrace-radius-card);
+  color: #fff;
+  animation: flexbrace-fade-up 780ms cubic-bezier(0.22, 1, 0.36, 1) both;
+}
+
+.flexbrace-testimonials__card:nth-child(1) { animation-delay: 60ms; }
+.flexbrace-testimonials__card:nth-child(2) { animation-delay: 140ms; }
+.flexbrace-testimonials__card:nth-child(3) { animation-delay: 220ms; }
+.flexbrace-testimonials__card:nth-child(4) { animation-delay: 300ms; }
+
+.flexbrace-testimonials__quote {
+  margin: 0;
+  flex: 1;
+  font-size: 1.02rem;
+  font-style: normal;
+  line-height: 1.55;
+  color: #fff;
+}
+
+.flexbrace-testimonials__name {
+  display: block;
+  font-size: 1.15rem;
+  font-style: normal;
+  font-weight: 700;
+  letter-spacing: -0.02em;
+  color: #fff;
+}
+
+.flexbrace-testimonials__meta {
+  margin: 0;
+  font-size: 0.9rem;
+  line-height: 1.4;
+  color: rgb(255 255 255 / 72%);
+}
+
+@media (max-width: 989px) {
+  .flexbrace-testimonials__grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
+
+@media (max-width: 649px) {
+  .flexbrace-testimonials {
+    padding-block: 56px 28px;
+  }
+
+  .flexbrace-testimonials__grid {
+    grid-template-columns: 1fr;
+  }
 }
 
 .flexbrace-site-footer-section {

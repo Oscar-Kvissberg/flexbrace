@@ -1,0 +1,118 @@
+{% comment %}
+  Kundröster – testimonials grid for the homepage (above video).
+{% endcomment %}
+
+<div class="flexbrace-testimonials" aria-label="{{ section.settings.heading | default: 'Kundröster' | escape }}">
+  <header class="flexbrace-testimonials__header">
+    {% if section.settings.eyebrow != blank %}
+      <p class="flexbrace-testimonials__eyebrow">{{ section.settings.eyebrow | escape }}</p>
+    {% endif %}
+    {% if section.settings.heading != blank %}
+      <h2 class="flexbrace-testimonials__heading">{{ section.settings.heading | escape }}</h2>
+    {% endif %}
+  </header>
+
+  <div class="flexbrace-testimonials__grid">
+    {% for block in section.blocks %}
+      <blockquote class="flexbrace-testimonials__card" {{ block.shopify_attributes }}>
+        {% if block.settings.quote != blank %}
+          <p class="flexbrace-testimonials__quote">“{{ block.settings.quote | escape }}”</p>
+        {% endif %}
+        {% if block.settings.name != blank %}
+          <cite class="flexbrace-testimonials__name">{{ block.settings.name | escape }}</cite>
+        {% endif %}
+        {% if block.settings.meta != blank %}
+          <p class="flexbrace-testimonials__meta">{{ block.settings.meta | escape }}</p>
+        {% endif %}
+      </blockquote>
+    {% endfor %}
+  </div>
+</div>
+
+{% schema %}
+{
+  "name": "Kundröster",
+  "tag": "section",
+  "class": "flexbrace-testimonials-section",
+  "settings": [
+    {
+      "type": "text",
+      "id": "eyebrow",
+      "label": "Etikett",
+      "default": "Kundröster"
+    },
+    {
+      "type": "text",
+      "id": "heading",
+      "label": "Rubrik",
+      "default": "Tryggare steg i vardagen"
+    }
+  ],
+  "blocks": [
+    {
+      "type": "quote",
+      "name": "Citat",
+      "settings": [
+        {
+          "type": "textarea",
+          "id": "quote",
+          "label": "Citat",
+          "default": "Jag har använt Flexbrace i fyra år och idag skulle jag inte vilja vara utan den."
+        },
+        {
+          "type": "text",
+          "id": "name",
+          "label": "Namn",
+          "default": "Per"
+        },
+        {
+          "type": "text",
+          "id": "meta",
+          "label": "Undertext",
+          "default": "62 år - Använder Flexbrace dagligen"
+        }
+      ]
+    }
+  ],
+  "presets": [
+    {
+      "name": "Kundröster",
+      "category": "Flexbrace",
+      "blocks": [
+        {
+          "type": "quote",
+          "settings": {
+            "quote": "Jag har använt Flexbrace i fyra år och idag skulle jag inte vilja vara utan den – varken på jobbet eller på fritiden.",
+            "name": "Per",
+            "meta": "62 år - Använder Flexbrace dagligen"
+          }
+        },
+        {
+          "type": "quote",
+          "settings": {
+            "quote": "Efter att jag fått min skena har jag inte fallit en enda gång.",
+            "name": "Erik",
+            "meta": "85 år - Mer trygghet i varje steg"
+          }
+        },
+        {
+          "type": "quote",
+          "settings": {
+            "quote": "Det känns stabilt utan att vara klumpigt. Jag kan röra mig mer naturligt – och mer avslappnat.",
+            "name": "Anna",
+            "meta": "Användare - Vardagsbruk"
+          }
+        },
+        {
+          "type": "quote",
+          "settings": {
+            "quote": "Jag vågar ta längre promenader igen. Balansen känns bättre och jag tänker mindre på foten.",
+            "name": "Maria",
+            "meta": "Användare - Mer rörlighet"
+          }
+        }
+      ]
+    }
+  ]
+}
+{% endschema %}
