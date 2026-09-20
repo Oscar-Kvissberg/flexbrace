@@ -1416,7 +1416,7 @@
       "type": "custom-liquid",
       "name": "Om / erfarenhet",
       "settings": {
-        "custom_liquid": "<div class=\"flexbrace-about\" aria-label=\"Om Flexbrace\"><div class=\"flexbrace-about__copy\"><p class=\"flexbrace-about__eyebrow\">Erfarenhet</p><h2>Individuella Flexbrace i över 25 år</h2><p>Flexbrace bygger på lång bandageri-erfarenhet och individuella anpassningar. Bakom produkten finns ett team som hjälper dig med passform, frågor och nästa steg.</p><a class=\"flexbrace-about__link\" href=\"/pages/contact\">Kontakta teamet</a></div></div>",
+        "custom_liquid": "<div class=\"flexbrace-about\" aria-label=\"Om Flexbrace\"><div class=\"flexbrace-about__copy\"><p class=\"flexbrace-about__eyebrow\">Erfarenhet</p><h2>Individuella Flexbrace i över 25 år</h2><p>Flexbrace bygger på lång bandageri-erfarenhet och individuella anpassningar. Bakom produkten finns ett team som hjälper dig med passform, frågor och nästa steg.</p><a class=\"flexbrace-about__link\" href=\"/pages/om-oss\">Läs mer om oss</a></div></div>",
         "background_color": "#f2f8fa",
         "section_width": "page-width",
         "padding-block-start": 72,
@@ -1427,6 +1427,7 @@
   "order": [
     "hero_jVaWmY",
     "problem_solution",
+    "about_experience",
     "product_focus_intro",
     "featured_product_information_4JzmUk",
     "kundroster",
@@ -1434,7 +1435,6 @@
     "section_wnkGAB",
     "section_FtVrRn",
     "section_P87RHy",
-    "comparison",
-    "about_experience"
+    "comparison"
   ]
 }
