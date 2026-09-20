@@ -1,0 +1,51 @@
+{
+  "sections": {
+    "about_hero": {
+      "type": "flexbrace-about-hero",
+      "settings": {
+        "heading": "Om Flexbrace",
+        "text": "Mer än 30 års erfarenhet inom ortopedi och droppfotslösningar.",
+        "overlay_opacity": 40,
+        "min_height": 70
+      }
+    },
+    "main": {
+      "type": "main-page",
+      "blocks": {
+        "content": {
+          "type": "text",
+          "name": "t:names.content",
+          "settings": {
+            "text": "{{ closest.page.content }}",
+            "width": "100%",
+            "max_width": "normal",
+            "alignment": "left",
+            "type_preset": "rte",
+            "font": "var(--font-body--family)",
+            "line_height": "normal",
+            "letter_spacing": "normal",
+            "case": "none",
+            "wrap": "pretty",
+            "background": false,
+            "background_color": "#00000026",
+            "corner_radius": 0,
+            "padding-block-start": 0,
+            "padding-block-end": 0,
+            "padding-inline-start": 0,
+            "padding-inline-end": 0
+          },
+          "blocks": {}
+        }
+      },
+      "block_order": ["content"],
+      "settings": {
+        "content_direction": "column",
+        "gap": 24,
+        "background_color": "#ffffff",
+        "padding-block-start": 56,
+        "padding-block-end": 80
+      }
+    }
+  },
+  "order": ["about_hero", "main"]
+}

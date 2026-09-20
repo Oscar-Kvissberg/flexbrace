@@ -1,0 +1,34 @@
+{% comment %}
+  Single-product store: skip collection listings and go straight to the product.
+{% endcomment %}
+
+{%- liquid
+  assign redirect_product = nil
+
+  if collection != blank and collection.products_count == 1
+    assign redirect_product = collection.products.first
+  endif
+
+  if redirect_product == blank
+    assign redirect_product = all_products['afo-ortos-ankel-fotortos']
+  endif
+-%}
+
+{%- if redirect_product != blank -%}
+  <script>
+    location.replace({{ redirect_product.url | json }});
+  </script>
+  <noscript>
+    <meta http-equiv="refresh" content="0;url={{ redirect_product.url }}">
+  </noscript>
+  <p class="fb-collection-redirect">
+    <a href="{{ redirect_product.url }}">Fortsätt till {{ redirect_product.title | escape }}</a>
+  </p>
+{%- endif -%}
+
+{% schema %}
+{
+  "name": "Omdirigera till produkt",
+  "settings": []
+}
+{% endschema %}

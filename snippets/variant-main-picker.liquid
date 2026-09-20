@@ -74,6 +74,13 @@
         -%}
 
         {%- if product_option.values.size == 1 and variant_style != 'swatch' -%}
+          {%- liquid
+            assign single_value_label = product_option.selected_value
+            assign option_name_down = product_option.name | downcase
+            if option_name_down == 'storlek' or option_name_down == 'size'
+              assign single_value_label = 'En storlek (38–45)'
+            endif
+          -%}
           <div
             class="variant-option"
             data-testid="variant-option-single"
@@ -83,7 +90,7 @@
               class="variant-option__swatch-value"
               data-testid="variant-option-single-value"
             >
-              {{- product_option.selected_value -}}
+              {{- single_value_label | escape -}}
             </span>
           </div>
         {%- elsif variant_style == 'swatch' or block_settings.variant_style == 'buttons' -%}

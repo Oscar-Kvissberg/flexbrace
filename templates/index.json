@@ -7,7 +7,7 @@
           "type": "text",
           "name": "t:names.heading",
           "settings": {
-            "text": "<h2>Tryggare gång utan klumpig skena.</h2>",
+            "text": "<h2>Flexbrace®</h2>",
             "width": "100%",
             "max_width": "normal",
             "alignment": "left",
@@ -33,7 +33,7 @@
           "type": "text",
           "name": "t:names.text",
           "settings": {
-            "text": "<p>Lätt (ca 100 g), diskret i vanliga skor och utformad för att lyfta foten – så du kan gå tryggare i vardagen.</p>",
+            "text": "<p>Smidig, naturlig och stabil droppfotsskena för de aktiviteter du saknar</p>",
             "width": "100%",
             "max_width": "normal",
             "alignment": "left",
@@ -59,7 +59,7 @@
           "type": "custom-liquid",
           "name": "Pris och köpknapp",
           "settings": {
-            "custom_liquid": "{% assign hero_product = all_products['afo-ortos-ankel-fotortos'] %}\n{% if hero_product != blank %}\n  <div class=\"hero-purchase\">\n    <a class=\"hero-purchase__button\" href=\"{{ hero_product.url }}\">Köp Flexbrace · {{ hero_product.price_min | money }}</a>\n    <a class=\"hero-purchase__link\" href=\"#hur-den-fungerar\">Se hur den fungerar</a>\n    <a class=\"hero-purchase__link\" href=\"/pages/contact\">Kom i kontakt</a>\n  </div>\n{% endif %}"
+            "custom_liquid": "{% assign hero_product = all_products['afo-ortos-ankel-fotortos'] %}\n{% if hero_product != blank %}\n  <div class=\"hero-purchase\">\n    <a class=\"hero-purchase__button\" href=\"{{ hero_product.url }}\">Köp Flexbrace · {{ hero_product.price_min | money }}</a>\n    <a class=\"hero-purchase__link\" href=\"#hur-den-fungerar\">Se hur den fungerar</a>\n    <a class=\"hero-purchase__link\" href=\"/pages/contact\">Kontakt</a>\n  </div>\n{% endif %}"
           },
           "blocks": {}
         }
@@ -108,67 +108,31 @@
         "pain_1": {
           "type": "pain",
           "settings": {
-            "text": "Foten släpar eller tippar inåt/utåt"
+            "text": "Lätt och smidig – väger endast cirka 100 gram"
           }
         },
         "pain_2": {
           "type": "pain",
           "settings": {
-            "text": "Du snubblar oftare, särskilt på ojämnt underlag"
+            "text": "Lyfter foten och ger ett naturligare gångmönster"
           }
         },
         "pain_3": {
           "type": "pain",
           "settings": {
-            "text": "Du lyfter knät högt för att få plats åt foten"
+            "text": "Ökad stabilitet och trygghet i varje steg"
           }
         },
         "pain_4": {
           "type": "pain",
           "settings": {
-            "text": "Gången känns ansträngande och ostadig"
+            "text": "Diskret utformning som passar i vanliga skor"
           }
         },
-        "feat_1": {
-          "type": "feature",
+        "pain_5": {
+          "type": "pain",
           "settings": {
-            "title": "Fotlyft",
-            "text": "Minskar släpande steg"
-          }
-        },
-        "feat_2": {
-          "type": "feature",
-          "settings": {
-            "title": "Sidostabilitet",
-            "text": "Stöd i fotleden utan klumpig skena"
-          }
-        },
-        "feat_3": {
-          "type": "feature",
-          "settings": {
-            "title": "Naturligare gång",
-            "text": "Mer avslappnat steg i vardagen"
-          }
-        },
-        "feat_4": {
-          "type": "feature",
-          "settings": {
-            "title": "Tryggare balans",
-            "text": "Bättre kontroll i varje steg"
-          }
-        },
-        "feat_5": {
-          "type": "feature",
-          "settings": {
-            "title": "Ca 100 g",
-            "text": "Låg vikt och följsam passform"
-          }
-        },
-        "feat_6": {
-          "type": "feature",
-          "settings": {
-            "title": "Diskret i skor",
-            "text": "Passar i de flesta vardagsskor"
+            "text": "Utvecklad genom 25 års erfarenhet av individuellt tillverkade Flexbrace®"
           }
         }
       },
@@ -177,23 +141,15 @@
         "pain_2",
         "pain_3",
         "pain_4",
-        "feat_1",
-        "feat_2",
-        "feat_3",
-        "feat_4",
-        "feat_5",
-        "feat_6"
+        "pain_5"
       ],
       "name": "Problem & lösning",
       "settings": {
-        "problem_eyebrow": "Känner du igen dig?",
-        "problem_heading": "När droppfot gör varje steg osäkert",
-        "problem_lead": "Droppfot gör att foten hänger eller släpar. Många snubblar, lyfter benet högt för att klara sig fram – och balansen blir sämre.",
+        "problem_eyebrow": "",
+        "problem_heading": "",
+        "problem_lead": "",
         "problem_image": "shopify://shop_images/images_1.jpg",
-        "solution_eyebrow": "Lösningen",
-        "solution_heading": "Så hjälper Flexbrace",
-        "solution_lead": "En lätt ankel-fot-ortos som lyfter foten, ger sidostabilitet och sitter diskret i vanliga skor.",
-        "solution_image": "shopify://shop_images/47cb0fa4-547d-41a0-93b5-60d646bab0d1.png",
+        "pains_heading": "Flexbrace",
         "background_color": "#ffffff",
         "section_width": "page-width",
         "padding-block-start": 88,
@@ -1034,7 +990,7 @@
           "type": "text",
           "name": "t:names.heading",
           "settings": {
-            "text": "<p><strong>FRÅGOR FÖRE KÖP</strong></p><h2>Vanliga frågor</h2><p>Svar om symptom, ortostyp, användning, mått, retur, leverans och bidrag i Sverige.</p>",
+            "text": "<p><strong>FRÅGOR FÖRE KÖP</strong></p><h2>Vanliga frågor</h2>",
             "width": "fit-content",
             "max_width": "narrow",
             "alignment": "left",
@@ -1418,17 +1374,6 @@
         "padding-block-start": 72,
         "padding-block-end": 72
       }
-    },
-    "clinical_cta": {
-      "type": "custom-liquid",
-      "name": "Avslutande CTA",
-      "settings": {
-        "custom_liquid": "<div class=\"flexbrace-cta\"><div class=\"flexbrace-cta__copy\"><p class=\"flexbrace-cta__eyebrow\">Nästa steg</p><h2>Redo för tryggare gång?</h2><p>Köp Flexbrace, kontakta oss om passform – eller ställ frågor innan du beställer.</p></div><div class=\"flexbrace-cta__actions\"><a class=\"flexbrace-cta__button\" href=\"/products/afo-ortos-ankel-fotortos\">Köp Flexbrace</a><a class=\"flexbrace-cta__link\" href=\"/pages/contact\">Kontakta oss</a><a class=\"flexbrace-cta__link\" href=\"/pages/contact\">Frågor om passform</a></div></div>",
-        "background_color": "#ffffff",
-        "section_width": "page-width",
-        "padding-block-start": 40,
-        "padding-block-end": 72
-      }
     }
   },
   "order": [
@@ -1441,7 +1386,6 @@
     "section_FtVrRn",
     "section_P87RHy",
     "comparison",
-    "about_experience",
-    "clinical_cta"
+    "about_experience"
   ]
 }

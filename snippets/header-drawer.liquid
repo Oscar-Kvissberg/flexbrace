@@ -244,11 +244,17 @@
                   {%- comment -%}
                     Simple links for links with no children (regardless of accordion setting), in menus with fewer than 3 levels of links
                   {%- endcomment -%}
+                  {% capture flexbrace_menu_url %}{% render 'flexbrace-menu-url', link: link %}{% endcapture %}
+                  {% assign flexbrace_menu_url = flexbrace_menu_url | strip %}
+                  {% assign flexbrace_menu_current = link.current %}
+                  {% if template.name == 'product' and product != blank and flexbrace_menu_url == product.url %}
+                    {% assign flexbrace_menu_current = true %}
+                  {% endif %}
                   <a
                     id="HeaderDrawer-{{ link.handle }}"
-                    href="{{ link.url }}"
+                    href="{{ flexbrace_menu_url }}"
                     class="menu-drawer__menu-item menu-drawer__menu-item--mainlist menu-drawer__animated-element"
-                    {% if link.current %}
+                    {% if flexbrace_menu_current %}
                       aria-current="page"
                     {% endif %}
                   >
@@ -573,11 +579,17 @@
                   {%- comment -%}
                     Simple links for links with no children (regardless of accordion setting), in menus with 3 levels of links
                   {%- endcomment -%}
+                  {% capture flexbrace_menu_url %}{% render 'flexbrace-menu-url', link: link %}{% endcapture %}
+                  {% assign flexbrace_menu_url = flexbrace_menu_url | strip %}
+                  {% assign flexbrace_menu_current = link.current %}
+                  {% if template.name == 'product' and product != blank and flexbrace_menu_url == product.url %}
+                    {% assign flexbrace_menu_current = true %}
+                  {% endif %}
                   <a
                     id="HeaderDrawer-{{ link.handle }}"
-                    href="{{ link.url }}"
+                    href="{{ flexbrace_menu_url }}"
                     class="menu-drawer__menu-item menu-drawer__menu-item--mainlist menu-drawer__animated-element"
-                    {% if link.current %}
+                    {% if flexbrace_menu_current %}
                       aria-current="page"
                     {% endif %}
                   >

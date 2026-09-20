@@ -1,0 +1,222 @@
+{% comment %}
+  Site footer inspired by editorial multi-column footers (Care of Carl style).
+{% endcomment %}
+
+{% liquid
+  assign fb = all_products['afo-ortos-ankel-fotortos']
+  assign product_url = '/products/afo-ortos-ankel-fotortos'
+  if fb != blank
+    assign product_url = fb.url
+  endif
+
+  assign has_social = false
+  if section.settings.instagram_url != blank or section.settings.facebook_url != blank or section.settings.youtube_url != blank or section.settings.linkedin_url != blank
+    assign has_social = true
+  endif
+%}
+
+<footer class="flexbrace-site-footer" aria-label="Sidfot">
+  <div class="flexbrace-site-footer__inner">
+    <div class="flexbrace-site-footer__columns">
+      <nav class="flexbrace-site-footer__column" aria-label="Flexbrace">
+        <h2 class="flexbrace-site-footer__heading">Flexbrace®</h2>
+        <ul class="flexbrace-site-footer__list">
+          <li><a href="{{ routes.root_url }}">Startsida</a></li>
+          <li><a href="{{ product_url }}">Produkt</a></li>
+          <li><a href="/pages/about">Om oss</a></li>
+          <li><a href="/pages/contact">Kontakt</a></li>
+          {% for policy in shop.policies %}
+            {% if policy != blank %}
+              <li><a href="{{ policy.url }}">{{ policy.title }}</a></li>
+            {% endif %}
+          {% endfor %}
+        </ul>
+      </nav>
+
+      <nav class="flexbrace-site-footer__column" aria-label="Kundservice">
+        <h2 class="flexbrace-site-footer__heading">Kundservice</h2>
+        <ul class="flexbrace-site-footer__list">
+          <li><a href="{{ product_url }}">Leverans &amp; retur</a></li>
+          <li><a href="{{ product_url }}">Vanliga frågor</a></li>
+          <li><a href="/pages/contact">Kontakta oss</a></li>
+          <li><a href="{{ product_url }}">Storleksguide</a></li>
+          {% if shop.refund_policy != blank %}
+            <li><a href="{{ shop.refund_policy.url }}">Ångra ditt köp</a></li>
+          {% endif %}
+        </ul>
+      </nav>
+
+      <nav class="flexbrace-site-footer__column" aria-label="Socialt">
+        <h2 class="flexbrace-site-footer__heading">Socialt</h2>
+        <ul class="flexbrace-site-footer__list">
+          {% if section.settings.instagram_url != blank %}
+            <li><a href="{{ section.settings.instagram_url }}" target="_blank" rel="noopener">Instagram</a></li>
+          {% endif %}
+          {% if section.settings.facebook_url != blank %}
+            <li><a href="{{ section.settings.facebook_url }}" target="_blank" rel="noopener">Facebook</a></li>
+          {% endif %}
+          {% if section.settings.youtube_url != blank %}
+            <li><a href="{{ section.settings.youtube_url }}" target="_blank" rel="noopener">Youtube</a></li>
+          {% endif %}
+          {% if section.settings.linkedin_url != blank %}
+            <li><a href="{{ section.settings.linkedin_url }}" target="_blank" rel="noopener">Linkedin</a></li>
+          {% endif %}
+          {% unless has_social %}
+            <li><a href="/pages/contact">Kontakta oss</a></li>
+          {% endunless %}
+        </ul>
+      </nav>
+
+      <div class="flexbrace-site-footer__column">
+        <h2 class="flexbrace-site-footer__heading">Kontakt</h2>
+        <ul class="flexbrace-site-footer__list flexbrace-site-footer__list--plain">
+          <li>{{ section.settings.company_name | default: 'Flexbrace' }}</li>
+          {% if section.settings.company_address != blank %}
+            <li>{{ section.settings.company_address }}</li>
+          {% endif %}
+          {% if section.settings.company_city != blank %}
+            <li>{{ section.settings.company_city }}</li>
+          {% endif %}
+          {% if section.settings.company_country != blank %}
+            <li>{{ section.settings.company_country }}</li>
+          {% endif %}
+          {% if section.settings.company_phone != blank %}
+            <li>
+              <a href="tel:{{ section.settings.company_phone | replace: ' ', '' | replace: '-', '' }}">
+                Telefon: {{ section.settings.company_phone }}
+              </a>
+            </li>
+          {% endif %}
+          {% if section.settings.company_email != blank %}
+            <li>
+              <a href="mailto:{{ section.settings.company_email }}">
+                E-post: {{ section.settings.company_email }}
+              </a>
+            </li>
+          {% endif %}
+          {% if section.settings.company_orgnr != blank %}
+            <li>Org.nr: {{ section.settings.company_orgnr }}</li>
+          {% else %}
+            <li>Org.nr: [fyll i]</li>
+          {% endif %}
+          {% if section.settings.company_vat != blank %}
+            <li>Momsreg.nr: {{ section.settings.company_vat }}</li>
+          {% else %}
+            <li>Momsreg.nr: [fyll i om ni har]</li>
+          {% endif %}
+        </ul>
+      </div>
+    </div>
+
+    <div class="flexbrace-site-footer__brand">
+      <p class="flexbrace-site-footer__brand-name">Flexbrace<sup>®</sup></p>
+    </div>
+
+    <div class="flexbrace-site-footer__bottom">
+      <p class="flexbrace-site-footer__copy">
+        &copy; {{ 'now' | date: '%Y' }} {{ section.settings.company_name | default: shop.name }}
+      </p>
+
+      {% if shop.enabled_payment_types.size > 0 %}
+        <ul class="flexbrace-site-footer__payments" role="list">
+          {% for type in shop.enabled_payment_types %}
+            <li>
+              {{ type | payment_type_svg_tag: class: 'flexbrace-site-footer__payment-icon' }}
+            </li>
+          {% endfor %}
+        </ul>
+      {% endif %}
+    </div>
+  </div>
+</footer>
+
+{% schema %}
+{
+  "name": "Flexbrace footer",
+  "tag": "section",
+  "class": "flexbrace-site-footer-section",
+  "settings": [
+    {
+      "type": "header",
+      "content": "Kontakt"
+    },
+    {
+      "type": "text",
+      "id": "company_name",
+      "label": "Företagsnamn",
+      "default": "Flexbrace"
+    },
+    {
+      "type": "text",
+      "id": "company_address",
+      "label": "Adress",
+      "default": "Lanckagatan 28"
+    },
+    {
+      "type": "text",
+      "id": "company_city",
+      "label": "Postort",
+      "default": "116 47 Stockholm"
+    },
+    {
+      "type": "text",
+      "id": "company_country",
+      "label": "Land",
+      "default": "Sverige"
+    },
+    {
+      "type": "text",
+      "id": "company_phone",
+      "label": "Telefon",
+      "default": "+46 72-100 10 10"
+    },
+    {
+      "type": "text",
+      "id": "company_email",
+      "label": "E-post",
+      "default": "anton2@egren.se"
+    },
+    {
+      "type": "text",
+      "id": "company_orgnr",
+      "label": "Org.nr",
+      "default": "[fyll i]"
+    },
+    {
+      "type": "text",
+      "id": "company_vat",
+      "label": "Momsreg.nr",
+      "default": "[fyll i om ni har]"
+    },
+    {
+      "type": "header",
+      "content": "Sociala länkar"
+    },
+    {
+      "type": "url",
+      "id": "instagram_url",
+      "label": "Instagram"
+    },
+    {
+      "type": "url",
+      "id": "facebook_url",
+      "label": "Facebook"
+    },
+    {
+      "type": "url",
+      "id": "youtube_url",
+      "label": "Youtube"
+    },
+    {
+      "type": "url",
+      "id": "linkedin_url",
+      "label": "Linkedin"
+    }
+  ],
+  "presets": [
+    {
+      "name": "Flexbrace footer"
+    }
+  ]
+}
+{% endschema %}

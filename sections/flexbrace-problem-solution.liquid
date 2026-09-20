@@ -1,5 +1,5 @@
 {% comment %}
-  Editorial problem → solution block for the homepage.
+  Editorial problem block for the homepage.
   Compact media + typography-led layout (medtech / Intuitive-inspired).
 {% endcomment %}
 
@@ -16,7 +16,7 @@
   class="section section--{{ section.settings.section_width }} spacing-style{% if section.settings.background_color != blank %} color-custom-{{ section.id }}{% endif %}"
   style="{% render 'spacing-padding', settings: section.settings %}"
 >
-  <div class="fb-story" aria-label="Problem och lösning">
+  <div class="fb-story" aria-label="{{ section.settings.problem_heading | default: 'Problem' | escape }}">
     <header class="fb-story__header">
       {% if section.settings.problem_eyebrow != blank %}
         <p class="fb-story__eyebrow">{{ section.settings.problem_eyebrow | escape }}</p>
@@ -48,66 +48,24 @@
         {% endif %}
       </div>
 
-      <ol class="fb-story__pains">
-        {% assign pain_i = 0 %}
-        {% for block in section.blocks %}
-          {% if block.type == 'pain' %}
-            {% assign pain_i = pain_i | plus: 1 %}
-            <li class="fb-story__pain" {{ block.shopify_attributes }}>
-              <span class="fb-story__pain-num" aria-hidden="true">
-                {% if pain_i < 10 %}0{% endif %}{{ pain_i }}
-              </span>
-              <p>{{ block.settings.text | escape }}</p>
-            </li>
-          {% endif %}
-        {% endfor %}
-      </ol>
-    </div>
-
-    <div class="fb-story__solution">
-      <div class="fb-story__solution-copy">
-        {% if section.settings.solution_eyebrow != blank %}
-          <p class="fb-story__eyebrow">{{ section.settings.solution_eyebrow | escape }}</p>
+      <div class="fb-story__pains-wrap">
+        {% if section.settings.pains_heading != blank %}
+          <h3 class="fb-story__pains-heading">{{ section.settings.pains_heading | escape }}</h3>
         {% endif %}
-        {% if section.settings.solution_heading != blank %}
-          <h3 class="fb-story__subtitle">{{ section.settings.solution_heading | escape }}</h3>
-        {% endif %}
-        {% if section.settings.solution_lead != blank %}
-          <p class="fb-story__lead fb-story__lead--short">{{ section.settings.solution_lead | escape }}</p>
-        {% endif %}
-      </div>
-
-      <div class="fb-story__solution-grid">
-        <ul class="fb-story__features">
+        <ol class="fb-story__pains">
+          {% assign pain_i = 0 %}
           {% for block in section.blocks %}
-            {% if block.type == 'feature' %}
-              <li class="fb-story__feature" {{ block.shopify_attributes }}>
-                <h4>{{ block.settings.title | escape }}</h4>
-                {% if block.settings.text != blank %}
-                  <p>{{ block.settings.text | escape }}</p>
-                {% endif %}
+            {% if block.type == 'pain' %}
+              {% assign pain_i = pain_i | plus: 1 %}
+              <li class="fb-story__pain" {{ block.shopify_attributes }}>
+                <span class="fb-story__pain-num" aria-hidden="true">
+                  {% if pain_i < 10 %}0{% endif %}{{ pain_i }}
+                </span>
+                <p>{{ block.settings.text | escape }}</p>
               </li>
             {% endif %}
           {% endfor %}
-        </ul>
-
-        <div class="fb-story__media fb-story__media--solution">
-          {% if section.settings.solution_image != blank %}
-            {% assign solution_alt = section.settings.solution_image.alt | default: section.settings.solution_heading %}
-            {{
-              section.settings.solution_image
-              | image_url: width: 1000
-              | image_tag:
-                loading: 'lazy',
-                widths: '360, 540, 720, 1000',
-                sizes: '(min-width: 990px) 32vw, (min-width: 750px) 42vw, 88vw',
-                class: 'fb-story__img',
-                alt: solution_alt
-            }}
-          {% else %}
-            {{ 'image' | placeholder_svg_tag: 'fb-story__img fb-story__img--placeholder' }}
-          {% endif %}
-        </div>
+        </ol>
       </div>
     </div>
   </div>
@@ -144,26 +102,9 @@
     },
     {
       "type": "text",
-      "id": "solution_eyebrow",
-      "label": "Lösning – etikett",
-      "default": "Lösningen"
-    },
-    {
-      "type": "text",
-      "id": "solution_heading",
-      "label": "Lösning – rubrik",
-      "default": "Så hjälper Flexbrace"
-    },
-    {
-      "type": "textarea",
-      "id": "solution_lead",
-      "label": "Lösning – ingress",
-      "default": "En lätt ankel-fot-ortos som lyfter foten, ger sidostabilitet och sitter diskret i vanliga skor."
-    },
-    {
-      "type": "image_picker",
-      "id": "solution_image",
-      "label": "Lösning – bild"
+      "id": "pains_heading",
+      "label": "Punktlista – rubrik",
+      "default": "Flexbrace"
     },
     {
       "type": "color",
@@ -209,31 +150,13 @@
   "blocks": [
     {
       "type": "pain",
-      "name": "Problem-punkt",
+      "name": "Punkt",
       "settings": [
         {
           "type": "text",
           "id": "text",
           "label": "Text",
-          "default": "Foten släpar eller tippar inåt/utåt"
-        }
-      ]
-    },
-    {
-      "type": "feature",
-      "name": "Lösning-kort",
-      "settings": [
-        {
-          "type": "text",
-          "id": "title",
-          "label": "Rubrik",
-          "default": "Fotlyft"
-        },
-        {
-          "type": "text",
-          "id": "text",
-          "label": "Text",
-          "default": "Minskar släpande steg"
+          "default": "Lyfter foten så du går tryggare utan att släpa"
         }
       ]
     }
@@ -243,16 +166,11 @@
       "name": "Problem & lösning",
       "category": "Flexbrace",
       "blocks": [
-        { "type": "pain", "settings": { "text": "Foten släpar eller tippar inåt/utåt" } },
-        { "type": "pain", "settings": { "text": "Du snubblar oftare, särskilt på ojämnt underlag" } },
-        { "type": "pain", "settings": { "text": "Du lyfter knät högt för att få plats åt foten" } },
-        { "type": "pain", "settings": { "text": "Gången känns ansträngande och ostadig" } },
-        { "type": "feature", "settings": { "title": "Fotlyft", "text": "Minskar släpande steg" } },
-        { "type": "feature", "settings": { "title": "Sidostabilitet", "text": "Stöd i fotleden utan klumpig skena" } },
-        { "type": "feature", "settings": { "title": "Naturligare gång", "text": "Mer avslappnat steg i vardagen" } },
-        { "type": "feature", "settings": { "title": "Tryggare balans", "text": "Bättre kontroll i varje steg" } },
-        { "type": "feature", "settings": { "title": "Ca 100 g", "text": "Låg vikt och följsam passform" } },
-        { "type": "feature", "settings": { "title": "Diskret i skor", "text": "Passar i de flesta vardagsskor" } }
+        { "type": "pain", "settings": { "text": "Lätt och smidig – väger endast cirka 100 gram" } },
+        { "type": "pain", "settings": { "text": "Lyfter foten och ger ett naturligare gångmönster" } },
+        { "type": "pain", "settings": { "text": "Ökad stabilitet och trygghet i varje steg" } },
+        { "type": "pain", "settings": { "text": "Diskret utformning som passar i vanliga skor" } },
+        { "type": "pain", "settings": { "text": "Utvecklad genom 25 års erfarenhet av individuellt tillverkade Flexbrace®" } }
       ]
     }
   ]

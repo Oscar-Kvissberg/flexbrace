@@ -45,12 +45,19 @@
             role="list"
           >
             {% for link in block_settings.menu.links %}
+              {% assign flexbrace_menu_url = '' %}
+              {% capture flexbrace_menu_url %}{% render 'flexbrace-menu-url', link: link %}{% endcapture %}
+              {% assign flexbrace_menu_url = flexbrace_menu_url | strip %}
+              {% assign flexbrace_menu_current = link.current %}
+              {% if template.name == 'product' and product != blank and flexbrace_menu_url == product.url %}
+                {% assign flexbrace_menu_current = true %}
+              {% endif %}
               <li>
                 <a
-                  href="{{ link.url }}"
+                  href="{{ flexbrace_menu_url }}"
                   id="MenuItem-{{ link.handle }}"
                   class="menu-list__item"
-                  {% if link.current %}
+                  {% if flexbrace_menu_current %}
                     aria-current="page"
                   {% endif %}
                 >
@@ -93,6 +100,15 @@
 
     {% capture children %}
       {% for link in block_settings.menu.links %}
+        {% assign flexbrace_menu_url = '' %}
+        {% capture flexbrace_menu_url %}{% render 'flexbrace-menu-url', link: link %}{% endcapture %}
+        {% assign flexbrace_menu_url = flexbrace_menu_url | strip %}
+        {% assign flexbrace_menu_active = link.active %}
+        {% assign flexbrace_menu_current = link.current %}
+        {% if template.name == 'product' and product != blank and flexbrace_menu_url == product.url %}
+          {% assign flexbrace_menu_active = true %}
+          {% assign flexbrace_menu_current = true %}
+        {% endif %}
         <li
           class="menu-list__list-item"
           on:blur="/deactivate"
@@ -103,10 +119,10 @@
             <span class="menu-list__trigger">
           {%- endif -%}
           <a
-            href="{{ link.url }}"
+            href="{{ flexbrace_menu_url }}"
             data-skip-node-update="true"
-            class="menu-list__link{% if link.active %} menu-list__link--active{% endif %}"
-            {% if link.current %}
+            class="menu-list__link{% if flexbrace_menu_active %} menu-list__link--active{% endif %}"
+            {% if flexbrace_menu_current %}
               aria-current="page"
             {% endif %}
             ref="menuitem"

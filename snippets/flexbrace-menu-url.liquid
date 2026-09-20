@@ -1,0 +1,28 @@
+{%- doc -%}
+  Resolves a nav link URL for the single-product storefront.
+  Collection links (and "Produkt" labels) go straight to the product page.
+
+  @param {object} link - A linklist link
+
+  @example
+  <a href="{% render 'flexbrace-menu-url', link: link %}">{{ link.title }}</a>
+{%- enddoc -%}
+
+{%- liquid
+  assign resolved_url = link.url
+  assign title_down = link.title | downcase | strip
+  assign product_fallback = all_products['afo-ortos-ankel-fotortos']
+
+  if link.type == 'collection_link'
+    if link.object.products_count == 1
+      assign resolved_url = link.object.products.first.url
+    elsif product_fallback != blank
+      assign resolved_url = product_fallback.url
+    endif
+  elsif title_down == 'produkt' or title_down == 'produkten' or title_down == 'product'
+    if product_fallback != blank
+      assign resolved_url = product_fallback.url
+    endif
+  endif
+-%}
+{{- resolved_url -}}

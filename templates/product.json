@@ -271,7 +271,7 @@
               "type": "text",
               "name": "Fördelar",
               "settings": {
-                "text": "<ul><li>Fotlyft och fotledsstabilitet</li><li>Naturligare gång och bättre balans</li><li>Låg vikt · diskret · följsam</li><li>Individuell anpassning · passar i vanliga skor</li></ul>",
+                "text": "<ul><li>Fri frakt inom EU</li><li>90 dagars öppet köp</li><li>One size fits all (38–45)</li><li>Passar i vanliga skor</li><li>Utvecklad av experter</li></ul>",
                 "width": "100%",
                 "max_width": "normal",
                 "alignment": "left",
@@ -283,217 +283,6 @@
                 "case": "none",
                 "wrap": "pretty",
                 "text_color": "",
-                "background": false,
-                "background_color": "#00000026",
-                "corner_radius": 0,
-                "padding-block-start": 0,
-                "padding-block-end": 0,
-                "padding-inline-start": 0,
-                "padding-inline-end": 0
-              },
-              "blocks": {}
-            },
-            "product_accordion": {
-              "type": "accordion",
-              "name": "Produktinfo",
-              "settings": {
-                "icon": "caret",
-                "dividers": true,
-                "divider_color": "#d7e7ed",
-                "type_preset": "h6",
-                "background_color": "",
-                "text_color": "",
-                "border": "none",
-                "border_width": 1,
-                "border_opacity": 100,
-                "border_color": "",
-                "border_radius": 12,
-                "padding-block-start": 0,
-                "padding-block-end": 0,
-                "padding-inline-start": 0,
-                "padding-inline-end": 0
-              },
-              "blocks": {
-                "row_included": {
-                  "type": "_accordion-row",
-                  "settings": {
-                    "heading": "Vad ingår?",
-                    "open_by_default": false,
-                    "icon": "none",
-                    "width": 20
-                  },
-                  "blocks": {
-                    "row_included_text": {
-                      "type": "text",
-                      "settings": {
-                        "text": "<p>Flexbrace® AFO för vald fotsida (höger eller vänster). Låg profil som sitter inuti skon, med justerbar passform. Anpassning sker utifrån mått eller utprovning enligt vår svenska process.</p>",
-                        "width": "100%",
-                        "max_width": "normal",
-                        "alignment": "left",
-                        "type_preset": "rte",
-                        "font": "var(--font-body--family)",
-                        "font_size": "",
-                        "line_height": "normal",
-                        "letter_spacing": "normal",
-                        "case": "none",
-                        "wrap": "pretty",
-                        "text_color": "",
-                        "background": false,
-                        "background_color": "#00000026",
-                        "corner_radius": 0,
-                        "padding-block-start": 0,
-                        "padding-block-end": 0,
-                        "padding-inline-start": 0,
-                        "padding-inline-end": 0
-                      },
-                      "blocks": {}
-                    }
-                  },
-                  "block_order": [
-                    "row_included_text"
-                  ]
-                },
-                "row_size": {
-                  "type": "_accordion-row",
-                  "settings": {
-                    "heading": "Storlek & passform",
-                    "open_by_default": false,
-                    "icon": "none",
-                    "width": 20
-                  },
-                  "blocks": {
-                    "row_size_text": {
-                      "type": "text",
-                      "settings": {
-                        "text": "<p>Passformen bygger på mått eller utprovning och individuell anpassning. Välj rätt fotsida här. Osäker? Kontakta oss före köp så guidar vi dig.</p>",
-                        "width": "100%",
-                        "max_width": "normal",
-                        "alignment": "left",
-                        "type_preset": "rte",
-                        "font": "var(--font-body--family)",
-                        "font_size": "",
-                        "line_height": "normal",
-                        "letter_spacing": "normal",
-                        "case": "none",
-                        "wrap": "pretty",
-                        "text_color": "",
-                        "background": false,
-                        "background_color": "#00000026",
-                        "corner_radius": 0,
-                        "padding-block-start": 0,
-                        "padding-block-end": 0,
-                        "padding-inline-start": 0,
-                        "padding-inline-end": 0
-                      },
-                      "blocks": {}
-                    }
-                  },
-                  "block_order": [
-                    "row_size_text"
-                  ]
-                },
-                "row_use": {
-                  "type": "_accordion-row",
-                  "settings": {
-                    "heading": "Så använder du Flexbrace",
-                    "open_by_default": false,
-                    "icon": "none",
-                    "width": 20
-                  },
-                  "blocks": {
-                    "row_use_text": {
-                      "type": "text",
-                      "settings": {
-                        "text": "<p>Placera ortosen runt fot och underben. Spänn tills stödet känns stabilt utan att klämma. Använd med en bekväm vardagssko som har plats för ortosen.</p>",
-                        "width": "100%",
-                        "max_width": "normal",
-                        "alignment": "left",
-                        "type_preset": "rte",
-                        "font": "var(--font-body--family)",
-                        "font_size": "",
-                        "line_height": "normal",
-                        "letter_spacing": "normal",
-                        "case": "none",
-                        "wrap": "pretty",
-                        "text_color": "",
-                        "background": false,
-                        "background_color": "#00000026",
-                        "corner_radius": 0,
-                        "padding-block-start": 0,
-                        "padding-block-end": 0,
-                        "padding-inline-start": 0,
-                        "padding-inline-end": 0
-                      },
-                      "blocks": {}
-                    }
-                  },
-                  "block_order": [
-                    "row_use_text"
-                  ]
-                },
-                "row_shipping": {
-                  "type": "_accordion-row",
-                  "settings": {
-                    "heading": "Leverans & retur",
-                    "open_by_default": false,
-                    "icon": "none",
-                    "width": 20
-                  },
-                  "blocks": {
-                    "row_shipping_text": {
-                      "type": "text",
-                      "settings": {
-                        "text": "<p>Fri frakt i Sverige. Leveranstid syns i kassan och beror på anpassning. 90 dagars öppet köp för att utvärdera hemma.</p>",
-                        "width": "100%",
-                        "max_width": "normal",
-                        "alignment": "left",
-                        "type_preset": "rte",
-                        "font": "var(--font-body--family)",
-                        "font_size": "",
-                        "line_height": "normal",
-                        "letter_spacing": "normal",
-                        "case": "none",
-                        "wrap": "pretty",
-                        "text_color": "",
-                        "background": false,
-                        "background_color": "#00000026",
-                        "corner_radius": 0,
-                        "padding-block-start": 0,
-                        "padding-block-end": 0,
-                        "padding-inline-start": 0,
-                        "padding-inline-end": 0
-                      },
-                      "blocks": {}
-                    }
-                  },
-                  "block_order": [
-                    "row_shipping_text"
-                  ]
-                }
-              },
-              "block_order": [
-                "row_included",
-                "row_size",
-                "row_use",
-                "row_shipping"
-              ]
-            },
-            "product_description": {
-              "type": "text",
-              "name": "Beskrivning",
-              "settings": {
-                "text": "<p>Flexbrace® är en lätt AFO för dig som behöver pålitligt stöd i vardagen – utan tung skena. Den hjälper foten att lyftas och hållas i en mer stabil position genom steget.</p>",
-                "width": "100%",
-                "max_width": "normal",
-                "alignment": "left",
-                "type_preset": "rte",
-                "font": "var(--font-body--family)",
-                "font_size": "1rem",
-                "line_height": "normal",
-                "letter_spacing": "normal",
-                "case": "none",
-                "wrap": "pretty",
-                "text_color": "#5d7182",
                 "background": false,
                 "background_color": "#00000026",
                 "corner_radius": 0,
@@ -510,9 +299,7 @@
             "intro_text",
             "variant_picker",
             "buy_buttons",
-            "product_usps",
-            "product_accordion",
-            "product_description"
+            "product_usps"
           ]
         }
       },
@@ -538,22 +325,10 @@
         "padding-block-start": 16,
         "padding-block-end": 40
       }
-    },
-    "product_support": {
-      "type": "custom-liquid",
-      "name": "Footer CTA",
-      "settings": {
-        "custom_liquid": "<div class=\"flexbrace-cta\"><div class=\"flexbrace-cta__copy\"><p class=\"flexbrace-cta__eyebrow\">Nästa steg</p><h2>Redo att beställa?</h2><p>Köp Flexbrace, kontakta oss – eller fråga om passform innan du beställer.</p></div><div class=\"flexbrace-cta__actions\">{% assign fb = product %}{% if fb == blank %}{% assign fb = all_products['afo-ortos-ankel-fotortos'] %}{% endif %}<a class=\"flexbrace-cta__button\" href=\"{% if fb != blank %}{{ fb.url }}{% else %}/products/afo-ortos-ankel-fotortos{% endif %}\">Köp Flexbrace{% if fb != blank %} · {{ fb.price_min | money }}{% endif %}</a><a class=\"flexbrace-cta__link\" href=\"/pages/contact\">Kontakta oss</a><a class=\"flexbrace-cta__link\" href=\"/pages/contact\">Frågor om passform</a></div></div>",
-        "background_color": "#ffffff",
-        "section_width": "page-width",
-        "padding-block-start": 40,
-        "padding-block-end": 72
-      }
     }
   },
   "order": [
     "main",
-    "product_info_tabs",
-    "product_support"
+    "product_info_tabs"
   ]
 }
