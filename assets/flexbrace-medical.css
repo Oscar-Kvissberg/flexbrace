@@ -173,7 +173,7 @@ accordion-custom {
 }
 
 .flexbrace-about-hero__overlay {
-  background: rgb(12 28 40 / var(--fb-about-hero-overlay, 0.3));
+  background: transparent;
 }
 
 .flexbrace-about-hero__content {
@@ -187,14 +187,29 @@ accordion-custom {
   text-align: center;
 }
 
+.flexbrace-about-hero__content::before {
+  content: '';
+  position: absolute;
+  z-index: -1;
+  inset: -12% -8%;
+  border-radius: 48px;
+  background: rgb(255 255 255 / 72%);
+  filter: blur(28px);
+  pointer-events: none;
+}
+
 .flexbrace-about-hero__title {
   margin: 0;
-  color: #fff;
+  color: #000;
   font-family: var(--flexbrace-btn-font);
   font-size: clamp(2.4rem, 6vw, 4.25rem);
   font-weight: 700;
   letter-spacing: -0.035em;
   line-height: 1.05;
+  text-shadow:
+    0 0 16px rgb(255 255 255 / 100%),
+    0 0 36px rgb(255 255 255 / 95%),
+    0 0 64px rgb(255 255 255 / 85%);
 }
 
 .flexbrace-about-hero__title sup {
@@ -208,11 +223,15 @@ accordion-custom {
 .flexbrace-about-hero__text {
   margin: 0;
   max-width: 34rem;
-  color: rgb(255 255 255 / 92%);
+  color: #000;
   font-size: clamp(1.05rem, 2vw, 1.35rem);
   font-weight: 400;
   line-height: 1.5;
   letter-spacing: -0.01em;
+  text-shadow:
+    0 0 14px rgb(255 255 255 / 100%),
+    0 0 32px rgb(255 255 255 / 95%),
+    0 0 56px rgb(255 255 255 / 80%);
 }
 
 @media screen and (max-width: 749px) {
@@ -223,6 +242,78 @@ accordion-custom {
   .flexbrace-about-hero__img {
     object-position: center center;
   }
+}
+
+/* ── Om oss page body ── */
+
+.flexbrace-about-page-section {
+  background: #fff;
+}
+
+.flexbrace-about-page {
+  box-sizing: border-box;
+  width: 100%;
+  max-width: 70rem;
+  margin-inline: auto;
+  padding-block: 64px 88px;
+  padding-inline: clamp(10px, 2vw, 20px);
+}
+
+.flexbrace-about-page__inner {
+  width: 100%;
+  max-width: none;
+  margin-inline: auto;
+}
+
+.flexbrace-about-page__block {
+  margin-bottom: 40px;
+}
+
+.flexbrace-about-page__block:last-child {
+  margin-bottom: 0;
+}
+
+.flexbrace-about-page__block h2 {
+  margin: 0 0 14px;
+  color: var(--flexbrace-navy);
+  font-size: clamp(1.5rem, 2.6vw, 1.95rem);
+  letter-spacing: -0.03em;
+  line-height: 1.15;
+}
+
+.flexbrace-about-page__block h3 {
+  margin: 0 0 8px;
+  color: var(--flexbrace-navy);
+  font-size: 1.2rem;
+  letter-spacing: -0.02em;
+}
+
+.flexbrace-about-page__block p {
+  margin: 0 0 14px;
+  color: var(--flexbrace-muted);
+  font-size: 1.12rem;
+  line-height: 1.7;
+}
+
+.flexbrace-about-page__block p:last-child {
+  margin-bottom: 0;
+}
+
+.flexbrace-about-page__block .flexbrace-checklist {
+  margin: 4px 0 0;
+  font-size: 1.12rem;
+}
+
+.flexbrace-about-page__person {
+  margin-bottom: 18px;
+}
+
+.flexbrace-about-page__note {
+  margin: 0;
+  color: var(--flexbrace-muted);
+  font-size: 1.05rem;
+  font-style: italic;
+  line-height: 1.55;
 }
 
 .flexbrace-site-footer-section {

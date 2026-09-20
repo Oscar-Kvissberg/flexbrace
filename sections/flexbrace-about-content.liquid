@@ -1,0 +1,141 @@
+{% comment %}
+  About page body content for /pages/om-oss
+{% endcomment %}
+
+{% liquid
+  assign show_about = false
+  if page.handle == 'om-oss' or page.handle == 'about' or template.suffix == 'about'
+    assign show_about = true
+  endif
+%}
+
+{% if show_about %}
+  <div class="flexbrace-about-page">
+    <div class="flexbrace-about-page__inner">
+      <section class="flexbrace-about-page__block">
+        <h2>Vilka vi är</h2>
+        <p>
+          Vi är Flexbrace – en aktör inom droppfotsortoser som bygger på mer än 30 års erfarenhet inom ortopedteknik.
+          Bakom produkten står Lars Falkenman, auktoriserad bandagist och uppfinnare av Flexbrace®: en lätt, diskret och
+          individuellt anpassad skena för dig som behöver bättre fotlyft och tryggare gång.
+        </p>
+        <p>Vårt fokus är enkelt: mer rörelsefrihet, mindre snubbelrisk och en skena som går att leva med i vardagen.</p>
+      </section>
+
+      <section class="flexbrace-about-page__block">
+        <h2>Vår historia</h2>
+        <p>
+          Historien börjar sommaren 1975, när Lars arbetade på en ortopedteknisk avdelning i Borås. Redan då såg han hur
+          ofta droppfotsortoser användes – och hur otillräckliga de var. De var klumpiga, hade begränsad funktion och
+          var långt ifrån användarvänliga.
+        </p>
+        <p>
+          Det blev starten på en livslång ambition: att skapa en ortos som var mer smidig, mer diskret och framför allt
+          gav bättre funktion.
+        </p>
+        <p>
+          Som auktoriserad bandagist arbetade Lars vidare på ortopedtekniska avdelningar i bland annat Göteborg och
+          Borås, var ortopedteknisk chef vid Linköpings universitetssjukhus, och arbetade internationellt i Bryssel
+          (CEBELOR) och i Köpenhamn (Nyrop &amp; Maag). Under åren utvecklade han droppfotsortoser löpande – men utan
+          det stora genombrottet.
+        </p>
+        <p>
+          Genombrottet kom 2001. En patient, Gerner Hemmingsen, hade fått en allvarlig blodpropp i hjärnan med
+          halvsideförlamning. Vardagen blev svår och ovärdig – bland annat när han inte kunde ta sig upp från golvet
+          själv. Det gjorde starkt intryck.
+        </p>
+        <p>
+          Efter 26 års erfarenhet beslutade Lars: nu eller aldrig. Nästan alla ortoser på marknaden hade prövats utan
+          tillfredsställande resultat. Något helt nytt behövde skapas.
+        </p>
+        <p>
+          I september 2001 stod den första prototypen klar. Den fick namnet Flexbrace®. När Gerner fick sin nya ortos
+          gick han över köksgolvet utan problem, vände sig om och sa: ”Den här skulle jag ha haft för fem år sedan.” I
+          det ögonblicket föddes Flexbrace®.
+        </p>
+        <p>
+          För att dokumentera effekten tillverkades 50 prototyper till olika användartyper. Efter två månader fick
+          användarna välja: fortsätta med Flexbrace® eller gå tillbaka till sin tidigare ortos. Resultatet var entydigt
+          – 100&nbsp;% valde att behålla Flexbrace®. Därefter inleddes patentarbete, och intresset växte snabbt i media
+          och bland kliniker.
+        </p>
+      </section>
+
+      <section class="flexbrace-about-page__block">
+        <h2>Vision &amp; mission</h2>
+        <p>
+          <strong>Vision:</strong> Att fler människor med droppfot ska kunna gå tryggare, mer naturligt och med större
+          värdighet i vardagen.
+        </p>
+        <p>
+          <strong>Mission:</strong> Att erbjuda en lätt, diskret och funktionell droppfotsortos – utvecklad ur verkliga
+          patientbehov – där stöd, komfort och individuell anpassning går hand i hand.
+        </p>
+      </section>
+
+      <section class="flexbrace-about-page__block">
+        <h2>Vad vi gör</h2>
+        <p>
+          Vi gör Flexbrace® tillgänglig för dig som behöver stöd vid droppfot: en ankel-fot-ortos som lyfter framfoten,
+          stabiliserar fotleden och stödjer ett mer naturligt gångmönster. Produkten är utvecklad i Europa, tillverkad i
+          högkvalitativ plast i Portugal, och utformad för att passa i vanliga skor.
+        </p>
+        <p>
+          Vi arbetar med tydlig produktinformation, rätt passform och en väg från behov till lösning – så att fler får
+          tillgång till den skillnad Lars en gång såg saknades på marknaden.
+        </p>
+      </section>
+
+      <section class="flexbrace-about-page__block">
+        <h2>Våra värderingar</h2>
+        <ul class="flexbrace-checklist">
+          <li>Funktion före prestige – skenan ska göra skillnad i verkliga steg, inte bara på pappret</li>
+          <li>Diskretion och värdighet – hjälpmedel ska synas så lite som möjligt och kännas så bra som möjligt</li>
+          <li>Individen i centrum – droppfot ser olika ut; lösningen ska följa behovet</li>
+          <li>Erfarenhet och ärlighet – mer än 30 års praktik bakom varje beslut</li>
+          <li>Kvalitet i detaljen – från design till tillverkning</li>
+        </ul>
+      </section>
+
+      <section class="flexbrace-about-page__block">
+        <h2>Teamet</h2>
+        <div class="flexbrace-about-page__person">
+          <h3>Lars Falkenman</h3>
+          <p>
+            Auktoriserad bandagist, leg. ortopedingenjör och uppfinnare av Flexbrace®. Med bakgrund från svenska
+            sjukhus, internationella uppdrag och mer än tre decenniers arbete med droppfot har Lars format produkten
+            utifrån det han saknade i vården: en skena som är både effektiv och möjlig att leva med.
+          </p>
+        </div>
+        <p class="flexbrace-about-page__note">
+          [Lägg gärna till Oscar, Anton, Glenn m.fl. med korta roller här när ni vill synas som svenskt team.]
+        </p>
+      </section>
+
+      <section class="flexbrace-about-page__block">
+        <h2>Vår kompetens</h2>
+        <ul class="flexbrace-checklist">
+          <li>Djup specialistkompetens inom droppfot och ankel-fot-ortoser (AFO)</li>
+          <li>Lång klinisk erfarenhet från ortopedteknik i Sverige och utomlands</li>
+          <li>Produktutveckling från idé och prototyp till patenterad lösning</li>
+          <li>Individuell anpassning och fokus på gångfunktion, balans och komfort</li>
+          <li>Europeisk utveckling och kontrollerad tillverkning i högkvalitativ plast</li>
+        </ul>
+      </section>
+    </div>
+  </div>
+{% endif %}
+
+{% schema %}
+{
+  "name": "Om oss innehåll",
+  "tag": "section",
+  "class": "flexbrace-about-page-section",
+  "settings": [],
+  "presets": [
+    {
+      "name": "Om oss innehåll"
+    }
+  ]
+}
+{% endschema %}
