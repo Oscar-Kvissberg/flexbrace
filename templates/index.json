@@ -141,7 +141,7 @@
         "pain_5": {
           "type": "pain",
           "settings": {
-            "text": "Utvecklad genom 25 års erfarenhet av individuellt tillverkade Flexbrace®"
+            "text": "Utvecklad av en auktoriserad bandagist med över 50 års erfarenhet. Flexbrace® sedan 2001"
           }
         }
       },
@@ -170,8 +170,8 @@
       "name": "Om / erfarenhet",
       "settings": {
         "eyebrow": "Erfarenhet",
-        "heading": "Flexbrace i över 25 år",
-        "body": "Flexbrace bygger på lång bandageri-erfarenhet och individuella anpassningar. Bakom produkten finns ett team som hjälper dig med passform, frågor och nästa steg.",
+        "heading": "Flexbrace® sedan 2001",
+        "body": "Utvecklad av en auktoriserad bandagist med över 50 års erfarenhet inom ortopedteknik. Flexbrace® har hjälpt användare sedan 2001.",
         "link_label": "Läs mer om oss",
         "link_url": "shopify://pages/om-oss",
         "image": "shopify://shop_images/lars_enhanced.png",
