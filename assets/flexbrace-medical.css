@@ -1556,6 +1556,10 @@ main[data-template='index'] .flexbrace-cta {
 
 /* About */
 .flexbrace-about {
+  display: grid;
+  grid-template-columns: minmax(0, 1.05fr) minmax(0, 0.95fr);
+  gap: clamp(24px, 4vw, 48px);
+  align-items: center;
   padding: clamp(28px, 4vw, 44px);
   border-radius: var(--flexbrace-radius-card);
   background: #fff;
@@ -1563,7 +1567,28 @@ main[data-template='index'] .flexbrace-cta {
 }
 
 .flexbrace-about__copy {
-  max-width: 640px;
+  max-width: 40rem;
+}
+
+.flexbrace-about__media {
+  min-width: 0;
+  border-radius: calc(var(--flexbrace-radius-card) - 8px);
+  overflow: hidden;
+  background: var(--flexbrace-surface);
+}
+
+.flexbrace-about__img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  min-height: 240px;
+  max-height: 360px;
+  object-fit: cover;
+  object-position: center;
+}
+
+.flexbrace-about__img--placeholder {
+  opacity: 0.45;
 }
 
 .flexbrace-about__link {
@@ -1579,6 +1604,18 @@ main[data-template='index'] .flexbrace-cta {
 .flexbrace-about__link:hover {
   color: var(--flexbrace-navy);
   border-bottom-color: var(--flexbrace-navy);
+}
+
+@media (max-width: 749px) {
+  .flexbrace-about {
+    grid-template-columns: 1fr;
+    gap: 20px;
+  }
+
+  .flexbrace-about__img {
+    min-height: 200px;
+    max-height: 260px;
+  }
 }
 
 main[data-template='index'] [id$='__section_rVAREi'] img,
