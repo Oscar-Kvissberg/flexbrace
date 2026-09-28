@@ -1,3 +1,12 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
 {
   "sections": {
     "hero_jVaWmY": {
@@ -148,12 +157,34 @@
         "problem_eyebrow": "",
         "problem_heading": "",
         "problem_lead": "",
-        "problem_image": "shopify://shop_images/images_1.jpg",
+        "problem_image": "shopify://shop_images/enhanced_product.png",
         "pains_heading": "Flexbrace",
         "background_color": "#ffffff",
         "section_width": "page-width",
         "padding-block-start": 88,
         "padding-block-end": 88
+      }
+    },
+    "about_experience": {
+      "type": "custom-liquid",
+      "name": "Om / erfarenhet",
+      "settings": {
+        "custom_liquid": "<div class=\"flexbrace-about\" aria-label=\"Om Flexbrace\"><div class=\"flexbrace-about__copy\"><p class=\"flexbrace-about__eyebrow\">Erfarenhet</p><h2>Individuella Flexbrace i över 25 år</h2><p>Flexbrace bygger på lång bandageri-erfarenhet och individuella anpassningar. Bakom produkten finns ett team som hjälper dig med passform, frågor och nästa steg.</p><a class=\"flexbrace-about__link\" href=\"/pages/om-oss\">Läs mer om oss</a></div></div>",
+        "background_color": "#f2f8fa",
+        "section_width": "page-width",
+        "padding-block-start": 72,
+        "padding-block-end": 72
+      }
+    },
+    "product_focus_intro": {
+      "type": "custom-liquid",
+      "name": "Produkt i fokus intro",
+      "settings": {
+        "custom_liquid": "<div class=\"flexbrace-focus-intro\"><p class=\"flexbrace-focus-intro__eyebrow\">Produkt i fokus</p><h2>Lätt, diskret och byggd för vanliga skor</h2><p>Ca 100 g. Följsam konstruktion med fokus på komfort. Passar i de flesta vardagsskor – utan klumpig skena utanpå.</p></div>",
+        "background_color": "#ffffff",
+        "section_width": "page-width",
+        "padding-block-start": 72,
+        "padding-block-end": 28
       }
     },
     "featured_product_information_4JzmUk": {
@@ -424,15 +455,214 @@
         "padding-block-end": 88
       }
     },
-    "product_focus_intro": {
-      "type": "custom-liquid",
-      "name": "Produkt i fokus intro",
+    "kundroster": {
+      "type": "flexbrace-testimonials",
+      "blocks": {
+        "quote_per": {
+          "type": "quote",
+          "settings": {
+            "quote": "Jag har använt Flexbrace i fyra år och idag skulle jag inte vilja vara utan den – varken på jobbet eller på fritiden.",
+            "name": "Per",
+            "meta": "62 år - Använder Flexbrace dagligen"
+          }
+        },
+        "quote_erik": {
+          "type": "quote",
+          "settings": {
+            "quote": "Efter att jag fått min skena har jag inte fallit en enda gång.",
+            "name": "Erik",
+            "meta": "85 år - Mer trygghet i varje steg"
+          }
+        },
+        "quote_anna": {
+          "type": "quote",
+          "settings": {
+            "quote": "Det känns stabilt utan att vara klumpigt. Jag kan röra mig mer naturligt – och mer avslappnat.",
+            "name": "Anna",
+            "meta": "Användare - Vardagsbruk"
+          }
+        },
+        "quote_maria": {
+          "type": "quote",
+          "settings": {
+            "quote": "Jag vågar ta längre promenader igen. Balansen känns bättre och jag tänker mindre på foten.",
+            "name": "Maria",
+            "meta": "Användare - Mer rörlighet"
+          }
+        }
+      },
+      "block_order": [
+        "quote_per",
+        "quote_erik",
+        "quote_anna",
+        "quote_maria"
+      ],
+      "name": "Kundröster",
       "settings": {
-        "custom_liquid": "<div class=\"flexbrace-focus-intro\"><p class=\"flexbrace-focus-intro__eyebrow\">Produkt i fokus</p><h2>Lätt, diskret och byggd för vanliga skor</h2><p>Ca 100 g. Följsam konstruktion med fokus på komfort. Passar i de flesta vardagsskor – utan klumpig skena utanpå.</p></div>",
-        "background_color": "#ffffff",
+        "eyebrow": "Kundröster",
+        "heading": "Tryggare steg i vardagen"
+      }
+    },
+    "section_6MeQMy": {
+      "type": "section",
+      "blocks": {
+        "anchor_hur": {
+          "type": "custom-liquid",
+          "name": "Ankare",
+          "settings": {
+            "custom_liquid": "<div id=\"hur-den-fungerar\" class=\"fb-anchor\" aria-hidden=\"true\"></div>"
+          },
+          "blocks": {}
+        },
+        "video_RACiwX": {
+          "type": "video",
+          "name": "t:names.video",
+          "settings": {
+            "source": "url",
+            "video_url": "https://www.youtube.com/watch?v=uVbtF2mJxLA&t=2s",
+            "video_autoplay": false,
+            "video_loop": true,
+            "alt": "",
+            "custom_width": 100,
+            "custom_width_mobile": 100,
+            "aspect_ratio": "16/9",
+            "border": "none",
+            "border_width": 1,
+            "border_opacity": 100,
+            "border_color": "",
+            "border_radius": 8,
+            "padding-block-start": 0,
+            "padding-block-end": 0,
+            "padding-inline-start": 0,
+            "padding-inline-end": 0
+          },
+          "blocks": {}
+        },
+        "group_jVDLMV": {
+          "type": "group",
+          "name": "t:names.caption",
+          "settings": {
+            "content_direction": "row",
+            "vertical_on_mobile": true,
+            "horizontal_alignment": "space-between",
+            "vertical_alignment": "flex-end",
+            "align_baseline": true,
+            "horizontal_alignment_flex_direction_column": "flex-start",
+            "vertical_alignment_flex_direction_column": "center",
+            "gap": 12,
+            "width": "fill",
+            "custom_width": 100,
+            "width_mobile": "fill",
+            "custom_width_mobile": 100,
+            "height": "fit",
+            "custom_height": 100,
+            "background_media": "none",
+            "background_color": "",
+            "video_position": "cover",
+            "background_image_position": "cover",
+            "toggle_overlay": false,
+            "overlay_color": "#00000026",
+            "overlay_style": "solid",
+            "gradient_direction": "to top",
+            "border": "none",
+            "border_width": 1,
+            "border_opacity": 100,
+            "border_color": "",
+            "border_radius": 0,
+            "link": "",
+            "open_in_new_tab": false,
+            "placeholder": "",
+            "padding-block-start": 0,
+            "padding-block-end": 0,
+            "padding-inline-start": 0,
+            "padding-inline-end": 0
+          },
+          "blocks": {
+            "text_3CR79M": {
+              "type": "text",
+              "name": "t:names.text",
+              "settings": {
+                "text": "<p><strong>I PRAKTIKEN</strong></p><h2>Se hur Flexbrace fungerar</h2><p>Kort film om konstruktionen och hur ortosen används i vardagen – före och efter känslan i steget.</p>",
+                "width": "fit-content",
+                "max_width": "normal",
+                "alignment": "left",
+                "type_preset": "rte",
+                "font": "var(--font-body--family)",
+                "font_size": "",
+                "line_height": "normal",
+                "letter_spacing": "normal",
+                "case": "none",
+                "wrap": "pretty",
+                "text_color": "#ffffff",
+                "background": false,
+                "background_color": "#00000026",
+                "corner_radius": 0,
+                "padding-block-start": 0,
+                "padding-block-end": 0,
+                "padding-inline-start": 0,
+                "padding-inline-end": 0
+              },
+              "blocks": {}
+            },
+            "button_cQYVNz": {
+              "type": "button",
+              "name": "t:names.button",
+              "settings": {
+                "label": "Köp Flexbrace",
+                "link": "shopify://products/afo-ortos-ankel-fotortos",
+                "open_in_new_tab": false,
+                "style_class": "button",
+                "custom_button_background": "#1678a2",
+                "custom_button_text": "#ffffff",
+                "custom_button_border": "#1678a2",
+                "link_text_color": "",
+                "width": "fit-content",
+                "custom_width": 100,
+                "width_mobile": "fit-content",
+                "custom_width_mobile": 100
+              },
+              "blocks": {}
+            }
+          },
+          "block_order": [
+            "text_3CR79M",
+            "button_cQYVNz"
+          ]
+        }
+      },
+      "block_order": [
+        "anchor_hur",
+        "video_RACiwX",
+        "group_jVDLMV"
+      ],
+      "name": "t:names.video_section",
+      "settings": {
+        "content_direction": "column",
+        "vertical_on_mobile": true,
+        "horizontal_alignment": "flex-start",
+        "vertical_alignment": "center",
+        "align_baseline": false,
+        "horizontal_alignment_flex_direction_column": "flex-start",
+        "vertical_alignment_flex_direction_column": "center",
+        "gap": 16,
         "section_width": "page-width",
+        "section_height": "",
+        "section_height_custom": 50,
+        "background_media": "none",
+        "background_color": "#103b5c",
+        "video_position": "cover",
+        "background_image_position": "cover",
+        "toggle_overlay": false,
+        "overlay_color": "#00000026",
+        "overlay_style": "solid",
+        "gradient_direction": "to top",
+        "border": "none",
+        "border_width": 1,
+        "border_opacity": 100,
+        "border_color": "",
+        "border_radius": 0,
         "padding-block-start": 72,
-        "padding-block-end": 28
+        "padding-block-end": 72
       }
     },
     "section_wnkGAB": {
@@ -821,216 +1051,6 @@
         "padding-block-end": 96
       }
     },
-    "kundroster": {
-      "type": "flexbrace-testimonials",
-      "blocks": {
-        "quote_per": {
-          "type": "quote",
-          "settings": {
-            "quote": "Jag har använt Flexbrace i fyra år och idag skulle jag inte vilja vara utan den – varken på jobbet eller på fritiden.",
-            "name": "Per",
-            "meta": "62 år - Använder Flexbrace dagligen"
-          }
-        },
-        "quote_erik": {
-          "type": "quote",
-          "settings": {
-            "quote": "Efter att jag fått min skena har jag inte fallit en enda gång.",
-            "name": "Erik",
-            "meta": "85 år - Mer trygghet i varje steg"
-          }
-        },
-        "quote_anna": {
-          "type": "quote",
-          "settings": {
-            "quote": "Det känns stabilt utan att vara klumpigt. Jag kan röra mig mer naturligt – och mer avslappnat.",
-            "name": "Anna",
-            "meta": "Användare - Vardagsbruk"
-          }
-        },
-        "quote_maria": {
-          "type": "quote",
-          "settings": {
-            "quote": "Jag vågar ta längre promenader igen. Balansen känns bättre och jag tänker mindre på foten.",
-            "name": "Maria",
-            "meta": "Användare - Mer rörlighet"
-          }
-        }
-      },
-      "block_order": [
-        "quote_per",
-        "quote_erik",
-        "quote_anna",
-        "quote_maria"
-      ],
-      "name": "Kundröster",
-      "settings": {
-        "eyebrow": "Kundröster",
-        "heading": "Tryggare steg i vardagen"
-      }
-    },
-    "section_6MeQMy": {
-      "type": "section",
-      "blocks": {
-        "video_RACiwX": {
-          "type": "video",
-          "name": "t:names.video",
-          "settings": {
-            "source": "url",
-            "video_url": "https://www.youtube.com/watch?v=uVbtF2mJxLA&t=2s",
-            "video_autoplay": false,
-            "video_loop": true,
-            "alt": "",
-            "custom_width": 100,
-            "custom_width_mobile": 100,
-            "aspect_ratio": "16/9",
-            "border": "none",
-            "border_width": 1,
-            "border_opacity": 100,
-            "border_color": "",
-            "border_radius": 8,
-            "padding-block-start": 0,
-            "padding-block-end": 0,
-            "padding-inline-start": 0,
-            "padding-inline-end": 0
-          },
-          "blocks": {}
-        },
-        "group_jVDLMV": {
-          "type": "group",
-          "name": "t:names.caption",
-          "settings": {
-            "content_direction": "row",
-            "vertical_on_mobile": true,
-            "horizontal_alignment": "space-between",
-            "vertical_alignment": "flex-end",
-            "align_baseline": true,
-            "horizontal_alignment_flex_direction_column": "flex-start",
-            "vertical_alignment_flex_direction_column": "center",
-            "gap": 12,
-            "width": "fill",
-            "custom_width": 100,
-            "width_mobile": "fill",
-            "custom_width_mobile": 100,
-            "height": "fit",
-            "custom_height": 100,
-            "background_media": "none",
-            "background_color": "",
-            "video_position": "cover",
-            "background_image_position": "cover",
-            "toggle_overlay": false,
-            "overlay_color": "#00000026",
-            "overlay_style": "solid",
-            "gradient_direction": "to top",
-            "border": "none",
-            "border_width": 1,
-            "border_opacity": 100,
-            "border_color": "",
-            "border_radius": 0,
-            "link": "",
-            "open_in_new_tab": false,
-            "placeholder": "",
-            "padding-block-start": 0,
-            "padding-block-end": 0,
-            "padding-inline-start": 0,
-            "padding-inline-end": 0
-          },
-          "blocks": {
-            "text_3CR79M": {
-              "type": "text",
-              "name": "t:names.text",
-              "settings": {
-                "text": "<p><strong>I PRAKTIKEN</strong></p><h2>Se hur Flexbrace fungerar</h2><p>Kort film om konstruktionen och hur ortosen används i vardagen – före och efter känslan i steget.</p>",
-                "width": "fit-content",
-                "max_width": "normal",
-                "alignment": "left",
-                "type_preset": "rte",
-                "font": "var(--font-body--family)",
-                "font_size": "",
-                "line_height": "normal",
-                "letter_spacing": "normal",
-                "case": "none",
-                "wrap": "pretty",
-                "text_color": "#ffffff",
-                "background": false,
-                "background_color": "#00000026",
-                "corner_radius": 0,
-                "padding-block-start": 0,
-                "padding-block-end": 0,
-                "padding-inline-start": 0,
-                "padding-inline-end": 0
-              },
-              "blocks": {}
-            },
-            "button_cQYVNz": {
-              "type": "button",
-              "name": "t:names.button",
-              "settings": {
-                "label": "Köp Flexbrace",
-                "link": "shopify://products/afo-ortos-ankel-fotortos",
-                "open_in_new_tab": false,
-                "style_class": "button",
-                "custom_button_background": "#1678a2",
-                "custom_button_text": "#ffffff",
-                "custom_button_border": "#1678a2",
-                "link_text_color": "",
-                "width": "fit-content",
-                "custom_width": 100,
-                "width_mobile": "fit-content",
-                "custom_width_mobile": 100
-              },
-              "blocks": {}
-            }
-          },
-          "block_order": [
-            "text_3CR79M",
-            "button_cQYVNz"
-          ]
-        },
-        "anchor_hur": {
-          "type": "custom-liquid",
-          "name": "Ankare",
-          "settings": {
-            "custom_liquid": "<div id=\"hur-den-fungerar\" class=\"fb-anchor\" aria-hidden=\"true\"></div>"
-          },
-          "blocks": {}
-        }
-      },
-      "block_order": [
-        "anchor_hur",
-        "video_RACiwX",
-        "group_jVDLMV"
-      ],
-      "name": "t:names.video_section",
-      "settings": {
-        "content_direction": "column",
-        "vertical_on_mobile": true,
-        "horizontal_alignment": "flex-start",
-        "vertical_alignment": "center",
-        "align_baseline": false,
-        "horizontal_alignment_flex_direction_column": "flex-start",
-        "vertical_alignment_flex_direction_column": "center",
-        "gap": 16,
-        "section_width": "page-width",
-        "section_height": "",
-        "section_height_custom": 50,
-        "background_media": "none",
-        "background_color": "#103b5c",
-        "video_position": "cover",
-        "background_image_position": "cover",
-        "toggle_overlay": false,
-        "overlay_color": "#00000026",
-        "overlay_style": "solid",
-        "gradient_direction": "to top",
-        "border": "none",
-        "border_width": 1,
-        "border_opacity": 100,
-        "border_color": "",
-        "border_radius": 0,
-        "padding-block-start": 72,
-        "padding-block-end": 72
-      }
-    },
     "section_P87RHy": {
       "type": "section",
       "blocks": {
@@ -1370,7 +1390,6 @@
         "text_Thbddc",
         "accordion_mwRM4H"
       ],
-      "disabled": false,
       "name": "t:names.faq_section",
       "settings": {
         "content_direction": "column",
@@ -1409,17 +1428,6 @@
         "background_color": "#ffffff",
         "section_width": "page-width",
         "padding-block-start": 88,
-        "padding-block-end": 72
-      }
-    },
-    "about_experience": {
-      "type": "custom-liquid",
-      "name": "Om / erfarenhet",
-      "settings": {
-        "custom_liquid": "<div class=\"flexbrace-about\" aria-label=\"Om Flexbrace\"><div class=\"flexbrace-about__copy\"><p class=\"flexbrace-about__eyebrow\">Erfarenhet</p><h2>Individuella Flexbrace i över 25 år</h2><p>Flexbrace bygger på lång bandageri-erfarenhet och individuella anpassningar. Bakom produkten finns ett team som hjälper dig med passform, frågor och nästa steg.</p><a class=\"flexbrace-about__link\" href=\"/pages/om-oss\">Läs mer om oss</a></div></div>",
-        "background_color": "#f2f8fa",
-        "section_width": "page-width",
-        "padding-block-start": 72,
         "padding-block-end": 72
       }
     }
