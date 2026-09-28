@@ -77,6 +77,47 @@ button.shopify-payment-button__button:hover {
   box-shadow: none;
 }
 
+/* Quantity −/+ must keep icons visible (not inherit buy-button fill) */
+.quantity-selector :is(.quantity-minus, .quantity-plus).button,
+.quantity-selector :is(.quantity-minus, .quantity-plus).button:hover,
+.quantity-selector :is(.quantity-minus, .quantity-plus).button:focus,
+.quantity-selector :is(.quantity-minus, .quantity-plus).button:focus-visible {
+  min-height: var(--minimum-touch-target, 44px) !important;
+  width: var(--minimum-touch-target, 44px) !important;
+  height: var(--minimum-touch-target, 44px) !important;
+  padding: 0 !important;
+  border: 0 !important;
+  border-radius: 50% !important;
+  background: transparent !important;
+  color: var(--flexbrace-ink) !important;
+  box-shadow: none !important;
+  font-size: 0 !important;
+}
+
+.quantity-selector .quantity-minus:disabled,
+.quantity-selector .quantity-minus[disabled],
+.quantity-selector .quantity-minus:disabled:hover {
+  color: var(--flexbrace-muted) !important;
+  opacity: 0.55;
+  cursor: not-allowed;
+}
+
+.quantity-selector .svg-wrapper {
+  display: inline-flex !important;
+  align-items: center;
+  justify-content: center;
+  color: inherit !important;
+}
+
+.quantity-selector svg {
+  display: block !important;
+  width: 14px !important;
+  height: 14px !important;
+  color: inherit !important;
+  stroke: currentColor !important;
+  --icon-stroke-width: 1.75;
+}
+
 .button:focus-visible,
 .hero-purchase__button:focus-visible,
 .flexbrace-product-support__button:focus-visible,
@@ -813,10 +854,10 @@ main[data-template='index'] [id$='__hero_jVaWmY'] :is(h1, h2) {
 }
 
 main[data-template='index'] [id$='__hero_jVaWmY'] .rte {
-  max-width: 34rem;
-  margin-top: 8px;
-  font-size: clamp(1.02rem, 1.5vw, 1.18rem);
-  line-height: 1.55;
+  max-width: 36rem;
+  margin-top: 10px;
+  font-size: clamp(1.12rem, 1.85vw, 1.32rem);
+  line-height: 1.5;
   color: rgb(232 242 247) !important;
 }
 
@@ -855,8 +896,8 @@ main[data-template='index'] [id$='__hero_jVaWmY'] a.button:hover {
   display: flex;
   flex-wrap: wrap;
   align-items: center;
-  gap: 12px 20px;
-  margin-top: 8px;
+  gap: 14px 22px;
+  margin-top: 14px;
 }
 
 .hero-purchase__button {
@@ -864,32 +905,33 @@ main[data-template='index'] [id$='__hero_jVaWmY'] a.button:hover {
   align-items: center;
   justify-content: center;
   gap: 0.35em;
-  min-height: 42px;
-  padding: 8px 20px;
+  min-height: 48px;
+  padding: 12px 22px;
   border: 0;
   border-radius: var(--flexbrace-pill);
-  background: var(--flexbrace-btn-bg);
-  color: var(--flexbrace-btn-text);
+  background: #1678a2;
+  color: #fff;
   box-shadow: none;
   font-family: var(--flexbrace-btn-font);
-  font-size: 14px;
-  font-weight: 500;
-  letter-spacing: normal;
-  line-height: 1;
+  font-size: 1.05rem;
+  font-weight: 600;
+  letter-spacing: -0.01em;
+  line-height: 1.2;
   text-decoration: none;
   white-space: nowrap;
   transition: background-color 160ms ease;
 }
 
 .hero-purchase__button:hover {
-  background: var(--flexbrace-btn-bg-hover);
-  color: var(--flexbrace-btn-text);
+  background: #0f5f82;
+  color: #fff;
 }
 
 .hero-purchase__link {
   color: rgb(220 234 240);
-  font-size: 0.92rem;
+  font-size: 1.05rem;
   font-weight: 600;
+  line-height: 1.2;
   text-decoration: none;
   border-bottom: 1px solid rgb(220 234 240 / 45%);
   padding-bottom: 1px;
@@ -1761,7 +1803,7 @@ main[data-template='index'] [id$='__featured_product_information_4JzmUk'] .produ
   padding: 0 !important;
   overflow: hidden;
   border-radius: var(--flexbrace-radius-card);
-  background: var(--flexbrace-surface);
+  background: transparent;
   aspect-ratio: 1 / 1;
 }
 
@@ -1782,7 +1824,7 @@ main[data-template='index'] [id$='__featured_product_information_4JzmUk'] .produ
   width: 100%;
   height: 100%;
   object-fit: contain;
-  background: var(--flexbrace-surface);
+  background: transparent;
 }
 
 main[data-template='index'] [id$='__featured_product_information_4JzmUk'] .product-details :is(h2, h3) {
@@ -1833,7 +1875,7 @@ main[data-template='index'] [id$='__featured_product_information_4JzmUk'] :is(.v
   border-radius: 999px !important;
 }
 
-main[data-template='index'] [id$='__featured_product_information_4JzmUk'] .button,
+main[data-template='index'] [id$='__featured_product_information_4JzmUk'] .button:not(.quantity-minus):not(.quantity-plus),
 main[data-template='index'] [id$='__featured_product_information_4JzmUk'] .add-to-cart-button,
 main[data-template='index'] [id$='__featured_product_information_4JzmUk'] .shopify-payment-button__button {
   min-height: 46px;
@@ -1848,7 +1890,7 @@ main[data-template='index'] [id$='__featured_product_information_4JzmUk'] .shopi
   box-shadow: none !important;
 }
 
-main[data-template='index'] [id$='__featured_product_information_4JzmUk'] .button:hover,
+main[data-template='index'] [id$='__featured_product_information_4JzmUk'] .button:not(.quantity-minus):not(.quantity-plus):hover,
 main[data-template='index'] [id$='__featured_product_information_4JzmUk'] .add-to-cart-button:hover {
   background: var(--flexbrace-btn-bg-hover) !important;
 }
@@ -2116,7 +2158,7 @@ main[data-template='product'] [id$='__main'] .product-information__grid {
 }
 
 main[data-template='product'] [id$='__main'] .product-information__media {
-  background: var(--flexbrace-surface);
+  background: transparent;
   border-radius: var(--flexbrace-radius-card);
   overflow: hidden;
 }
@@ -2152,8 +2194,8 @@ main[data-template='product'] [id$='__main'] .price {
   letter-spacing: -0.01em;
 }
 
-main[data-template='product'] [id$='__main'] .product-details .button,
-main[data-template='product'] [id$='__main'] .product-form-buttons .button,
+main[data-template='product'] [id$='__main'] .product-details .button:not(.quantity-minus):not(.quantity-plus),
+main[data-template='product'] [id$='__main'] .product-form-buttons .button:not(.quantity-minus):not(.quantity-plus),
 main[data-template='product'] [id$='__main'] .shopify-payment-button__button,
 main[data-template='product'] [id$='__main'] .add-to-cart-button {
   min-height: 42px;
@@ -2172,8 +2214,8 @@ main[data-template='product'] [id$='__main'] .add-to-cart-button {
 }
 
 main[data-template='product'] [id$='__main'] .add-to-cart-button:hover,
-main[data-template='product'] [id$='__main'] .product-details .button:hover,
-main[data-template='product'] [id$='__main'] .product-form-buttons .button:hover {
+main[data-template='product'] [id$='__main'] .product-details .button:not(.quantity-minus):not(.quantity-plus):hover,
+main[data-template='product'] [id$='__main'] .product-form-buttons .button:not(.quantity-minus):not(.quantity-plus):hover {
   transform: none;
   background: var(--flexbrace-btn-bg-hover) !important;
   border-color: var(--flexbrace-btn-bg-hover) !important;
