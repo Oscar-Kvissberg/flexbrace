@@ -927,7 +927,7 @@
                 "s6_text": {
                   "type": "text",
                   "settings": {
-                    "text": "<p>Leveranstiden beror på anpassning och lagerläge. Aktuell tid visas i kassan, och du får spårning via e-post när ordern skickats. Fri frakt i Sverige.</p>",
+                    "text": "<p>Leveranstiden beror på anpassning och lagerläge. Aktuell tid visas i kassan, och du får spårning via e-post när ordern skickats. Fri frakt inom EU.</p>",
                     "width": "100%",
                     "max_width": "normal",
                     "alignment": "left",
