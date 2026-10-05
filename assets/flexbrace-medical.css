@@ -3493,3 +3493,28 @@ main[data-template='index'] [id$='__about_experience'] .flexbrace-about__img {
     aspect-ratio: 4 / 3;
   }
 }
+
+/* Product focus: intro sits in the left column beside the product image */
+main[data-template='index'] [id$='__featured_product_information_4JzmUk'] .product-information__grid--half.product-information--media-right .product-details {
+  max-width: 34rem;
+  align-self: center;
+}
+
+main[data-template='index'] .flexbrace-focus-intro--inline {
+  margin-bottom: clamp(20px, 3vw, 36px);
+}
+
+main[data-template='index'] .flexbrace-focus-intro--inline h2 {
+  font-size: clamp(2rem, 3.2vw, 2.75rem);
+}
+
+/* Video: text left, film right */
+main[data-template='index'] [id$='__section_6MeQMy'] .custom-section-content {
+  align-items: center;
+}
+
+@media (max-width: 749px) {
+  main[data-template='index'] [id$='__section_6MeQMy'] .custom-section-content {
+    align-items: stretch;
+  }
+}
