@@ -3391,3 +3391,98 @@ main[data-template='article'] .rte {
     animation: none;
   }
 }
+
+/* ── Homepage "Erfarenhet" — full-bleed band, copy left, square image right ── */
+main[data-template='index'] > [id$='__about_experience'] {
+  background: var(--flexbrace-surface) !important;
+}
+
+main[data-template='index'] [id$='__about_experience'] .section-background {
+  background: transparent !important;
+}
+
+main[data-template='index'] [id$='__about_experience'] .section {
+  padding-block: 0 !important;
+}
+
+main[data-template='index'] [id$='__about_experience'] .flexbrace-about {
+  grid-template-columns: minmax(0, 1fr) minmax(0, 1fr);
+  gap: 0;
+  align-items: stretch;
+  padding: 0;
+  border: 0;
+  border-radius: 0;
+  background: transparent;
+}
+
+main[data-template='index'] [id$='__about_experience'] .flexbrace-about__copy {
+  align-self: center;
+  max-width: 36rem;
+  padding-block: clamp(56px, 8vw, 112px);
+  padding-inline-end: clamp(28px, 5vw, 80px);
+}
+
+main[data-template='index'] [id$='__about_experience'] .flexbrace-about__copy h2 {
+  margin-bottom: 22px;
+  font-size: clamp(2.4rem, 4.4vw, 3.9rem);
+  line-height: 1.04;
+}
+
+main[data-template='index'] [id$='__about_experience'] .flexbrace-about__copy p:not(:first-child):not(.flexbrace-about__eyebrow) {
+  max-width: 44ch;
+  color: var(--flexbrace-ink);
+  font-size: clamp(1.08rem, 1.4vw, 1.25rem);
+  line-height: 1.6;
+}
+
+main[data-template='index'] [id$='__about_experience'] .flexbrace-about__link {
+  align-items: center;
+  min-height: 52px;
+  margin-top: 32px;
+  padding: 12px 24px;
+  border: 0;
+  border-radius: var(--flexbrace-pill);
+  background: var(--flexbrace-btn-bg);
+  color: var(--flexbrace-btn-text);
+  font-family: var(--flexbrace-btn-font);
+  font-size: 1.05rem;
+  font-weight: 600;
+  transition: background-color 160ms ease;
+}
+
+main[data-template='index'] [id$='__about_experience'] .flexbrace-about__link:hover {
+  background: var(--flexbrace-btn-bg-hover);
+  color: var(--flexbrace-btn-text);
+}
+
+main[data-template='index'] [id$='__about_experience'] .flexbrace-about__link:focus-visible {
+  outline: none;
+  box-shadow: var(--flexbrace-focus);
+}
+
+main[data-template='index'] [id$='__about_experience'] .flexbrace-about__media {
+  border-radius: 0;
+  aspect-ratio: 1 / 1;
+}
+
+main[data-template='index'] [id$='__about_experience'] .flexbrace-about__img {
+  min-height: 0;
+  max-height: none;
+  height: 100%;
+}
+
+@media (max-width: 749px) {
+  main[data-template='index'] [id$='__about_experience'] .flexbrace-about {
+    grid-template-columns: 1fr;
+  }
+
+  main[data-template='index'] [id$='__about_experience'] .flexbrace-about__copy {
+    padding-block: 48px 36px;
+    padding-inline-end: 0;
+  }
+
+  main[data-template='index'] [id$='__about_experience'] .flexbrace-about__media {
+    aspect-ratio: 4 / 3;
+    border-radius: var(--flexbrace-radius-sm);
+  }
+}
