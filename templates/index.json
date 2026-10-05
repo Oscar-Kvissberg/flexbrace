@@ -617,30 +617,10 @@
                 "padding-inline-end": 0
               },
               "blocks": {}
-            },
-            "button_cQYVNz": {
-              "type": "button",
-              "name": "t:names.button",
-              "settings": {
-                "label": "Köp Flexbrace",
-                "link": "shopify://products/afo-ortos-ankel-fotortos",
-                "open_in_new_tab": false,
-                "style_class": "button",
-                "custom_button_background": "#1678a2",
-                "custom_button_text": "#ffffff",
-                "custom_button_border": "#1678a2",
-                "link_text_color": "",
-                "width": "fit-content",
-                "custom_width": 100,
-                "width_mobile": "fit-content",
-                "custom_width_mobile": 100
-              },
-              "blocks": {}
             }
           },
           "block_order": [
-            "text_3CR79M",
-            "button_cQYVNz"
+            "text_3CR79M"
           ]
         }
       },

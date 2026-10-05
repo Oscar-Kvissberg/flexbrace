@@ -2051,8 +2051,19 @@ main[data-template='index'] [id$='__section_6MeQMy'] .custom-section-content {
   background: var(--flexbrace-navy) !important;
   padding: clamp(24px, 3.5vw, 40px);
   box-sizing: border-box;
-  max-width: 60rem;
+  width: min(70rem, calc(100% - 2 * var(--flexbrace-page-gutter)));
   margin-inline: auto;
+}
+
+/* Anchor must not take a flex gap slot above the video */
+main[data-template='index'] [id$='__section_6MeQMy'] .custom-section-content {
+  position: relative;
+}
+
+main[data-template='index'] [id$='__section_6MeQMy'] .custom-section-content > .fb-anchor,
+main[data-template='index'] [id$='__section_6MeQMy'] .custom-section-content > :has(> .fb-anchor) {
+  position: absolute;
+  top: 0;
 }
 
 main[data-template='index'] [id$='__section_6MeQMy'] :is(h2, p, strong) {
