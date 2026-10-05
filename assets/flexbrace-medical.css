@@ -3406,10 +3406,10 @@ main[data-template='index'] [id$='__about_experience'] .section {
 }
 
 main[data-template='index'] [id$='__about_experience'] .flexbrace-about {
-  grid-template-columns: minmax(0, 1fr) minmax(0, 1fr);
-  gap: 0;
-  align-items: stretch;
-  padding: 0;
+  grid-template-columns: minmax(0, 1.4fr) minmax(0, 1fr);
+  gap: clamp(28px, 5vw, 80px);
+  align-items: center;
+  padding: clamp(48px, 6vw, 88px) 0;
   border: 0;
   border-radius: 0;
   background: transparent;
@@ -3418,8 +3418,7 @@ main[data-template='index'] [id$='__about_experience'] .flexbrace-about {
 main[data-template='index'] [id$='__about_experience'] .flexbrace-about__copy {
   align-self: center;
   max-width: 36rem;
-  padding-block: clamp(56px, 8vw, 112px);
-  padding-inline-end: clamp(28px, 5vw, 80px);
+  padding: 0;
 }
 
 main[data-template='index'] [id$='__about_experience'] .flexbrace-about__copy h2 {
@@ -3461,6 +3460,9 @@ main[data-template='index'] [id$='__about_experience'] .flexbrace-about__link:fo
 }
 
 main[data-template='index'] [id$='__about_experience'] .flexbrace-about__media {
+  justify-self: end;
+  width: 100%;
+  max-width: 28rem;
   border-radius: var(--flexbrace-radius-card);
   aspect-ratio: 1 / 1;
 }
@@ -3477,11 +3479,12 @@ main[data-template='index'] [id$='__about_experience'] .flexbrace-about__img {
   }
 
   main[data-template='index'] [id$='__about_experience'] .flexbrace-about__copy {
-    padding-block: 48px 36px;
-    padding-inline-end: 0;
+    padding: 0;
   }
 
   main[data-template='index'] [id$='__about_experience'] .flexbrace-about__media {
+    justify-self: stretch;
+    max-width: none;
     aspect-ratio: 4 / 3;
   }
 }
