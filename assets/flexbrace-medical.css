@@ -409,7 +409,7 @@ accordion-custom {
   box-sizing: border-box;
   width: min(70rem, calc(100% - 2 * var(--flexbrace-page-gutter)));
   margin-inline: auto;
-  padding-block: 72px 40px;
+  padding-block: 40px 40px;
 }
 
 .flexbrace-testimonials__header {
@@ -1862,7 +1862,7 @@ main[data-template='index'] [id$='__featured_product_information_4JzmUk'] .produ
   overflow: hidden;
   border-radius: var(--flexbrace-radius-card);
   background: transparent;
-  aspect-ratio: 1 / 1;
+  aspect-ratio: auto;
 }
 
 main[data-template='index'] [id$='__featured_product_information_4JzmUk'] .product-details > .group-block {
@@ -1880,7 +1880,7 @@ main[data-template='index'] [id$='__featured_product_information_4JzmUk'] .produ
 
 main[data-template='index'] [id$='__featured_product_information_4JzmUk'] .product-information__media img {
   width: 100%;
-  height: 100%;
+  height: auto;
   object-fit: contain;
   background: transparent;
 }
@@ -2051,6 +2051,8 @@ main[data-template='index'] [id$='__section_6MeQMy'] .custom-section-content {
   background: var(--flexbrace-navy) !important;
   padding: clamp(24px, 3.5vw, 40px);
   box-sizing: border-box;
+  max-width: 60rem;
+  margin-inline: auto;
 }
 
 main[data-template='index'] [id$='__section_6MeQMy'] :is(h2, p, strong) {
