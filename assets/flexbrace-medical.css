@@ -18,7 +18,7 @@
   --flexbrace-btn-font: Inter, system-ui, -apple-system, 'Segoe UI', sans-serif;
   --flexbrace-focus: 0 0 0 3px rgb(22 120 162 / 22%);
   --flexbrace-page-gutter: clamp(20px, 3.8vw, 48px);
-  --flexbrace-home-content-width: 82rem;
+  --flexbrace-home-content-width: 94rem;
   --flexbrace-home-rail-inset: max(
     clamp(28px, 4.5vw, 72px),
     calc((100vw - min(var(--flexbrace-home-content-width), 100vw - 96px)) / 2)
