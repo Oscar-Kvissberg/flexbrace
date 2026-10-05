@@ -199,7 +199,8 @@
         "section_width": "page-width",
         "padding-block-start": 72,
         "padding-block-end": 28
-      }
+      },
+      "disabled": true
     },
     "featured_product_information_4JzmUk": {
       "type": "featured-product-information",
@@ -256,6 +257,14 @@
             "padding-inline-end": 0
           },
           "blocks": {
+            "focus_intro": {
+              "type": "custom-liquid",
+              "name": "Produkt i fokus intro",
+              "settings": {
+                "custom_liquid": "<div class=\"flexbrace-focus-intro flexbrace-focus-intro--inline\"><p class=\"flexbrace-focus-intro__eyebrow\">Produkt i fokus</p><h2>Lätt, diskret och byggd för vanliga skor</h2><p>Ca 100 g. Följsam konstruktion med fokus på komfort. Passar i de flesta vardagsskor – utan klumpig skena utanpå.</p></div>"
+              },
+              "blocks": {}
+            },
             "group_Mk8rAV": {
               "type": "group",
               "name": "t:names.header",
@@ -449,6 +458,7 @@
             }
           },
           "block_order": [
+            "focus_intro",
             "group_Mk8rAV",
             "review_MVay7x",
             "variant_picker_3dEHMY",
@@ -465,8 +475,8 @@
         "limit_details_width": true,
         "gap": 48,
         "background_color": "#ffffff",
-        "padding-block-start": 40,
-        "padding-block-end": 88
+        "padding-block-start": 72,
+        "padding-block-end": 32
       }
     },
     "kundroster": {
@@ -537,7 +547,7 @@
             "video_autoplay": false,
             "video_loop": true,
             "alt": "",
-            "custom_width": 100,
+            "custom_width": 58,
             "custom_width_mobile": 100,
             "aspect_ratio": "16/9",
             "border": "none",
@@ -556,7 +566,7 @@
           "type": "group",
           "name": "t:names.caption",
           "settings": {
-            "content_direction": "row",
+            "content_direction": "column",
             "vertical_on_mobile": true,
             "horizontal_alignment": "space-between",
             "vertical_alignment": "flex-end",
@@ -617,48 +627,28 @@
                 "padding-inline-end": 0
               },
               "blocks": {}
-            },
-            "button_cQYVNz": {
-              "type": "button",
-              "name": "t:names.button",
-              "settings": {
-                "label": "Köp Flexbrace",
-                "link": "shopify://products/afo-ortos-ankel-fotortos",
-                "open_in_new_tab": false,
-                "style_class": "button",
-                "custom_button_background": "#1678a2",
-                "custom_button_text": "#ffffff",
-                "custom_button_border": "#1678a2",
-                "link_text_color": "",
-                "width": "fit-content",
-                "custom_width": 100,
-                "width_mobile": "fit-content",
-                "custom_width_mobile": 100
-              },
-              "blocks": {}
             }
           },
           "block_order": [
-            "text_3CR79M",
-            "button_cQYVNz"
+            "text_3CR79M"
           ]
         }
       },
       "block_order": [
         "anchor_hur",
-        "video_RACiwX",
-        "group_jVDLMV"
+        "group_jVDLMV",
+        "video_RACiwX"
       ],
       "name": "t:names.video_section",
       "settings": {
-        "content_direction": "column",
+        "content_direction": "row",
         "vertical_on_mobile": true,
         "horizontal_alignment": "flex-start",
         "vertical_alignment": "center",
         "align_baseline": false,
         "horizontal_alignment_flex_direction_column": "flex-start",
         "vertical_alignment_flex_direction_column": "center",
-        "gap": 16,
+        "gap": 48,
         "section_width": "page-width",
         "section_height": "",
         "section_height_custom": 50,

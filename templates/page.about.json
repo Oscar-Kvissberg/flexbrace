@@ -4,7 +4,7 @@
       "type": "flexbrace-about-hero",
       "settings": {
         "heading": "Om Flexbrace",
-        "text": "Utvecklad av en auktoriserad bandagist med över 50 års erfarenhet inom ortopedteknik. Flexbrace® har hjälpt användare sedan 2001.",
+        "text": "",
         "overlay_opacity": 30,
         "min_height": 70
       }
