@@ -606,7 +606,7 @@
               "type": "text",
               "name": "t:names.text",
               "settings": {
-                "text": "<p><strong>I PRAKTIKEN</strong></p><h2>Se hur Flexbrace fungerar</h2><p>Kort film om konstruktionen och hur ortosen används i vardagen – före och efter känslan i steget.</p>",
+                "text": "<h2>Se hur Flexbrace fungerar</h2><p>Kort film om konstruktionen och hur ortosen används i vardagen – före och efter känslan i steget.</p>",
                 "width": "fit-content",
                 "max_width": "normal",
                 "alignment": "left",
