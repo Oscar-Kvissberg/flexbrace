@@ -12,11 +12,19 @@
     "hero_jVaWmY": {
       "type": "hero",
       "blocks": {
+        "hero_eyebrow": {
+          "type": "custom-liquid",
+          "name": "Eyebrow",
+          "settings": {
+            "custom_liquid": "<p class=\"hero-eyebrow\">Flexbrace® droppfotsskena</p>"
+          },
+          "blocks": {}
+        },
         "text_YLPk4p": {
           "type": "text",
           "name": "t:names.heading",
           "settings": {
-            "text": "<h2>Flexbrace®</h2>",
+            "text": "<h1>Lyft foten. Gå naturligt igen.</h1>",
             "width": "100%",
             "max_width": "normal",
             "alignment": "left",
@@ -42,7 +50,7 @@
           "type": "text",
           "name": "t:names.text",
           "settings": {
-            "text": "<p>Smidig, naturlig och stabil droppfotsskena för de aktiviteter du saknar</p>",
+            "text": "<p>Lätt, stabil och diskret droppfotsskena på ca 100 g som passar i dina vanliga skor.</p>",
             "width": "100%",
             "max_width": "normal",
             "alignment": "left",
@@ -68,12 +76,13 @@
           "type": "custom-liquid",
           "name": "Pris och köpknapp",
           "settings": {
-            "custom_liquid": "{% assign hero_product = all_products['afo-ortos-ankel-fotortos'] %}\n{% if hero_product != blank %}\n  <div class=\"hero-purchase\">\n    <a class=\"hero-purchase__button\" href=\"{{ hero_product.url }}\">Köp Flexbrace · {{ hero_product.price_min | money }}</a>\n    <a class=\"hero-purchase__link\" href=\"#hur-den-fungerar\">Se hur den fungerar</a>\n    <a class=\"hero-purchase__link\" href=\"/pages/contact\">Kontakt</a>\n  </div>\n{% endif %}"
+            "custom_liquid": "{% assign hero_product = all_products['afo-ortos-ankel-fotortos'] %}\n{% if hero_product != blank %}\n  <div class=\"hero-purchase\">\n    <a class=\"hero-purchase__button\" href=\"{{ hero_product.url }}\">Köp Flexbrace · <span class=\"hero-purchase__price\">{{ hero_product.price_min | money }}</span></a>\n    <a class=\"hero-purchase__secondary\" href=\"#hur-den-fungerar\">Se hur den fungerar</a>\n  </div>\n{% endif %}\n<ul class=\"hero-trust\">\n  <li>Ca 100 gram</li>\n  <li>Passar i vanliga skor</li>\n  <li>Sedan 2001, 50 års erfarenhet</li>\n</ul>"
           },
           "blocks": {}
         }
       },
       "block_order": [
+        "hero_eyebrow",
         "text_YLPk4p",
         "text_fHFGdJ",
         "hero_cta_buy"
