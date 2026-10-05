@@ -226,10 +226,10 @@ accordion-custom {
   display: grid;
   gap: 16px;
   justify-items: start;
-  justify-self: center;
+  justify-self: start;
   max-width: 46rem;
-  margin-inline-start: clamp(4rem, 14vw, 12rem);
-  padding: 48px var(--flexbrace-page-gutter);
+  margin-inline-start: var(--flexbrace-home-rail-inset);
+  padding: 48px 0;
   text-align: left;
 }
 
@@ -284,8 +284,8 @@ accordion-custom {
   .flexbrace-about-hero__content {
     gap: 10px;
     max-width: 28rem;
-    margin-inline-start: clamp(2rem, 8vw, 5rem);
-    padding: 28px var(--flexbrace-page-gutter);
+    margin-inline-start: var(--flexbrace-home-rail-inset);
+    padding: 28px 0;
   }
 
   .flexbrace-about-hero__content::before {
@@ -315,8 +315,8 @@ accordion-custom {
   .flexbrace-about-hero__content {
     gap: 8px;
     max-width: 18rem;
-    margin-inline-start: clamp(1.25rem, 6vw, 3rem);
-    padding: 20px 16px;
+    margin-inline-start: var(--flexbrace-home-rail-inset);
+    padding: 20px 0;
   }
 
   .flexbrace-about-hero__title {
@@ -338,11 +338,11 @@ accordion-custom {
 
 .flexbrace-about-page {
   box-sizing: border-box;
-  width: 100%;
-  max-width: 70rem;
+  width: var(--flexbrace-rail-width);
+  max-width: none;
   margin-inline: auto;
   padding-block: 64px 88px;
-  padding-inline: clamp(10px, 2vw, 20px);
+  padding-inline: 0;
 }
 
 .flexbrace-about-page__inner {
@@ -1455,7 +1455,7 @@ main[data-template='index'] [id$='__section_j89FNC'] .rte li::before {
 }
 
 /* Homepage below hero: shared rail with more edge breathing room */
-main[data-template='index'] .shopify-section:not([id*='__hero']) .section,
+main .shopify-section:not([id*='__hero']) :is(.section, .page-width-content),
 #header-group .section {
   --page-content-width: var(--flexbrace-home-content-width);
   --page-margin: var(--flexbrace-rail-margin);
@@ -2219,7 +2219,7 @@ main[data-template='product'] {
 }
 
 main[data-template='product'] > [id$='__main'] {
-  padding-inline: var(--flexbrace-page-gutter);
+  padding-inline: 0;
   background: #fff;
 }
 
