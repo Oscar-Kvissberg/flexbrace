@@ -3461,7 +3461,7 @@ main[data-template='index'] [id$='__about_experience'] .flexbrace-about__link:fo
 }
 
 main[data-template='index'] [id$='__about_experience'] .flexbrace-about__media {
-  border-radius: 0;
+  border-radius: var(--flexbrace-radius-card);
   aspect-ratio: 1 / 1;
 }
 
@@ -3483,6 +3483,5 @@ main[data-template='index'] [id$='__about_experience'] .flexbrace-about__img {
 
   main[data-template='index'] [id$='__about_experience'] .flexbrace-about__media {
     aspect-ratio: 4 / 3;
-    border-radius: var(--flexbrace-radius-sm);
   }
 }
