@@ -2055,7 +2055,7 @@ main[data-template='index'] [id$='__section_6MeQMy'] .custom-section-content {
   background: var(--flexbrace-navy) !important;
   padding: clamp(24px, 3.5vw, 40px);
   box-sizing: border-box;
-  width: var(--flexbrace-rail-width);
+  width: 100%;
   margin-inline: auto;
 }
 
