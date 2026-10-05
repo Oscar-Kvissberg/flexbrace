@@ -225,12 +225,12 @@ accordion-custom {
   z-index: 1;
   display: grid;
   gap: 16px;
-  justify-items: start;
-  justify-self: start;
+  justify-items: center;
+  justify-self: center;
   max-width: 46rem;
-  margin-inline-start: var(--flexbrace-home-rail-inset);
-  padding: 48px 0;
-  text-align: left;
+  margin-inline: auto;
+  padding: 48px var(--flexbrace-page-gutter);
+  text-align: center;
 }
 
 .flexbrace-about-hero__content::before {
@@ -284,8 +284,8 @@ accordion-custom {
   .flexbrace-about-hero__content {
     gap: 10px;
     max-width: 28rem;
-    margin-inline-start: var(--flexbrace-home-rail-inset);
-    padding: 28px 0;
+    margin-inline: auto;
+    padding: 28px var(--flexbrace-page-gutter);
   }
 
   .flexbrace-about-hero__content::before {
@@ -315,8 +315,8 @@ accordion-custom {
   .flexbrace-about-hero__content {
     gap: 8px;
     max-width: 18rem;
-    margin-inline-start: var(--flexbrace-home-rail-inset);
-    padding: 20px 0;
+    margin-inline: auto;
+    padding: 20px 16px;
   }
 
   .flexbrace-about-hero__title {
