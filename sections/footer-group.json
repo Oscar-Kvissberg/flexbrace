@@ -1,3 +1,12 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
 {
   "type": "footer",
   "name": "t:names.footer",
@@ -10,7 +19,7 @@
         "company_city": "116 47 Stockholm",
         "company_country": "Sverige",
         "company_phone": "+46 72-100 10 10",
-        "company_email": "anton2@egren.se",
+        "company_email": "ogge@frickoff.nu",
         "company_orgnr": "[fyll i]",
         "company_vat": "[fyll i om ni har]",
         "instagram_url": "",
@@ -20,5 +29,7 @@
       }
     }
   },
-  "order": ["flexbrace_footer"]
+  "order": [
+    "flexbrace_footer"
+  ]
 }
