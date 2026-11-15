@@ -34,7 +34,6 @@
     "inventory_status": "Inventory status",
     "localization_region_and_language": "Region and language selector",
     "menu": "Menu",
-    // This is the label for the header navigation menu when using screen readers, it will read "Primary navigation"
     "header_navigation_label": "Primary",
     "nested_product": "{{ product_title }} for {{ parent_title }}",
     "new_window": "Opens in a new window.",
@@ -68,53 +67,41 @@
     "price_filter_high": "High price"
   },
   "actions": {
-    // Quick add button on product cards, shortened version of add to cart
     "add": "Add",
     "add_to_cart": "Add to cart",
-    // Success message shown after adding item to cart
     "added": "Added",
-    // Button to apply discount code to cart
     "apply": "Apply",
     "back": "Back",
     "back_to": "Back to {{ title }}",
     "back_to_main_menu": "Back to main menu",
     "choose": "Choose",
-    // Button to reset current selection or input
     "clear": "Clear",
-    // Button to remove all applied product filters
     "clear_all": "Clear all",
     "close": "Close",
     "open": "Open",
-    // Continue shopping link on the cart page which takes the user back to a collection page
     "continue_shopping": "Continue shopping",
     "enter_password": "Enter password",
     "log_in_html": "Have an account? <a href=\"{{ link }}\">Log in</a> to check out faster.",
     "log_in": "Sign in",
     "log_out": "Log out",
     "open_image_in_full_screen": "Open image in full screen",
-    // Button to remove applied filters from search/collection results
     "remove": "Remove",
     "remove_discount": "Remove discount {{ code }}",
-    // Button to expand hidden product variant options
     "show_all_options": "Show all options",
     "see_items": {
       "one": "See {{ count }} item",
-      // Button to view filtered product results and close filter dialog
       "other": "See {{ count }} items"
     },
     "show_filters": "Filter",
     "show_less": "Show less",
     "show_more": "Show more",
     "sign_in_options": "Other sign in options",
-    // AR button to view 3D product model in physical space
     "view_in_your_space": "View in your space",
-    // Button to view complete collection/product list
     "view_all": "View all",
     "more": "More",
     "zoom": "Zoom",
     "zoom_media": "Zoom media {{ index }}",
     "close_dialog": "Close dialog",
-    // Button to clear search filter and restore default view
     "reset": "Reset",
     "enter_using_password": "Enter using password",
     "sign_up": "Sign up",
@@ -261,7 +248,6 @@
     "search_results_no_results_check_spelling": "No results found for \"{{ terms }}\". Check the spelling or use a different word or phrase.",
     "search_results_resource_articles": "Blog posts",
     "search_results_resource_collections": "Collections",
-    // Section heading for Shopify store pages in search results
     "search_results_resource_pages": "Pages",
     "search_results_resource_products": "Products",
     "search_results_resource_products_count": {
@@ -278,10 +264,8 @@
       "one": "1 item added to cart",
       "other": "{{ count }} items added to cart"
     },
-    // Button to go from search preview to full search results page
     "search_results_view_all": "View all",
     "search_results_view_all_button": "View all",
-    // Label for customer's note to seller during checkout
     "seller_note": "Special instructions",
     "shipping_policy": "Shipping calculated at checkout.",
     "shipping_policy_html": "<a href=\"{{ link }}\">Shipping</a> calculated at checkout.",
@@ -297,7 +281,6 @@
     "taxes_included_shipping_at_checkout_without_policy_without_discounts": "Taxes included. Shipping is calculated at checkout.",
     "unavailable": "Unavailable",
     "use_fewer_filters_html": "Try using fewer filters, or <a class=\"{{ class }}\" href=\"{{ link }}\">clear all filters</a>.",
-    // Link or button to expand additional information
     "view_more_details": "View more details",
     "volume_pricing_available": "Volume pricing available",
     "volume_pricing": "Volume pricing",
@@ -310,7 +293,6 @@
     "product_count": "Product count",
     "errors": "Errors",
     "wrong_password": "Wrong password",
-    // Legend text for gift card delivery options
     "recipient_form_send_to": "Send to",
     "recipient_form_email_label": "Recipient’s email",
     "recipient_form_email_label_my_email": "My email",
@@ -326,7 +308,6 @@
     "product_custom_property_character_count": "{{ used_chars }}/{{ max_chars }} characters used"
   },
   "fields": {
-    // Separates min and max values in price range filter
     "separator": "to"
   },
   "gift_cards": {
@@ -356,7 +337,7 @@
   },
   "products": {
     "product": {
-      "add_to_cart": "Add to cart",
+      "add_to_cart": "Buy Flexbrace",
       "adding_to_cart": "Adding...",
       "added_to_cart": "Added to cart",
       "add_to_cart_error": "Error adding to cart",
@@ -370,6 +351,287 @@
       "in_cart": "in cart",
       "default_title": "Default Title",
       "sticky_add_to_cart": "Quick add to cart bar"
+    }
+  },
+  "flexbrace": {
+    "announcement": {
+      "bar": "Free shipping within the EU • 90-day returns"
+    },
+    "hero": {
+      "cta_buy": "Buy Flexbrace",
+      "cta_how": "See how it works",
+      "cta_contact": "Contact",
+      "trust_1": "Approx. 100 grams",
+      "trust_2": "Fits in regular shoes",
+      "trust_3": "Since 2001"
+    },
+    "experience": {
+      "eyebrow": "Experience",
+      "heading": "Flexbrace® since 2001",
+      "body": "Developed by a licensed orthotist / CPO Certified Prosthetist Orthotist with over 50 years of experience in orthotic technology. Flexbrace® has helped users since 2001.",
+      "link": "Read more about us"
+    },
+    "benefits": {
+      "1": "Light and easy – weighs only about 100 grams",
+      "2": "Lifts the foot and supports a more natural gait",
+      "3": "Greater stability and confidence in every step",
+      "4": "Discreet design that fits in regular shoes",
+      "5": "Developed by a licensed orthotist / CPO Certified Prosthetist Orthotist with over 50 years of experience. Flexbrace® since 2001"
+    },
+    "testimonials": {
+      "eyebrow": "Customer stories",
+      "heading": "More confident steps every day",
+      "q1": {
+        "quote": "I have used Flexbrace for four years and would not want to be without it today – at work or in my free time.",
+        "name": "Per",
+        "meta": "62 – uses Flexbrace daily"
+      },
+      "q2": {
+        "quote": "Since I got my brace, I have not fallen once.",
+        "name": "Erik",
+        "meta": "85 – more confidence in every step"
+      },
+      "q3": {
+        "quote": "It feels stable without being bulky. I can move more naturally – and more relaxed.",
+        "name": "Anna",
+        "meta": "User – everyday use"
+      },
+      "q4": {
+        "quote": "I dare to take longer walks again. My balance feels better and I think less about my foot.",
+        "name": "Maria",
+        "meta": "User – more mobility"
+      }
+    },
+    "footer": {
+      "label": "Footer",
+      "nav": {
+        "home": "Home",
+        "product": "Product",
+        "about": "About us",
+        "contact": "Contact"
+      },
+      "support": {
+        "heading": "Customer service",
+        "delivery": "Shipping & returns",
+        "faq": "FAQ",
+        "contact": "Contact us",
+        "size_guide": "Size guide",
+        "withdrawal": "Cancel your purchase"
+      },
+      "social": {
+        "heading": "Social"
+      },
+      "contact": {
+        "heading": "Contact",
+        "phone": "Phone",
+        "email": "Email",
+        "org_number": "Org. no.",
+        "org_number_placeholder": "[fill in]",
+        "vat_number": "VAT no.",
+        "vat_number_placeholder": "[fill in if applicable]"
+      }
+    },
+    "about": {
+      "hero": {
+        "heading": "About Flexbrace",
+        "text": "Developed by a licensed orthotist / CPO Certified Prosthetist Orthotist with over 50 years of experience in orthotic technology. Flexbrace® has helped users since 2001."
+      },
+      "who": {
+        "heading": "Who we are",
+        "p1": "We are Flexbrace – a company focused on drop foot orthoses. Behind the product is Lars Falkenman, licensed orthotist / CPO Certified Prosthetist Orthotist with over 50 years of experience in orthotic technology (since 1975). Flexbrace® has helped users since 2001: a light, discreet and individually fitted brace for anyone who needs better foot lift and more confident walking.",
+        "p2": "Our focus is simple: more freedom of movement, less risk of tripping, and a brace you can live with every day."
+      },
+      "history": {
+        "heading": "Our history",
+        "p1": "The story begins in the summer of 1975, when Lars worked in an orthotics department in Borås. Even then he saw how often drop foot orthoses were used – and how inadequate they were. They were bulky, limited in function and far from user-friendly.",
+        "p2": "That sparked a lifelong ambition: to create an orthosis that was lighter, more discreet and, above all, more functional.",
+        "p3": "As a licensed orthotist / CPO Certified Prosthetist Orthotist, Lars continued working in orthotics departments in Borås and Gothenburg, served as head of orthotics at Linköping University Hospital, and worked internationally in Brussels (CEBELOR) and Copenhagen (Nyrop & Maag). Over the years he kept developing drop foot orthoses – but without the major breakthrough.",
+        "p4": "The breakthrough came in 2001. A patient, Gerner Hemmingsen, had suffered a serious cerebral blood clot with hemiplegia. Everyday life became difficult and undignified – including when he could not get up from the floor on his own. That made a strong impression.",
+        "p5": "After 26 years of experience, Lars decided: now or never. Almost every orthosis on the market had been tried without satisfactory results. Something entirely new was needed.",
+        "p6": "In September 2001 the first prototype was ready. It was named Flexbrace®. When Gerner received his new orthosis he walked across the kitchen floor without difficulty, turned around and said: “I should have had this five years ago.” In that moment Flexbrace® was born.",
+        "p7": "To document the effect, 50 prototypes were made for different user types. After two months users could choose: continue with Flexbrace® or return to their previous orthosis. In an early evaluation with 50 users, all chose to continue with Flexbrace®. Patent work then began, and interest grew quickly in media and among clinics.",
+        "p8": "Flexbrace® is used today at Center for Hjerneskade in Copenhagen, among others, and has been featured on the Danish TV programme Lægens Bord."
+      },
+      "vision_mission_heading": "Vision & mission",
+      "vision_label": "Vision:",
+      "vision": "That more people with drop foot can walk with greater confidence, more naturally and with greater dignity in everyday life.",
+      "mission_label": "Mission:",
+      "mission": "To offer a light, discreet and functional drop foot orthosis – developed from real patient needs – where support, comfort and individual fitting go hand in hand.",
+      "what": {
+        "heading": "What we do",
+        "p1": "We make Flexbrace® available to anyone who needs support for drop foot: an ankle-foot orthosis that lifts the forefoot, stabilises the ankle and supports a more natural gait. The product is developed in Europe, manufactured in Italy, and designed to fit in regular shoes.",
+        "p2": "We work with clear product information, the right fit and a path from need to solution – so more people get access to the difference Lars once saw was missing on the market."
+      },
+      "values": {
+        "heading": "Our values",
+        "1": "Function before prestige – the brace should make a difference in real steps, not just on paper",
+        "2": "Discretion and dignity – assistive devices should show as little as possible and feel as good as possible",
+        "3": "The individual at the centre – drop foot looks different for everyone; the solution should follow the need",
+        "4": "Experience and honesty – over 50 years of orthotic practice behind every decision",
+        "5": "Quality in the details – from design to manufacturing"
+      },
+      "team": {
+        "heading": "The team",
+        "lars_name": "Lars Falkenman",
+        "lars_bio": "Licensed orthotist / CPO Certified Prosthetist Orthotist and inventor of Flexbrace®. Former head of orthotics at Linköping University Hospital; has worked in Borås, Gothenburg, Brussels and Copenhagen. With over 50 years of experience in orthotic technology, Lars shaped the product around what he missed in care: a brace that is both effective and possible to live with. Flexbrace® has helped users since 2001.",
+        "note": "[Feel free to add Oscar, Anton, Glenn and others with short roles here when you want to show the Swedish team.]"
+      },
+      "competence": {
+        "heading": "Our expertise",
+        "1": "Deep specialist expertise in drop foot and ankle-foot orthoses (AFO)",
+        "2": "Over 50 years of orthotic experience from Sweden and abroad",
+        "3": "Product development from idea and prototype to patented solution (Flexbrace® since 2001)",
+        "4": "Individual fitting with a focus on gait function, balance and comfort",
+        "5": "European development and manufacturing in Italy"
+      }
+    },
+    "product": {
+      "tabs": {
+        "label": "Product information",
+        "overview": "Overview",
+        "specs": "Specifications",
+        "delivery": "Delivery",
+        "faq": "FAQ",
+        "about": "About Flexbrace"
+      },
+      "overview": {
+        "heading": "Product overview",
+        "intro": "Flexbrace® is a light and discreet drop foot orthosis (ankle-foot orthosis) designed for anyone who has difficulty lifting the foot while walking. When foot lift fails, the risk increases that the toes catch on the ground, that gait becomes uneven and that balance is affected. Flexbrace® provides controlled lift of the forefoot, stabilises the ankle and supports a more natural gait pattern.",
+        "body": "The product is developed in Europe by a licensed orthotist / CPO Certified Prosthetist Orthotist with over 50 years of experience in orthotic technology. Flexbrace® has helped users since 2001. That makes Flexbrace® unique: a compliant brace without unnecessary stiffness, with enough support to lift and stabilise – and a feel that makes it easier to wear for longer periods in everyday life.",
+        "does": {
+          "heading": "What Flexbrace® does",
+          "intro": "Drop foot often means reduced ability to lift the forefoot (dorsiflexion). That can make people lift the leg higher than normal, stumble more easily and compensate with the whole body. Flexbrace® helps to:",
+          "1": "lift the foot in the swing phase",
+          "2": "stabilise the ankle",
+          "3": "improve gait toward a more natural movement",
+          "4": "increase balance and confidence in every step",
+          "5": "reduce the risk of toes catching on the ground"
+        },
+        "design": {
+          "heading": "Design and comfort",
+          "intro": "Flexbrace® is built to show as little as possible and feel as light as possible:",
+          "1": "Low weight – about 100 grams",
+          "2": "Discreet fit that often works in regular shoes",
+          "3": "High comfort for daily use",
+          "4": "Compliant construction that supports without unnecessarily “locking” the foot",
+          "closing": "The goal is a brace you actually want to wear – not just one that works in theory."
+        },
+        "manufacturing": {
+          "heading": "Manufacturing",
+          "body": "The design of Flexbrace® has been developed by experts in orthopaedics and assistive devices. The brace is manufactured in Italy, where production is carried out with high precision for consistent quality in every unit. The combination of expert-led design and controlled European manufacturing results in an orthosis that is both functional and durable to live with."
+        },
+        "for_whom": {
+          "heading": "Who is Flexbrace® for?",
+          "body": "Flexbrace® may be relevant for drop foot and reduced gait function, for example in connection with nerve involvement, neurological disease or other conditions that affect foot lift and ankle stability. Needs differ from person to person; individual assessment and the right fitting are therefore important parts of a good solution."
+        }
+      },
+      "specs": {
+        "eyebrow": "Product in focus",
+        "heading": "What you need to know",
+        "lead": "A light orthosis focused on comfort and everyday use.",
+        "spec_heading": "Specification",
+        "weight": "Weight",
+        "weight_value": "Approx. 100 g",
+        "type": "Product type",
+        "type_value": "Ankle-foot orthosis (AFO)",
+        "comfort": "Comfort",
+        "comfort_value": "Compliant, low profile",
+        "shoes": "Shoes",
+        "shoes_value": "Fits in regular shoes",
+        "variant": "Variant",
+        "variant_value": "Right or left foot",
+        "size": "Size",
+        "size_value": "One size fits all (up to EU 45)",
+        "guide_heading": "Size guide",
+        "fit": "Fit",
+        "fit_value": "One size, up to EU 45",
+        "eu": "EU",
+        "eu_value": "Up to 45",
+        "us_men": "US men",
+        "us_men_value": "5.5–11.5",
+        "us_women": "US women",
+        "us_women_value": "7.5–13",
+        "uk": "UK",
+        "uk_value": "5–10.5",
+        "cm": "CM",
+        "cm_value": "approx. 24–29"
+      },
+      "delivery": {
+        "eyebrow": "Shipping & returns",
+        "heading": "How shipping and returns work",
+        "lead": "Clear terms before you order – free shipping within the EU and 90-day returns.",
+        "shipping": "Shipping",
+        "shipping_value": "Free shipping within the EU",
+        "time": "Delivery time",
+        "time_value": "Current delivery time is shown at checkout",
+        "returns": "Returns",
+        "returns_value": "90 days – return according to our return policy if it does not fit",
+        "size": "Size",
+        "size_value": "One size fits all (up to EU 45)"
+      },
+      "faq": {
+        "eyebrow": "FAQ",
+        "heading": "Answers before you order",
+        "lead": "Symptoms, orthosis type, all-day use, sizing, returns, delivery and funding in Sweden.",
+        "q1": {
+          "question": "Which symptoms is Flexbrace for?",
+          "answer": "Flexbrace is intended for people who have difficulty lifting the foot, stumble, roll the ankle or feel unsteady when walking. Please consult a healthcare provider if you are unsure."
+        },
+        "q2": {
+          "question": "What type of orthosis is Flexbrace?",
+          "answer": "An ankle-foot orthosis (AFO) that provides foot lift and lateral support. Light and low-profile so it can sit inside regular shoes."
+        },
+        "q3": {
+          "question": "Can I wear it all day?",
+          "answer": "Many people use Flexbrace for most of the day. Start gradually and adjust the straps so the support feels stable without pinching."
+        },
+        "q4": {
+          "question": "How do size and fitting work?",
+          "answer": "Fit is based on measurements or trial fitting and individual adjustment. Choose the correct foot side (right/left) when ordering."
+        },
+        "q5": {
+          "question": "What is the returns policy?",
+          "answer": "90-day returns. Return according to our return policy if it does not fit."
+        },
+        "q6": {
+          "question": "How long is the delivery time?",
+          "answer": "Depends on fitting and stock. Current time is shown at checkout. Free shipping within the EU."
+        },
+        "q7": {
+          "question": "Can I get funding or assistive devices in Sweden?",
+          "answer": "Eligibility for funding or prescription varies by region and your medical assessment. Ask your healthcare provider or assistive device centre. We answer product questions – but do not assess your right to funding."
+        }
+      },
+      "about": {
+        "label": "About Flexbrace",
+        "eyebrow": "Experience",
+        "heading": "Flexbrace® since 2001",
+        "body": "Developed by a licensed orthotist / CPO Certified Prosthetist Orthotist with over 50 years of experience in orthotic technology. Flexbrace® has helped users since 2001.",
+        "link": "Read more about us"
+      }
+    },
+    "redirect": {
+      "continue_to": "Continue to {{ title }}"
+    },
+    "home": {
+      "hero_eyebrow": "Flexbrace® drop foot brace",
+      "hero_heading": "Lift the foot. Walk naturally again.",
+      "hero_subcopy": "A light, stable and discreet drop foot brace of about 100 g that fits in your regular shoes.",
+      "focus_eyebrow": "Product in focus",
+      "focus_heading": "Light, discreet and built for regular shoes",
+      "focus_body": "Approx. 100 g. Compliant construction focused on comfort. Fits most everyday shoes – without a bulky brace on the outside.",
+      "video_heading": "See how Flexbrace works",
+      "video_body": "A short film about the construction and how the orthosis is used in everyday life – before and after the feeling in each step.",
+      "video_cta": "Buy Flexbrace",
+      "faq_eyebrow": "Questions before buying",
+      "faq_heading": "FAQ"
+    },
+    "product_usps": {
+      "1": "Free shipping within the EU",
+      "2": "90-day returns",
+      "3": "One size fits all (up to EU 45)",
+      "4": "Fits in regular shoes",
+      "5": "Developed by experts"
     }
   }
 }
