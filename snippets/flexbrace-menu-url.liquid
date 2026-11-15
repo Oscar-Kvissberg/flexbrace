@@ -11,7 +11,10 @@
 {%- liquid
   assign resolved_url = link.url
   assign title_down = link.title | downcase | strip
-  assign product_fallback = all_products['afo-ortos-ankel-fotortos']
+  assign product_fallback = all_products['flexbrace-afo']
+  if product_fallback == blank
+    assign product_fallback = all_products['afo-ortos-ankel-fotortos']
+  endif
 
   if link.type == 'collection_link'
     if link.object.products_count == 1
@@ -19,10 +22,20 @@
     elsif product_fallback != blank
       assign resolved_url = product_fallback.url
     endif
-  elsif title_down == 'produkt' or title_down == 'produkten' or title_down == 'product'
+  elsif title_down == 'produkt' or title_down == 'produkten' or title_down == 'product' or title_down == 'produktet'
     if product_fallback != blank
       assign resolved_url = product_fallback.url
     endif
+  elsif title_down == 'kontakt' or title_down == 'contact' or title_down == 'kontakta oss' or title_down == 'contact us'
+    capture resolved_url
+      render 'flexbrace-page-urls', which: 'contact'
+    endcapture
+    assign resolved_url = resolved_url | strip
+  elsif title_down == 'om oss' or title_down == 'about' or title_down == 'about us' or title_down == 'über uns'
+    capture resolved_url
+      render 'flexbrace-page-urls', which: 'about'
+    endcapture
+    assign resolved_url = resolved_url | strip
   endif
 -%}
 {{- resolved_url -}}

@@ -3,7 +3,10 @@
   Used by the hero custom-liquid block in templates/index.json.
 {% endcomment %}
 
-{%- assign hero_product = all_products['afo-ortos-ankel-fotortos'] -%}
+{%- assign hero_product = all_products['flexbrace-afo'] -%}
+{%- if hero_product == blank -%}
+  {%- assign hero_product = all_products['afo-ortos-ankel-fotortos'] -%}
+{%- endif -%}
 {%- if hero_product != blank -%}
   <div class="hero-purchase">
     <a class="hero-purchase__button" href="{{ hero_product.url }}">
