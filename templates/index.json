@@ -182,7 +182,7 @@
         "heading": "Flexbrace® sedan 2001",
         "body": "Utvecklad av en auktoriserad bandagist med över 50 års erfarenhet inom ortopedteknik. Flexbrace® har hjälpt användare sedan 2001.",
         "link_label": "Läs mer om oss",
-        "link_url": "shopify://pages/om-oss",
+        "link_url": "shopify://pages/ueber-uns",
         "image": "shopify://shop_images/lars_enhanced.png",
         "background_color": "#f2f8fa",
         "section_width": "page-width",
@@ -192,6 +192,7 @@
     },
     "product_focus_intro": {
       "type": "custom-liquid",
+      "disabled": true,
       "name": "Produkt i fokus intro",
       "settings": {
         "custom_liquid": "<div class=\"flexbrace-focus-intro\"><p class=\"flexbrace-focus-intro__eyebrow\">Produkt i fokus</p><h2>Lätt, diskret och byggd för vanliga skor</h2><p>Ca 100 g. Följsam konstruktion med fokus på komfort. Passar i de flesta vardagsskor – utan klumpig skena utanpå.</p></div>",
@@ -199,8 +200,7 @@
         "section_width": "page-width",
         "padding-block-start": 72,
         "padding-block-end": 28
-      },
-      "disabled": true
+      }
     },
     "featured_product_information_4JzmUk": {
       "type": "featured-product-information",
