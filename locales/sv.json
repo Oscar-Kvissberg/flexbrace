@@ -22,7 +22,7 @@
       "name": "Namn",
       "email": "E-post",
       "phone": "Telefon",
-      "comment": "Kommentar",
+      "comment": "Nachricht",
       "post_success": "Tack för att du kontaktar oss. Vi återkommer till dig så snart som möjligt.",
       "error_heading": "Justera följande:"
     },
