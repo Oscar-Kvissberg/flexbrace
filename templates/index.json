@@ -432,7 +432,7 @@
       },
       "name": "Utvald produkt page",
       "settings": {
-        "product": "afo-ortos-ankel-fotortos",
+        "product": "flexbrace-afo",
         "content_width": "content-center-aligned",
         "desktop_media_position": "right",
         "equal_columns": true,
