@@ -94,16 +94,6 @@
               </a>
             </li>
           {% endif %}
-          {%- assign company_orgnr = section.settings.company_orgnr -%}
-          {%- if company_orgnr == blank or company_orgnr == '[fyll i]' -%}
-            {%- assign company_orgnr = 'flexbrace.footer.contact.org_number_placeholder' | t -%}
-          {%- endif -%}
-          <li>{{ 'flexbrace.footer.contact.org_number' | t }}: {{ company_orgnr }}</li>
-          {%- assign company_vat = section.settings.company_vat -%}
-          {%- if company_vat == blank or company_vat == '[fyll i om ni har]' -%}
-            {%- assign company_vat = 'flexbrace.footer.contact.vat_number_placeholder' | t -%}
-          {%- endif -%}
-          <li>{{ 'flexbrace.footer.contact.vat_number' | t }}: {{ company_vat }}</li>
         </ul>
       </div>
     </div>
@@ -145,6 +135,30 @@
       "id": "company_name",
       "label": "Företagsnamn",
       "default": "Flexbrace"
+    },
+    {
+      "type": "text",
+      "id": "company_address",
+      "label": "Adress",
+      "default": "Lanckagatan 28"
+    },
+    {
+      "type": "text",
+      "id": "company_city",
+      "label": "Postort",
+      "default": "116 47 Stockholm"
+    },
+    {
+      "type": "text",
+      "id": "company_country",
+      "label": "Land",
+      "default": "Sverige"
+    },
+    {
+      "type": "text",
+      "id": "company_phone",
+      "label": "Telefon",
+      "default": "+46 72-100 10 10"
     },
     {
       "type": "text",
