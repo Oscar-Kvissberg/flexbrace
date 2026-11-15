@@ -54,7 +54,7 @@
       "name": "t:names.hero",
       "settings": {
         "media_type_1": "image",
-        "image_1": "shopify://shop_images/droppfot.png",
+        "image_1": "shopify://shop_images/fdsafdsaadf.png",
         "media_type_2": "image",
         "stack_media_on_mobile": false,
         "custom_mobile_media": false,
@@ -130,7 +130,7 @@
         "problem_eyebrow": "",
         "problem_heading": "",
         "problem_lead": "",
-        "problem_image": "shopify://shop_images/enhanced_product.png",
+        "problem_image": "shopify://shop_images/sadfdsfsdfa.png",
         "pains_heading": "Flexbrace",
         "background_color": "#ffffff",
         "section_width": "page-width",
@@ -156,6 +156,7 @@
     },
     "product_focus_intro": {
       "type": "custom-liquid",
+      "disabled": true,
       "name": "Produkt i fokus intro",
       "settings": {
         "custom_liquid": "{% render 'flexbrace-focus-intro' %}",
@@ -163,8 +164,7 @@
         "section_width": "page-width",
         "padding-block-start": 72,
         "padding-block-end": 28
-      },
-      "disabled": true
+      }
     },
     "featured_product_information_4JzmUk": {
       "type": "featured-product-information",
@@ -502,30 +502,6 @@
           },
           "blocks": {}
         },
-        "video_RACiwX": {
-          "type": "video",
-          "name": "t:names.video",
-          "settings": {
-            "source": "url",
-            "video_url": "https://www.youtube.com/watch?v=uVbtF2mJxLA&t=2s",
-            "video_autoplay": false,
-            "video_loop": true,
-            "alt": "",
-            "custom_width": 58,
-            "custom_width_mobile": 100,
-            "aspect_ratio": "16/9",
-            "border": "none",
-            "border_width": 1,
-            "border_opacity": 100,
-            "border_color": "",
-            "border_radius": 8,
-            "padding-block-start": 0,
-            "padding-block-end": 0,
-            "padding-inline-start": 0,
-            "padding-inline-end": 0
-          },
-          "blocks": {}
-        },
         "group_jVDLMV": {
           "type": "group",
           "name": "t:names.caption",
@@ -578,6 +554,30 @@
           "block_order": [
             "text_3CR79M"
           ]
+        },
+        "video_RACiwX": {
+          "type": "video",
+          "name": "t:names.video",
+          "settings": {
+            "source": "url",
+            "video_url": "https://www.youtube.com/watch?v=uVbtF2mJxLA&t=2s",
+            "video_autoplay": false,
+            "video_loop": true,
+            "alt": "",
+            "custom_width": 58,
+            "custom_width_mobile": 100,
+            "aspect_ratio": "16/9",
+            "border": "none",
+            "border_width": 1,
+            "border_opacity": 100,
+            "border_color": "",
+            "border_radius": 8,
+            "padding-block-start": 0,
+            "padding-block-end": 0,
+            "padding-inline-start": 0,
+            "padding-inline-end": 0
+          },
+          "blocks": {}
         }
       },
       "block_order": [
