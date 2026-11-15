@@ -9,7 +9,10 @@
 
   assign fb = product
   if fb == blank
-    assign fb = all_products['afo-ortos-ankel-fotortos']
+    assign fb = all_products['flexbrace-afo']
+    if fb == blank
+      assign fb = all_products['afo-ortos-ankel-fotortos']
+    endif
   endif
 %}
 
@@ -320,7 +323,8 @@
             <p class="flexbrace-about__eyebrow">{{ 'flexbrace.product.about.eyebrow' | t }}</p>
             <h2>{{ 'flexbrace.product.about.heading' | t }}</h2>
             <p>{{ 'flexbrace.product.about.body' | t }}</p>
-            <a class="flexbrace-about__link" href="/pages/om-oss">{{ 'flexbrace.product.about.link' | t }}</a>
+            {%- capture about_url -%}{% render 'flexbrace-page-urls', which: 'about' %}{%- endcapture -%}
+            <a class="flexbrace-about__link" href="{{ about_url | strip }}">{{ 'flexbrace.product.about.link' | t }}</a>
           </div>
         </div>
       </div>

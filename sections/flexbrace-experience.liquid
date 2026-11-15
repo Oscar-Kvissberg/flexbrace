@@ -7,7 +7,10 @@
   assign heading = 'flexbrace.experience.heading' | t
   assign body = 'flexbrace.experience.body' | t
   assign link_label = 'flexbrace.experience.link' | t
-  assign link_url = section.settings.link_url | default: '/pages/om-oss'
+  capture link_url
+    render 'flexbrace-page-urls', which: 'about'
+  endcapture
+  assign link_url = link_url | strip
 %}
 
 <div

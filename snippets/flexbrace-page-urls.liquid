@@ -1,0 +1,29 @@
+{% comment %}
+  Outputs About or Contact page URL.
+  Prefers English handles (about, contact), falls back to Swedish (om-oss, kontakt).
+
+  @param {string} which - 'about' or 'contact'
+{% endcomment %}
+{%- liquid
+  assign which = which | default: 'about' | downcase
+
+  if which == 'contact'
+    if pages.contact != blank
+      echo pages.contact.url
+    elsif pages.kontakt != blank
+      echo pages.kontakt.url
+    elsif pages.kontact != blank
+      echo pages.kontact.url
+    else
+      echo '/pages/contact'
+    endif
+  else
+    if pages.about != blank
+      echo pages.about.url
+    elsif pages['om-oss'] != blank
+      echo pages['om-oss'].url
+    else
+      echo '/pages/about'
+    endif
+  endif
+-%}

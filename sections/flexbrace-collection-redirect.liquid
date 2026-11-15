@@ -10,7 +10,10 @@
   endif
 
   if redirect_product == blank
-    assign redirect_product = all_products['afo-ortos-ankel-fotortos']
+    assign redirect_product = all_products['flexbrace-afo']
+    if redirect_product == blank
+      assign redirect_product = all_products['afo-ortos-ankel-fotortos']
+    endif
   endif
 -%}
 
