@@ -305,7 +305,7 @@
   },
   "products": {
     "product": {
-      "add_to_cart": "In den Warenkorb legen",
+      "add_to_cart": "Flexbrace kaufen",
       "added_to_cart": "Zum Warenkorb hinzugefügt",
       "adding_to_cart": "Wird hinzugefügt...",
       "add_to_cart_error": "Fehler beim Hinzufügen zum Warenkorb",
@@ -342,6 +342,287 @@
       "post": "Kommentar posten",
       "success_moderated": "Kommentar gepostet, Moderation ausstehend",
       "success": "Kommentar gepostet"
+    }
+  },
+  "flexbrace": {
+    "announcement": {
+      "bar": "Kostenloser Versand innerhalb der EU • 90 Tage Rückgaberecht"
+    },
+    "hero": {
+      "cta_buy": "Flexbrace kaufen",
+      "cta_how": "So funktioniert es",
+      "cta_contact": "Kontakt",
+      "trust_1": "Ca. 100 Gramm",
+      "trust_2": "Passt in handelsübliche Schuhe",
+      "trust_3": "Seit 2001, 50 Jahre Erfahrung"
+    },
+    "experience": {
+      "eyebrow": "Erfahrung",
+      "heading": "Flexbrace® seit 2001",
+      "body": "Entwickelt von einem autorisierten Bandagisten mit über 50 Jahren Erfahrung in der Orthopädietechnik. Flexbrace® unterstützt Anwender seit 2001.",
+      "link": "Mehr über uns erfahren"
+    },
+    "benefits": {
+      "1": "Leicht und flexibel – wiegt nur etwa 100 Gramm",
+      "2": "Hebt den Fuß an und unterstützt ein natürlicheres Gangbild",
+      "3": "Mehr Stabilität und Sicherheit bei jedem Schritt",
+      "4": "Dezentes Design, das in handelsübliche Schuhe passt",
+      "5": "Entwickelt von einem autorisierten Bandagisten mit über 50 Jahren Erfahrung. Flexbrace® seit 2001"
+    },
+    "testimonials": {
+      "eyebrow": "Kundenstimmen",
+      "heading": "Sicherer gehen im Alltag",
+      "q1": {
+        "quote": "Ich trage Flexbrace seit vier Jahren und möchte heute nicht mehr darauf verzichten – weder bei der Arbeit noch in der Freizeit.",
+        "name": "Per",
+        "meta": "62 Jahre – trägt Flexbrace täglich"
+      },
+      "q2": {
+        "quote": "Seit ich meine Orthese habe, bin ich kein einziges Mal mehr gestürzt.",
+        "name": "Erik",
+        "meta": "85 Jahre – mehr Sicherheit bei jedem Schritt"
+      },
+      "q3": {
+        "quote": "Sie fühlt sich stabil an, ohne klobig zu sein. Ich kann mich natürlicher – und entspannter – bewegen.",
+        "name": "Anna",
+        "meta": "Anwenderin – im Alltag"
+      },
+      "q4": {
+        "quote": "Ich traue mir wieder längere Spaziergänge zu. Das Gleichgewicht fühlt sich besser an, und ich denke weniger an meinen Fuß.",
+        "name": "Maria",
+        "meta": "Anwenderin – mehr Beweglichkeit"
+      }
+    },
+    "footer": {
+      "label": "Fußzeile",
+      "nav": {
+        "home": "Startseite",
+        "product": "Produkt",
+        "about": "Über uns",
+        "contact": "Kontakt"
+      },
+      "support": {
+        "heading": "Kundenservice",
+        "delivery": "Lieferung & Rückgabe",
+        "faq": "Häufige Fragen",
+        "contact": "Kontakt aufnehmen",
+        "size_guide": "Größentabelle",
+        "withdrawal": "Kauf widerrufen"
+      },
+      "social": {
+        "heading": "Social Media"
+      },
+      "contact": {
+        "heading": "Kontakt",
+        "phone": "Telefon",
+        "email": "E-Mail",
+        "org_number": "Org.-Nr.",
+        "org_number_placeholder": "[bitte ergänzen]",
+        "vat_number": "USt-IdNr.",
+        "vat_number_placeholder": "[falls vorhanden, bitte ergänzen]"
+      }
+    },
+    "about": {
+      "hero": {
+        "heading": "Über Flexbrace",
+        "text": "Entwickelt von einem autorisierten Bandagisten mit über 50 Jahren Erfahrung in der Orthopädietechnik. Flexbrace® unterstützt Anwender seit 2001."
+      },
+      "who": {
+        "heading": "Wer wir sind",
+        "p1": "Wir sind Flexbrace – ein Anbieter von Fußheberorthesen. Hinter dem Produkt steht Lars Falkenman, autorisierter Bandagist mit über 50 Jahren Erfahrung in der Orthopädietechnik (seit 1975). Flexbrace® unterstützt Anwender seit 2001: eine leichte, dezente und individuell angepasste Orthese für alle, die einen besseren Fußhub und ein sichereres Gehen benötigen.",
+        "p2": "Unser Fokus ist einfach: mehr Bewegungsfreiheit, ein geringeres Stolperrisiko und eine Orthese, die sich im Alltag tragen lässt."
+      },
+      "history": {
+        "heading": "Unsere Geschichte",
+        "p1": "Die Geschichte beginnt im Sommer 1975, als Lars in einer orthopädietechnischen Abteilung in Borås arbeitete. Schon damals sah er, wie häufig Fußheberorthesen eingesetzt wurden – und wie unzureichend sie waren. Sie waren klobig, in ihrer Funktion eingeschränkt und alles andere als anwenderfreundlich.",
+        "p2": "Das war der Beginn eines lebenslangen Anliegens: eine Orthese zu schaffen, die geschmeidiger, dezenter und vor allem funktionaler ist.",
+        "p3": "Als autorisierter Bandagist arbeitete Lars in orthopädietechnischen Abteilungen in Borås und Göteborg, war Leiter der Orthopädietechnik am Universitätskrankenhaus Linköping und arbeitete international in Brüssel (CEBELOR) und in Kopenhagen (Nyrop & Maag). Über die Jahre entwickelte er Fußheberorthesen kontinuierlich weiter – doch der große Durchbruch blieb aus.",
+        "p4": "Der Durchbruch kam 2001. Ein Patient, Gerner Hemmingsen, hatte eine schwere Hirnblutung mit halbseitiger Lähmung erlitten. Der Alltag wurde schwierig und würdelos – unter anderem, weil er nicht allein vom Boden aufstehen konnte. Das hinterließ einen tiefen Eindruck.",
+        "p5": "Nach 26 Jahren Erfahrung entschied Lars: jetzt oder nie. Nahezu alle auf dem Markt erhältlichen Orthesen waren ohne zufriedenstellendes Ergebnis erprobt worden. Es musste etwas völlig Neues entstehen.",
+        "p6": "Im September 2001 war der erste Prototyp fertig. Er erhielt den Namen Flexbrace®. Als Gerner seine neue Orthese bekam, ging er mühelos über den Küchenboden, drehte sich um und sagte: „Die hätte ich schon vor fünf Jahren gebraucht.“ In diesem Moment wurde Flexbrace® geboren.",
+        "p7": "Um die Wirkung zu dokumentieren, wurden 50 Prototypen für verschiedene Anwendertypen gefertigt. Nach zwei Monaten konnten die Anwender wählen: weiter mit Flexbrace® oder zurück zur bisherigen Orthese. In einer frühen Evaluation mit 50 Anwendern entschieden sich alle für Flexbrace®. Anschließend wurde die Patentierung eingeleitet, und das Interesse in den Medien und bei Kliniken wuchs rasch.",
+        "p8": "Flexbrace® wird heute unter anderem am Center for Hjerneskade in Kopenhagen eingesetzt und wurde in der dänischen Fernsehsendung Lægens Bord vorgestellt."
+      },
+      "vision_mission_heading": "Vision & Mission",
+      "vision_label": "Vision:",
+      "vision": "Dass mehr Menschen mit Fallfuß im Alltag sicherer, natürlicher und mit mehr Würde gehen können.",
+      "mission_label": "Mission:",
+      "mission": "Eine leichte, dezente und funktionale Fußheberorthese anzubieten – entwickelt aus realen Patientenbedürfnissen –, bei der Halt, Komfort und individuelle Anpassung Hand in Hand gehen.",
+      "what": {
+        "heading": "Was wir tun",
+        "p1": "Wir machen Flexbrace® für alle zugänglich, die bei Fallfuß Unterstützung benötigen: eine Knöchel-Fuß-Orthese, die den Vorfuß anhebt, das Sprunggelenk stabilisiert und ein natürlicheres Gangbild unterstützt. Das Produkt wurde in Europa entwickelt, wird in Portugal gefertigt und ist so gestaltet, dass es in handelsübliche Schuhe passt.",
+        "p2": "Wir setzen auf klare Produktinformationen, die passende Anpassung und einen verständlichen Weg vom Bedarf zur Lösung – damit mehr Menschen Zugang zu dem Unterschied erhalten, den Lars einst auf dem Markt vermisste."
+      },
+      "values": {
+        "heading": "Unsere Werte",
+        "1": "Funktion vor Prestige – die Orthese soll bei jedem realen Schritt einen Unterschied machen, nicht nur auf dem Papier",
+        "2": "Diskretion und Würde – Hilfsmittel sollen so wenig wie möglich auffallen und sich so gut wie möglich anfühlen",
+        "3": "Der Mensch im Mittelpunkt – Fallfuß sieht bei jedem anders aus; die Lösung soll dem Bedarf folgen",
+        "4": "Erfahrung und Ehrlichkeit – über 50 Jahre orthopädietechnische Praxis stehen hinter jeder Entscheidung",
+        "5": "Qualität im Detail – vom Design bis zur Fertigung"
+      },
+      "team": {
+        "heading": "Das Team",
+        "lars_name": "Lars Falkenman",
+        "lars_bio": "Autorisierter Bandagist, staatlich anerkannter Orthopädieingenieur und Erfinder von Flexbrace®. Zuvor Leiter der Orthopädietechnik am Universitätskrankenhaus Linköping; tätig in Borås, Göteborg, Brüssel und Kopenhagen. Mit über 50 Jahren Erfahrung in der Orthopädietechnik hat Lars das Produkt nach dem gestaltet, was er in der Versorgung vermisste: eine Orthese, die sowohl wirksam als auch alltagstauglich ist. Flexbrace® unterstützt Anwender seit 2001.",
+        "note": "[Fügen Sie hier gern Oscar, Anton, Glenn u. a. mit kurzen Rollenbeschreibungen hinzu, wenn Sie als schwedisches Team sichtbar sein möchten.]"
+      },
+      "competence": {
+        "heading": "Unsere Kompetenz",
+        "1": "Fundierte Spezialkompetenz bei Fallfuß und Knöchel-Fuß-Orthesen (AFO)",
+        "2": "Über 50 Jahre orthopädietechnische Erfahrung aus Schweden und dem Ausland",
+        "3": "Produktentwicklung von der Idee und dem Prototyp bis zur patentierten Lösung (Flexbrace® seit 2001)",
+        "4": "Individuelle Anpassung mit Fokus auf Gehfunktion, Gleichgewicht und Komfort",
+        "5": "Entwicklung in Europa und Fertigung in Portugal"
+      }
+    },
+    "product": {
+      "tabs": {
+        "label": "Produktinformationen",
+        "overview": "Übersicht",
+        "specs": "Spezifikation",
+        "delivery": "Lieferung",
+        "faq": "FAQ",
+        "about": "Über Flexbrace"
+      },
+      "overview": {
+        "heading": "Produktübersicht",
+        "intro": "Flexbrace® ist eine leichte und dezente Fußheberorthese (Knöchel-Fuß-Orthese), die für Menschen entwickelt wurde, denen es schwerfällt, beim Gehen den Fuß anzuheben. Wenn der Fußhub nachlässt, steigt das Risiko, mit den Zehen am Untergrund hängen zu bleiben, das Gangbild wird unregelmäßig und das Gleichgewicht beeinträchtigt. Flexbrace® hebt den Vorfuß kontrolliert an, stabilisiert das Sprunggelenk und unterstützt ein natürlicheres Gangbild.",
+        "body": "Das Produkt wurde in Europa von einem autorisierten Bandagisten mit über 50 Jahren Erfahrung in der Orthopädietechnik entwickelt. Flexbrace® unterstützt Anwender seit 2001. Das macht Flexbrace® einzigartig: eine flexible Orthese ohne unnötige Steifigkeit, mit ausreichend Halt zum Anheben und Stabilisieren – und einem Tragegefühl, das den Einsatz im Alltag auch über längere Zeit erleichtert.",
+        "does": {
+          "heading": "Was Flexbrace® bewirkt",
+          "intro": "Ein Fallfuß bedeutet häufig eine eingeschränkte Fähigkeit, den Vorfuß anzuheben (Dorsalextension). Dadurch hebt man das Bein höher als normal, stolpert leichter und kompensiert mit dem ganzen Körper. Flexbrace® trägt dazu bei:",
+          "1": "den Fuß in der Schwungphase anzuheben",
+          "2": "das Sprunggelenk zu stabilisieren",
+          "3": "das Gangbild hin zu einer natürlicheren Bewegung zu verbessern",
+          "4": "Gleichgewicht und Sicherheit bei jedem Schritt zu erhöhen",
+          "5": "das Risiko zu verringern, mit den Zehen am Untergrund hängen zu bleiben"
+        },
+        "design": {
+          "heading": "Design und Komfort",
+          "intro": "Flexbrace® ist so konstruiert, dass sie so wenig wie möglich auffällt und sich so leicht wie möglich anfühlt:",
+          "1": "Geringes Gewicht – etwa 100 Gramm",
+          "2": "Dezente Passform, die sich häufig in handelsüblichen Schuhen tragen lässt",
+          "3": "Hoher Komfort für den täglichen Gebrauch",
+          "4": "Flexible Konstruktion, die stützt, ohne den Fuß unnötig zu „blockieren“",
+          "closing": "Das Ziel ist eine Orthese, die Sie wirklich tragen möchten – nicht nur eine, die in der Theorie funktioniert."
+        },
+        "manufacturing": {
+          "heading": "Fertigung",
+          "body": "Das Design und die Gestaltung von Flexbrace® wurden von Experten für Orthopädie und Hilfsmittel entwickelt. Die Orthese wird in Portugal gefertigt, wo die Produktion mit hoher Präzision erfolgt, um eine gleichbleibende Qualität bei jedem Exemplar sicherzustellen. Die Kombination aus fachkundig entwickeltem Design und kontrollierter europäischer Fertigung ergibt eine Orthese, die funktional und im Alltag langlebig ist."
+        },
+        "for_whom": {
+          "heading": "Für wen ist Flexbrace® geeignet?",
+          "body": "Flexbrace® kann bei Fallfuß und eingeschränkter Gehfunktion infrage kommen, beispielsweise bei Nervenschädigungen, neurologischen Erkrankungen oder anderen Zuständen, die den Fußhub und die Stabilität des Sprunggelenks beeinträchtigen. Der Bedarf ist von Person zu Person unterschiedlich; daher sind eine individuelle Beurteilung und die richtige Anpassung wichtige Bestandteile einer guten Lösung."
+        }
+      },
+      "specs": {
+        "eyebrow": "Produkt im Fokus",
+        "heading": "Das sollten Sie wissen",
+        "lead": "Leichte Orthese mit Fokus auf Komfort und Alltagstauglichkeit.",
+        "spec_heading": "Spezifikation",
+        "weight": "Gewicht",
+        "weight_value": "Ca. 100 g",
+        "type": "Produkttyp",
+        "type_value": "Knöchel-Fuß-Orthese (AFO)",
+        "comfort": "Komfort",
+        "comfort_value": "Flexibel, flaches Profil",
+        "shoes": "Schuhe",
+        "shoes_value": "Passt in handelsübliche Schuhe",
+        "variant": "Variante",
+        "variant_value": "Rechter oder linker Fuß",
+        "size": "Größe",
+        "size_value": "Einheitsgröße (38–45)",
+        "guide_heading": "Größentabelle",
+        "fit": "Passform",
+        "fit_value": "Eine Größe für den gesamten Bereich",
+        "eu": "EU",
+        "eu_value": "38–45",
+        "us_men": "US Herren",
+        "us_men_value": "5,5–11,5",
+        "us_women": "US Damen",
+        "us_women_value": "7,5–13",
+        "uk": "UK",
+        "uk_value": "5–10,5",
+        "cm": "CM",
+        "cm_value": "ca. 24–29"
+      },
+      "delivery": {
+        "eyebrow": "Lieferung & Rückgabe",
+        "heading": "So funktionieren Versand und Rückgabe",
+        "lead": "Klare Bedingungen vor Ihrer Bestellung – kostenloser Versand innerhalb der EU und 90 Tage Rückgaberecht.",
+        "shipping": "Versand",
+        "shipping_value": "Kostenloser Versand innerhalb der EU",
+        "time": "Lieferzeit",
+        "time_value": "Die aktuelle Lieferzeit wird an der Kasse angezeigt",
+        "returns": "Rückgaberecht",
+        "returns_value": "90 Tage – Rückgabe gemäß unseren Rückgabebedingungen, falls sie nicht passt",
+        "size": "Größe",
+        "size_value": "Einheitsgröße (38–45)"
+      },
+      "faq": {
+        "eyebrow": "Häufige Fragen",
+        "heading": "Antworten vor Ihrer Bestellung",
+        "lead": "Symptome, Orthesentyp, Ganztagesnutzung, Maße, Rückgabe, Lieferung und Zuschüsse in Schweden.",
+        "q1": {
+          "question": "Für welche Symptome ist Flexbrace geeignet?",
+          "answer": "Flexbrace ist für Menschen gedacht, denen es schwerfällt, den Fuß anzuheben, die stolpern, im Sprunggelenk umknicken oder sich beim Gehen unsicher fühlen. Lassen Sie sich bei Unsicherheit gern von Ihrem Arzt oder Therapeuten beraten."
+        },
+        "q2": {
+          "question": "Um welche Art von Orthese handelt es sich bei Flexbrace?",
+          "answer": "Um eine Knöchel-Fuß-Orthese (AFO), die den Fuß anhebt und seitlichen Halt gibt. Sie ist leicht und flach gebaut, sodass sie in handelsüblichen Schuhen getragen werden kann."
+        },
+        "q3": {
+          "question": "Kann ich sie den ganzen Tag tragen?",
+          "answer": "Viele Anwender tragen Flexbrace den größten Teil des Tages. Beginnen Sie schrittweise und stellen Sie die Bänder so ein, dass der Halt stabil ist, ohne zu drücken."
+        },
+        "q4": {
+          "question": "Wie funktionieren Größe und Maße?",
+          "answer": "Die Passform basiert auf Maßen oder einer Anprobe sowie auf individueller Anpassung. Wählen Sie bei der Bestellung die richtige Fußseite (rechts/links)."
+        },
+        "q5": {
+          "question": "Wie funktioniert die Rückgabe?",
+          "answer": "90 Tage Rückgaberecht. Senden Sie die Orthese gemäß unseren Rückgabebedingungen zurück, falls sie nicht passt."
+        },
+        "q6": {
+          "question": "Wie lange dauert die Lieferung?",
+          "answer": "Sie hängt von der Anpassung und der Lagerverfügbarkeit ab. Die aktuelle Lieferzeit wird an der Kasse angezeigt. Kostenloser Versand innerhalb der EU."
+        },
+        "q7": {
+          "question": "Kann ich in Schweden einen Zuschuss oder eine Hilfsmittelversorgung erhalten?",
+          "answer": "Ob ein Zuschuss oder eine Verordnung möglich ist, hängt von der Region und Ihrer medizinischen Beurteilung ab. Fragen Sie Ihren Arzt oder Ihre Hilfsmittelzentrale. Wir beantworten Produktfragen, beurteilen jedoch nicht Ihren Anspruch auf Zuschüsse."
+        }
+      },
+      "about": {
+        "label": "Über Flexbrace",
+        "eyebrow": "Erfahrung",
+        "heading": "Flexbrace® seit 2001",
+        "body": "Entwickelt von einem autorisierten Bandagisten mit über 50 Jahren Erfahrung in der Orthopädietechnik. Flexbrace® unterstützt Anwender seit 2001.",
+        "link": "Mehr über uns erfahren"
+      }
+    },
+    "redirect": {
+      "continue_to": "Weiter zu {{ title }}"
+    },
+    "home": {
+      "hero_eyebrow": "Flexbrace® Fußheberorthese",
+      "hero_heading": "Den Fuß heben. Wieder natürlich gehen.",
+      "hero_subcopy": "Leichte, stabile und dezente Fußheberorthese mit ca. 100 g – passend für Ihre normalen Schuhe.",
+      "focus_eyebrow": "Produkt im Fokus",
+      "focus_heading": "Leicht, dezent und für normale Schuhe gemacht",
+      "focus_body": "Ca. 100 g. Nachgiebige Konstruktion mit Fokus auf Komfort. Passt in die meisten Alltagsschuhe – ohne klobige Orthese außen.",
+      "video_heading": "So funktioniert Flexbrace",
+      "video_body": "Kurzer Film über die Konstruktion und den Alltagseinsatz der Orthese – das Gefühl im Schritt vorher und nachher.",
+      "video_cta": "Flexbrace kaufen",
+      "faq_eyebrow": "Fragen vor dem Kauf",
+      "faq_heading": "Häufige Fragen"
+    },
+    "product_usps": {
+      "1": "Kostenloser Versand innerhalb der EU",
+      "2": "90 Tage Rückgaberecht",
+      "3": "One size fits all (38–45)",
+      "4": "Passt in normale Schuhe",
+      "5": "Von Experten entwickelt"
     }
   }
 }

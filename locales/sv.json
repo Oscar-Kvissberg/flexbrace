@@ -343,5 +343,286 @@
       "default_title": "Standardtitel",
       "sticky_add_to_cart": "Fält för att lägga till snabbt i varukorgen"
     }
+  },
+  "flexbrace": {
+    "announcement": {
+      "bar": "Fri frakt inom EU • 90 dagars öppet köp"
+    },
+    "hero": {
+      "cta_buy": "Köp Flexbrace",
+      "cta_how": "Se hur den fungerar",
+      "cta_contact": "Kontakt",
+      "trust_1": "Ca 100 gram",
+      "trust_2": "Passar i vanliga skor",
+      "trust_3": "Sedan 2001, 50 års erfarenhet"
+    },
+    "experience": {
+      "eyebrow": "Erfarenhet",
+      "heading": "Flexbrace® sedan 2001",
+      "body": "Utvecklad av en auktoriserad bandagist med över 50 års erfarenhet inom ortopedteknik. Flexbrace® har hjälpt användare sedan 2001.",
+      "link": "Läs mer om oss"
+    },
+    "benefits": {
+      "1": "Lätt och smidig – väger endast cirka 100 gram",
+      "2": "Lyfter foten och ger ett naturligare gångmönster",
+      "3": "Ökad stabilitet och trygghet i varje steg",
+      "4": "Diskret utformning som passar i vanliga skor",
+      "5": "Utvecklad av en auktoriserad bandagist med över 50 års erfarenhet. Flexbrace® sedan 2001"
+    },
+    "testimonials": {
+      "eyebrow": "Kundröster",
+      "heading": "Tryggare steg i vardagen",
+      "q1": {
+        "quote": "Jag har använt Flexbrace i fyra år och idag skulle jag inte vilja vara utan den – varken på jobbet eller på fritiden.",
+        "name": "Per",
+        "meta": "62 år - Använder Flexbrace dagligen"
+      },
+      "q2": {
+        "quote": "Efter att jag fått min skena har jag inte fallit en enda gång.",
+        "name": "Erik",
+        "meta": "85 år - Mer trygghet i varje steg"
+      },
+      "q3": {
+        "quote": "Det känns stabilt utan att vara klumpigt. Jag kan röra mig mer naturligt – och mer avslappnat.",
+        "name": "Anna",
+        "meta": "Användare - Vardagsbruk"
+      },
+      "q4": {
+        "quote": "Jag vågar ta längre promenader igen. Balansen känns bättre och jag tänker mindre på foten.",
+        "name": "Maria",
+        "meta": "Användare - Mer rörlighet"
+      }
+    },
+    "footer": {
+      "label": "Sidfot",
+      "nav": {
+        "home": "Startsida",
+        "product": "Produkt",
+        "about": "Om oss",
+        "contact": "Kontakt"
+      },
+      "support": {
+        "heading": "Kundservice",
+        "delivery": "Leverans & retur",
+        "faq": "Vanliga frågor",
+        "contact": "Kontakta oss",
+        "size_guide": "Storleksguide",
+        "withdrawal": "Ångra ditt köp"
+      },
+      "social": {
+        "heading": "Socialt"
+      },
+      "contact": {
+        "heading": "Kontakt",
+        "phone": "Telefon",
+        "email": "E-post",
+        "org_number": "Org.nr",
+        "org_number_placeholder": "[fyll i]",
+        "vat_number": "Momsreg.nr",
+        "vat_number_placeholder": "[fyll i om ni har]"
+      }
+    },
+    "about": {
+      "hero": {
+        "heading": "Om Flexbrace",
+        "text": "Utvecklad av en auktoriserad bandagist med över 50 års erfarenhet inom ortopedteknik. Flexbrace® har hjälpt användare sedan 2001."
+      },
+      "who": {
+        "heading": "Vilka vi är",
+        "p1": "Vi är Flexbrace – en aktör inom droppfotsortoser. Bakom produkten står Lars Falkenman, auktoriserad bandagist med över 50 års erfarenhet inom ortopedteknik (sedan 1975). Flexbrace® har hjälpt användare sedan 2001: en lätt, diskret och individuellt anpassad skena för dig som behöver bättre fotlyft och tryggare gång.",
+        "p2": "Vårt fokus är enkelt: mer rörelsefrihet, mindre snubbelrisk och en skena som går att leva med i vardagen."
+      },
+      "history": {
+        "heading": "Vår historia",
+        "p1": "Historien börjar sommaren 1975, när Lars arbetade på en ortopedteknisk avdelning i Borås. Redan då såg han hur ofta droppfotsortoser användes – och hur otillräckliga de var. De var klumpiga, hade begränsad funktion och var långt ifrån användarvänliga.",
+        "p2": "Det blev starten på en livslång ambition: att skapa en ortos som var mer smidig, mer diskret och framför allt gav bättre funktion.",
+        "p3": "Som auktoriserad bandagist arbetade Lars vidare på ortopedtekniska avdelningar i Borås och Göteborg, var ortopedteknisk chef vid Linköpings universitetssjukhus, och arbetade internationellt i Bryssel (CEBELOR) och i Köpenhamn (Nyrop & Maag). Under åren utvecklade han droppfotsortoser löpande – men utan det stora genombrottet.",
+        "p4": "Genombrottet kom 2001. En patient, Gerner Hemmingsen, hade fått en allvarlig blodpropp i hjärnan med halvsideförlamning. Vardagen blev svår och ovärdig – bland annat när han inte kunde ta sig upp från golvet själv. Det gjorde starkt intryck.",
+        "p5": "Efter 26 års erfarenhet beslutade Lars: nu eller aldrig. Nästan alla ortoser på marknaden hade prövats utan tillfredsställande resultat. Något helt nytt behövde skapas.",
+        "p6": "I september 2001 stod den första prototypen klar. Den fick namnet Flexbrace®. När Gerner fick sin nya ortos gick han över köksgolvet utan problem, vände sig om och sa: ”Den här skulle jag ha haft för fem år sedan.” I det ögonblicket föddes Flexbrace®.",
+        "p7": "För att dokumentera effekten tillverkades 50 prototyper till olika användartyper. Efter två månader fick användarna välja: fortsätta med Flexbrace® eller gå tillbaka till sin tidigare ortos. I en tidig utvärdering med 50 användare valde samtliga att fortsätta med Flexbrace®. Därefter inleddes patentarbete, och intresset växte snabbt i media och bland kliniker.",
+        "p8": "Flexbrace® används i dag bland annat på Center for Hjerneskade i Köpenhamn, och har visats i det danska tv-programmet Lægens Bord."
+      },
+      "vision_mission_heading": "Vision & mission",
+      "vision_label": "Vision:",
+      "vision": "Att fler människor med droppfot ska kunna gå tryggare, mer naturligt och med större värdighet i vardagen.",
+      "mission_label": "Mission:",
+      "mission": "Att erbjuda en lätt, diskret och funktionell droppfotsortos – utvecklad ur verkliga patientbehov – där stöd, komfort och individuell anpassning går hand i hand.",
+      "what": {
+        "heading": "Vad vi gör",
+        "p1": "Vi gör Flexbrace® tillgänglig för dig som behöver stöd vid droppfot: en ankel-fot-ortos som lyfter framfoten, stabiliserar fotleden och stödjer ett mer naturligt gångmönster. Produkten är utvecklad i Europa, tillverkad i Portugal, och utformad för att passa i vanliga skor.",
+        "p2": "Vi arbetar med tydlig produktinformation, rätt passform och en väg från behov till lösning – så att fler får tillgång till den skillnad Lars en gång såg saknades på marknaden."
+      },
+      "values": {
+        "heading": "Våra värderingar",
+        "1": "Funktion före prestige – skenan ska göra skillnad i verkliga steg, inte bara på pappret",
+        "2": "Diskretion och värdighet – hjälpmedel ska synas så lite som möjligt och kännas så bra som möjligt",
+        "3": "Individen i centrum – droppfot ser olika ut; lösningen ska följa behovet",
+        "4": "Erfarenhet och ärlighet – över 50 års ortopedteknisk praktik bakom varje beslut",
+        "5": "Kvalitet i detaljen – från design till tillverkning"
+      },
+      "team": {
+        "heading": "Teamet",
+        "lars_name": "Lars Falkenman",
+        "lars_bio": "Auktoriserad bandagist, leg. ortopedingenjör och uppfinnare av Flexbrace®. Tidigare ortopedteknisk chef på Linköpings universitetssjukhus; har arbetat i Borås, Göteborg, Bryssel och Köpenhamn. Med över 50 års erfarenhet inom ortopedteknik har Lars format produkten utifrån det han saknade i vården: en skena som är både effektiv och möjlig att leva med. Flexbrace® har hjälpt användare sedan 2001.",
+        "note": "[Lägg gärna till Oscar, Anton, Glenn m.fl. med korta roller här när ni vill synas som svenskt team.]"
+      },
+      "competence": {
+        "heading": "Vår kompetens",
+        "1": "Djup specialistkompetens inom droppfot och ankel-fot-ortoser (AFO)",
+        "2": "Över 50 års ortopedteknisk erfarenhet från Sverige och utomlands",
+        "3": "Produktutveckling från idé och prototyp till patenterad lösning (Flexbrace® sedan 2001)",
+        "4": "Individuell anpassning och fokus på gångfunktion, balans och komfort",
+        "5": "Europeisk utveckling och tillverkning i Portugal"
+      }
+    },
+    "product": {
+      "tabs": {
+        "label": "Produktinformation",
+        "overview": "Översikt",
+        "specs": "Specifikation",
+        "delivery": "Leverans",
+        "faq": "FAQ",
+        "about": "Om Flexbrace"
+      },
+      "overview": {
+        "heading": "Produktöversikt",
+        "intro": "Flexbrace® är en lätt och diskret droppfotsortos (ankel-fot-ortos) som är framtagen för dig som har svårt att lyfta foten under gång. När fotlyftet brister ökar risken att tårna fastnar i underlaget, att gången blir ojämn och att balansen påverkas. Flexbrace® ger ett kontrollerat lyft av framfoten, stabiliserar fotleden och stödjer ett mer naturligt gångmönster.",
+        "body": "Produkten är utvecklad i Europa av en auktoriserad bandagist med över 50 års erfarenhet inom ortopedteknik. Flexbrace® har hjälpt användare sedan 2001. Det gör Flexbrace® unik: en följsam skena utan onödig stelhet, med tillräckligt stöd för att lyfta och stabilisera – och en känsla som gör det enklare att använda skenan under längre stunder i vardagen.",
+        "does": {
+          "heading": "Vad Flexbrace® gör",
+          "intro": "Droppfot innebär ofta nedsatt förmåga att lyfta framfoten (dorsalflexion). Det kan göra att man lyfter benet högre än normalt, snubblar lättare och kompenserar med hela kroppen. Flexbrace® hjälper till att:",
+          "1": "lyfta foten i svingfasen",
+          "2": "stabilisera fotleden",
+          "3": "förbättra gångmönstret mot en mer naturlig rörelse",
+          "4": "öka balansen och tryggheten i varje steg",
+          "5": "minska risken att tårna hakar i underlaget"
+        },
+        "design": {
+          "heading": "Utformning och komfort",
+          "intro": "Flexbrace® är byggd för att synas så lite som möjligt och kännas så lätt som möjligt:",
+          "1": "Låg vikt – cirka 100 gram",
+          "2": "Diskret passform som ofta går att använda i vanliga skor",
+          "3": "Hög komfort för dagligt bruk",
+          "4": "Följsam konstruktion som stödjer utan att “låsa” foten i onödan",
+          "closing": "Målet är en skena du faktiskt vill ha på dig – inte bara en skena som fungerar i teorin."
+        },
+        "manufacturing": {
+          "heading": "Tillverkning",
+          "body": "Designen och utformningen av Flexbrace® har tagits fram av experter inom ortopedi och hjälpmedel. Skenan tillverkas i Portugal, där produktionen sker med hög precision för jämn kvalitet i varje exemplar. Kombinationen av expertframtagen design och kontrollerad europeisk tillverkning ger en ortos som är både funktionell och hållbar att leva med."
+        },
+        "for_whom": {
+          "heading": "För vem passar Flexbrace®?",
+          "body": "Flexbrace® kan vara aktuell vid droppfot och nedsatt gångfunktion, till exempel i samband med nervpåverkan, neurologisk sjukdom eller andra tillstånd som påverkar fotlyft och fotledsstabilitet. Behovet ser olika ut från person till person; därför är individuell bedömning och rätt anpassning viktiga delar av en bra lösning."
+        }
+      },
+      "specs": {
+        "eyebrow": "Produkt i fokus",
+        "heading": "Det du behöver veta",
+        "lead": "Lätt ortos med fokus på komfort och vardagsbruk.",
+        "spec_heading": "Specifikation",
+        "weight": "Vikt",
+        "weight_value": "Ca 100 g",
+        "type": "Produkttyp",
+        "type_value": "Ankel-fotortos (AFO)",
+        "comfort": "Komfort",
+        "comfort_value": "Följsam, låg profil",
+        "shoes": "Skor",
+        "shoes_value": "Passar i vanliga skor",
+        "variant": "Variant",
+        "variant_value": "Höger eller vänster fot",
+        "size": "Storlek",
+        "size_value": "One size fits all (38–45)",
+        "guide_heading": "Storleksguide",
+        "fit": "Passform",
+        "fit_value": "En storlek för hela spannet",
+        "eu": "EU",
+        "eu_value": "38–45",
+        "us_men": "US herr",
+        "us_men_value": "5.5–11.5",
+        "us_women": "US dam",
+        "us_women_value": "7.5–13",
+        "uk": "UK",
+        "uk_value": "5–10.5",
+        "cm": "CM",
+        "cm_value": "ca 24–29"
+      },
+      "delivery": {
+        "eyebrow": "Leverans & retur",
+        "heading": "Så funkar frakt och öppet köp",
+        "lead": "Tydliga villkor innan du beställer – fri frakt inom EU och 90 dagars öppet köp.",
+        "shipping": "Frakt",
+        "shipping_value": "Fri frakt inom EU",
+        "time": "Leveranstid",
+        "time_value": "Aktuell leveranstid visas i kassan",
+        "returns": "Öppet köp",
+        "returns_value": "90 dagar – returnera enligt våra returvillkor om den inte passar",
+        "size": "Storlek",
+        "size_value": "One size fits all (38–45)"
+      },
+      "faq": {
+        "eyebrow": "Vanliga frågor",
+        "heading": "Svar innan du beställer",
+        "lead": "Symptom, ortostyp, heldagsbruk, mått, retur, leverans och bidrag i Sverige.",
+        "q1": {
+          "question": "Vilka symptom passar Flexbrace för?",
+          "answer": "Flexbrace är tänkt för dig som har svårt att lyfta foten, snubblar, tippar i fotleden eller känner dig ostadig vid gång. Rådgör gärna med vårdgivare om du är osäker."
+        },
+        "q2": {
+          "question": "Vilken typ av ortos är Flexbrace?",
+          "answer": "En ankel-fot-ortos (AFO) som ger fotlyft och sidostöd. Lätt och lågprofilerad så den kan sitta inuti vanliga skor."
+        },
+        "q3": {
+          "question": "Kan jag använda den hela dagen?",
+          "answer": "Många använder Flexbrace under större delen av dagen. Börja stegvis och justera banden så stödet känns stabilt utan att klämma."
+        },
+        "q4": {
+          "question": "Hur fungerar storlek och mått?",
+          "answer": "Passformen bygger på mått eller utprovning och individuell anpassning. Välj rätt fotsida (höger/vänster) vid beställning."
+        },
+        "q5": {
+          "question": "Vad gäller för retur?",
+          "answer": "90 dagars öppet köp. Returnera enligt våra returvillkor om den inte passar."
+        },
+        "q6": {
+          "question": "Hur lång är leveranstiden?",
+          "answer": "Beror på anpassning och lagerläge. Aktuell tid visas i kassan. Fri frakt inom EU."
+        },
+        "q7": {
+          "question": "Kan jag få bidrag eller hjälpmedel i Sverige?",
+          "answer": "Möjligheten till bidrag eller förskrivning varierar mellan regioner och din medicinska bedömning. Fråga din vårdgivare eller hjälpmedelscentral. Vi svarar på produktfrågor – men bedömer inte din rätt till bidrag."
+        }
+      },
+      "about": {
+        "label": "Om Flexbrace",
+        "eyebrow": "Erfarenhet",
+        "heading": "Flexbrace® sedan 2001",
+        "body": "Utvecklad av en auktoriserad bandagist med över 50 års erfarenhet inom ortopedteknik. Flexbrace® har hjälpt användare sedan 2001.",
+        "link": "Läs mer om oss"
+      }
+    },
+    "redirect": {
+      "continue_to": "Fortsätt till {{ title }}"
+    },
+    "home": {
+      "hero_eyebrow": "Flexbrace® droppfotsskena",
+      "hero_heading": "Lyft foten. Gå naturligt igen.",
+      "hero_subcopy": "Lätt, stabil och diskret droppfotsskena på ca 100 g som passar i dina vanliga skor.",
+      "focus_eyebrow": "Produkt i fokus",
+      "focus_heading": "Lätt, diskret och byggd för vanliga skor",
+      "focus_body": "Ca 100 g. Följsam konstruktion med fokus på komfort. Passar i de flesta vardagsskor – utan klumpig skena utanpå.",
+      "video_heading": "Se hur Flexbrace fungerar",
+      "video_body": "Kort film om konstruktionen och hur ortosen används i vardagen – före och efter känslan i steget.",
+      "video_cta": "Köp Flexbrace",
+      "faq_eyebrow": "Frågor före köp",
+      "faq_heading": "Vanliga frågor"
+    },
+    "product_usps": {
+      "1": "Fri frakt inom EU",
+      "2": "90 dagars öppet köp",
+      "3": "One size fits all (38–45)",
+      "4": "Passar i vanliga skor",
+      "5": "Utvecklad av experter"
+    }
   }
 }

@@ -1,0 +1,19 @@
+{% comment %}
+  Hero purchase buttons + trust list (translated via locales: flexbrace.hero.*).
+  Used by the hero custom-liquid block in templates/index.json.
+{% endcomment %}
+
+{%- assign hero_product = all_products['afo-ortos-ankel-fotortos'] -%}
+{%- if hero_product != blank -%}
+  <div class="hero-purchase">
+    <a class="hero-purchase__button" href="{{ hero_product.url }}">
+      {{- 'flexbrace.hero.cta_buy' | t }} · <span class="hero-purchase__price">{{ hero_product.price_min | money }}</span>
+    </a>
+    <a class="hero-purchase__secondary" href="#hur-den-fungerar">{{ 'flexbrace.hero.cta_how' | t }}</a>
+  </div>
+{%- endif -%}
+<ul class="hero-trust">
+  <li>{{ 'flexbrace.hero.trust_1' | t }}</li>
+  <li>{{ 'flexbrace.hero.trust_2' | t }}</li>
+  <li>{{ 'flexbrace.hero.trust_3' | t }}</li>
+</ul>

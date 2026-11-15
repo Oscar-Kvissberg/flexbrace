@@ -16,59 +16,23 @@
           "type": "custom-liquid",
           "name": "Eyebrow",
           "settings": {
-            "custom_liquid": "<p class=\"hero-eyebrow\">Flexbrace® droppfotsskena</p>"
+            "custom_liquid": "<p class=\"hero-eyebrow\">{{ 'flexbrace.home.hero_eyebrow' | t }}</p>"
           },
           "blocks": {}
         },
         "text_YLPk4p": {
-          "type": "text",
-          "name": "t:names.heading",
+          "type": "custom-liquid",
+          "name": "Heading",
           "settings": {
-            "text": "<h1>Lyft foten. Gå naturligt igen.</h1>",
-            "width": "100%",
-            "max_width": "normal",
-            "alignment": "left",
-            "type_preset": "h1",
-            "font": "var(--font-body--family)",
-            "font_size": "1rem",
-            "line_height": "normal",
-            "letter_spacing": "normal",
-            "case": "none",
-            "wrap": "pretty",
-            "text_color": "#ffffff",
-            "background": false,
-            "background_color": "#00000026",
-            "corner_radius": 0,
-            "padding-block-start": 0,
-            "padding-block-end": 0,
-            "padding-inline-start": 0,
-            "padding-inline-end": 0
+            "custom_liquid": "<h1 class=\"hero-heading\">{{ 'flexbrace.home.hero_heading' | t }}</h1>"
           },
           "blocks": {}
         },
         "text_fHFGdJ": {
-          "type": "text",
-          "name": "t:names.text",
+          "type": "custom-liquid",
+          "name": "Subcopy",
           "settings": {
-            "text": "<p>Lätt, stabil och diskret droppfotsskena på ca 100 g som passar i dina vanliga skor.</p>",
-            "width": "100%",
-            "max_width": "normal",
-            "alignment": "left",
-            "type_preset": "rte",
-            "font": "var(--font-body--family)",
-            "font_size": "1rem",
-            "line_height": "normal",
-            "letter_spacing": "normal",
-            "case": "none",
-            "wrap": "pretty",
-            "text_color": "#ffffff",
-            "background": false,
-            "background_color": "#00000026",
-            "corner_radius": 0,
-            "padding-block-start": 0,
-            "padding-block-end": 0,
-            "padding-inline-start": 0,
-            "padding-inline-end": 0
+            "custom_liquid": "<p class=\"hero-subcopy\">{{ 'flexbrace.home.hero_subcopy' | t }}</p>"
           },
           "blocks": {}
         },
@@ -76,7 +40,7 @@
           "type": "custom-liquid",
           "name": "Pris och köpknapp",
           "settings": {
-            "custom_liquid": "{% assign hero_product = all_products['afo-ortos-ankel-fotortos'] %}\n{% if hero_product != blank %}\n  <div class=\"hero-purchase\">\n    <a class=\"hero-purchase__button\" href=\"{{ hero_product.url }}\">Köp Flexbrace · <span class=\"hero-purchase__price\">{{ hero_product.price_min | money }}</span></a>\n    <a class=\"hero-purchase__secondary\" href=\"#hur-den-fungerar\">Se hur den fungerar</a>\n  </div>\n{% endif %}\n<ul class=\"hero-trust\">\n  <li>Ca 100 gram</li>\n  <li>Passar i vanliga skor</li>\n  <li>Sedan 2001, 50 års erfarenhet</li>\n</ul>"
+            "custom_liquid": "{% render 'flexbrace-hero-purchase' %}"
           },
           "blocks": {}
         }
@@ -194,7 +158,7 @@
       "type": "custom-liquid",
       "name": "Produkt i fokus intro",
       "settings": {
-        "custom_liquid": "<div class=\"flexbrace-focus-intro\"><p class=\"flexbrace-focus-intro__eyebrow\">Produkt i fokus</p><h2>Lätt, diskret och byggd för vanliga skor</h2><p>Ca 100 g. Följsam konstruktion med fokus på komfort. Passar i de flesta vardagsskor – utan klumpig skena utanpå.</p></div>",
+        "custom_liquid": "{% render 'flexbrace-focus-intro' %}",
         "background_color": "#ffffff",
         "section_width": "page-width",
         "padding-block-start": 72,
@@ -261,7 +225,7 @@
               "type": "custom-liquid",
               "name": "Produkt i fokus intro",
               "settings": {
-                "custom_liquid": "<div class=\"flexbrace-focus-intro flexbrace-focus-intro--inline\"><p class=\"flexbrace-focus-intro__eyebrow\">Produkt i fokus</p><h2>Lätt, diskret och byggd för vanliga skor</h2><p>Ca 100 g. Följsam konstruktion med fokus på komfort. Passar i de flesta vardagsskor – utan klumpig skena utanpå.</p></div>"
+                "custom_liquid": "{% render 'flexbrace-focus-intro', class: 'flexbrace-focus-intro--inline' %}"
               },
               "blocks": {}
             },
@@ -603,28 +567,10 @@
           },
           "blocks": {
             "text_3CR79M": {
-              "type": "text",
+              "type": "custom-liquid",
               "name": "t:names.text",
               "settings": {
-                "text": "<h2>Se hur Flexbrace fungerar</h2><p>Kort film om konstruktionen och hur ortosen används i vardagen – före och efter känslan i steget.</p>",
-                "width": "fit-content",
-                "max_width": "normal",
-                "alignment": "left",
-                "type_preset": "rte",
-                "font": "var(--font-body--family)",
-                "font_size": "",
-                "line_height": "normal",
-                "letter_spacing": "normal",
-                "case": "none",
-                "wrap": "pretty",
-                "text_color": "#ffffff",
-                "background": false,
-                "background_color": "#00000026",
-                "corner_radius": 0,
-                "padding-block-start": 0,
-                "padding-block-end": 0,
-                "padding-inline-start": 0,
-                "padding-inline-end": 0
+                "custom_liquid": "{% render 'flexbrace-video-copy' %}"
               },
               "blocks": {}
             }
@@ -673,28 +619,10 @@
       "type": "section",
       "blocks": {
         "text_Thbddc": {
-          "type": "text",
+          "type": "custom-liquid",
           "name": "t:names.heading",
           "settings": {
-            "text": "<p><strong>FRÅGOR FÖRE KÖP</strong></p><h2>Vanliga frågor</h2>",
-            "width": "fit-content",
-            "max_width": "narrow",
-            "alignment": "left",
-            "type_preset": "h3",
-            "font": "var(--font-body--family)",
-            "font_size": "",
-            "line_height": "normal",
-            "letter_spacing": "normal",
-            "case": "none",
-            "wrap": "pretty",
-            "text_color": "",
-            "background": false,
-            "background_color": "#00000026",
-            "corner_radius": 0,
-            "padding-block-start": 0,
-            "padding-block-end": 0,
-            "padding-inline-start": 0,
-            "padding-inline-end": 0
+            "custom_liquid": "{% render 'flexbrace-home-faq-heading' %}"
           },
           "blocks": {}
         },
@@ -722,7 +650,7 @@
             "row_symptom": {
               "type": "_accordion-row",
               "settings": {
-                "heading": "Vilka symptom passar Flexbrace för?",
+                "heading": "t:flexbrace.product.faq.q1.question",
                 "open_by_default": false,
                 "icon": "none",
                 "width": 20
@@ -731,7 +659,7 @@
                 "s1_text": {
                   "type": "text",
                   "settings": {
-                    "text": "<p>Flexbrace är tänkt för dig som har svårt att lyfta foten, snubblar, tippar i fotleden eller känner dig ostadig vid gång. Om du känner igen dig i droppfot eller liknande besvär kan en AFO vara aktuell – rådgör gärna med vårdgivare.</p>",
+                    "text": "<p>t:flexbrace.product.faq.q1.answer</p>",
                     "width": "100%",
                     "max_width": "normal",
                     "alignment": "left",
@@ -761,7 +689,7 @@
             "row_type": {
               "type": "_accordion-row",
               "settings": {
-                "heading": "Vilken typ av ortos är Flexbrace?",
+                "heading": "t:flexbrace.product.faq.q2.question",
                 "open_by_default": false,
                 "icon": "none",
                 "width": 20
@@ -770,7 +698,7 @@
                 "s2_text": {
                   "type": "text",
                   "settings": {
-                    "text": "<p>Flexbrace är en ankel-fot-ortos (AFO) som ger fotlyft och sidostöd. Den är lätt och lågprofilerad så den kan sitta inuti vanliga skor.</p>",
+                    "text": "<p>t:flexbrace.product.faq.q2.answer</p>",
                     "width": "100%",
                     "max_width": "normal",
                     "alignment": "left",
@@ -800,7 +728,7 @@
             "row_allday": {
               "type": "_accordion-row",
               "settings": {
-                "heading": "Kan jag använda den hela dagen?",
+                "heading": "t:flexbrace.product.faq.q3.question",
                 "open_by_default": false,
                 "icon": "none",
                 "width": 20
@@ -809,7 +737,7 @@
                 "s3_text": {
                   "type": "text",
                   "settings": {
-                    "text": "<p>Många använder Flexbrace under större delen av dagen i vardagen. Börja gärna stegvis och justera banden så stödet känns stabilt utan att klämma. Vid smärta eller tryck – kontakta oss eller din vårdgivare.</p>",
+                    "text": "<p>t:flexbrace.product.faq.q3.answer</p>",
                     "width": "100%",
                     "max_width": "normal",
                     "alignment": "left",
@@ -839,7 +767,7 @@
             "row_size": {
               "type": "_accordion-row",
               "settings": {
-                "heading": "Hur fungerar storlek och mått?",
+                "heading": "t:flexbrace.product.faq.q4.question",
                 "open_by_default": false,
                 "icon": "none",
                 "width": 20
@@ -848,7 +776,7 @@
                 "s4_text": {
                   "type": "text",
                   "settings": {
-                    "text": "<p>Passformen bygger på mått eller utprovning och individuell anpassning. Välj rätt fotsida (höger/vänster) vid beställning. Osäker? Kontakta oss så guidar vi dig innan köp.</p>",
+                    "text": "<p>t:flexbrace.product.faq.q4.answer</p>",
                     "width": "100%",
                     "max_width": "normal",
                     "alignment": "left",
@@ -878,7 +806,7 @@
             "row_return": {
               "type": "_accordion-row",
               "settings": {
-                "heading": "Vad gäller för retur?",
+                "heading": "t:flexbrace.product.faq.q5.question",
                 "open_by_default": false,
                 "icon": "none",
                 "width": 20
@@ -887,7 +815,7 @@
                 "s5_text": {
                   "type": "text",
                   "settings": {
-                    "text": "<p>Du har 90 dagars öppet köp så att du kan utvärdera Flexbrace i din egen vardag. Returnera enligt våra returvillkor om den inte passar.</p>",
+                    "text": "<p>t:flexbrace.product.faq.q5.answer</p>",
                     "width": "100%",
                     "max_width": "normal",
                     "alignment": "left",
@@ -917,7 +845,7 @@
             "row_delivery": {
               "type": "_accordion-row",
               "settings": {
-                "heading": "Hur lång är leveranstiden?",
+                "heading": "t:flexbrace.product.faq.q6.question",
                 "open_by_default": false,
                 "icon": "none",
                 "width": 20
@@ -926,7 +854,7 @@
                 "s6_text": {
                   "type": "text",
                   "settings": {
-                    "text": "<p>Leveranstiden beror på anpassning och lagerläge. Aktuell tid visas i kassan, och du får spårning via e-post när ordern skickats. Fri frakt inom EU.</p>",
+                    "text": "<p>t:flexbrace.product.faq.q6.answer</p>",
                     "width": "100%",
                     "max_width": "normal",
                     "alignment": "left",
@@ -956,7 +884,7 @@
             "row_bidrag": {
               "type": "_accordion-row",
               "settings": {
-                "heading": "Kan jag få bidrag eller hjälpmedel i Sverige?",
+                "heading": "t:flexbrace.product.faq.q7.question",
                 "open_by_default": false,
                 "icon": "none",
                 "width": 20
@@ -965,7 +893,7 @@
                 "s7_text": {
                   "type": "text",
                   "settings": {
-                    "text": "<p>Möjligheten till bidrag eller förskrivning via hjälpmedel varierar mellan regioner och din medicinska bedömning. Fråga din vårdgivare eller hjälpmedelscentral vad som gäller dig. Vi kan svara på produktfrågor – men inte bedöma din rätt till bidrag.</p>",
+                    "text": "<p>t:flexbrace.product.faq.q7.answer</p>",
                     "width": "100%",
                     "max_width": "normal",
                     "alignment": "left",

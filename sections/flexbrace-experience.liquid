@@ -3,10 +3,10 @@
 {% endcomment %}
 
 {% liquid
-  assign eyebrow = section.settings.eyebrow | default: 'Erfarenhet'
-  assign heading = section.settings.heading | default: 'Flexbrace® sedan 2001'
-  assign body = section.settings.body
-  assign link_label = section.settings.link_label | default: 'Läs mer om oss'
+  assign eyebrow = 'flexbrace.experience.eyebrow' | t
+  assign heading = 'flexbrace.experience.heading' | t
+  assign body = 'flexbrace.experience.body' | t
+  assign link_label = 'flexbrace.experience.link' | t
   assign link_url = section.settings.link_url | default: '/pages/om-oss'
 %}
 

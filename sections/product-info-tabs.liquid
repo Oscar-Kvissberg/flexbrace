@@ -25,7 +25,7 @@
       <div
         class="flexbrace-tabs__nav"
         role="tablist"
-        aria-label="Produktinformation"
+        aria-label="{{ 'flexbrace.product.tabs.label' | t | escape }}"
       >
         <button
           type="button"
@@ -36,7 +36,7 @@
           aria-controls="fb-panel-overview"
           data-tab="overview"
         >
-          Översikt
+          {{ 'flexbrace.product.tabs.overview' | t }}
         </button>
         <button
           type="button"
@@ -48,7 +48,7 @@
           data-tab="specs"
           tabindex="-1"
         >
-          Specifikation
+          {{ 'flexbrace.product.tabs.specs' | t }}
         </button>
         <button
           type="button"
@@ -60,7 +60,7 @@
           data-tab="delivery"
           tabindex="-1"
         >
-          Leverans
+          {{ 'flexbrace.product.tabs.delivery' | t }}
         </button>
         <button
           type="button"
@@ -72,7 +72,7 @@
           data-tab="faq"
           tabindex="-1"
         >
-          FAQ
+          {{ 'flexbrace.product.tabs.faq' | t }}
         </button>
         <button
           type="button"
@@ -84,7 +84,7 @@
           data-tab="about"
           tabindex="-1"
         >
-          Om Flexbrace
+          {{ 'flexbrace.product.tabs.about' | t }}
         </button>
       </div>
     </div>
@@ -100,76 +100,50 @@
       >
         <div class="flexbrace-product-section flexbrace-product-overview">
           <div class="flexbrace-product-section__header">
-            <h2>Produktöversikt</h2>
-            <p>
-              Flexbrace® är en lätt och diskret droppfotsortos (ankel-fot-ortos) som är framtagen för dig som har svårt
-              att lyfta foten under gång. När fotlyftet brister ökar risken att tårna fastnar i underlaget, att gången
-              blir ojämn och att balansen påverkas. Flexbrace® ger ett kontrollerat lyft av framfoten, stabiliserar
-              fotleden och stödjer ett mer naturligt gångmönster.
-            </p>
+            <h2>{{ 'flexbrace.product.overview.heading' | t }}</h2>
+            <p>{{ 'flexbrace.product.overview.intro' | t }}</p>
           </div>
 
-          <p class="flexbrace-product-overview__body">
-            Produkten är utvecklad i Europa av en auktoriserad bandagist med över 50 års erfarenhet inom ortopedteknik.
-            Flexbrace® har hjälpt användare sedan 2001. Det gör Flexbrace® unik: en följsam skena utan onödig stelhet,
-            med tillräckligt stöd för att lyfta och stabilisera – och en känsla som gör det enklare att använda skenan
-            under längre stunder i vardagen.
-          </p>
+          <p class="flexbrace-product-overview__body">{{ 'flexbrace.product.overview.body' | t }}</p>
 
           <div class="flexbrace-product-overview__block">
-            <h3>Vad Flexbrace® gör</h3>
-            <p>
-              Droppfot innebär ofta nedsatt förmåga att lyfta framfoten (dorsalflexion). Det kan göra att man lyfter
-              benet högre än normalt, snubblar lättare och kompenserar med hela kroppen. Flexbrace® hjälper till att:
-            </p>
+            <h3>{{ 'flexbrace.product.overview.does.heading' | t }}</h3>
+            <p>{{ 'flexbrace.product.overview.does.intro' | t }}</p>
             <ul class="flexbrace-checklist">
-              <li>lyfta foten i svingfasen</li>
-              <li>stabilisera fotleden</li>
-              <li>förbättra gångmönstret mot en mer naturlig rörelse</li>
-              <li>öka balansen och tryggheten i varje steg</li>
-              <li>minska risken att tårna hakar i underlaget</li>
+              <li>{{ 'flexbrace.product.overview.does.1' | t }}</li>
+              <li>{{ 'flexbrace.product.overview.does.2' | t }}</li>
+              <li>{{ 'flexbrace.product.overview.does.3' | t }}</li>
+              <li>{{ 'flexbrace.product.overview.does.4' | t }}</li>
+              <li>{{ 'flexbrace.product.overview.does.5' | t }}</li>
             </ul>
           </div>
 
           <div class="flexbrace-product-overview__block">
-            <h3>Utformning och komfort</h3>
-            <p>
-              Flexbrace® är byggd för att synas så lite som möjligt och kännas så lätt som möjligt:
-            </p>
+            <h3>{{ 'flexbrace.product.overview.design.heading' | t }}</h3>
+            <p>{{ 'flexbrace.product.overview.design.intro' | t }}</p>
             <ul class="flexbrace-checklist">
-              <li>Låg vikt – cirka 100 gram</li>
-              <li>Diskret passform som ofta går att använda i vanliga skor</li>
-              <li>Hög komfort för dagligt bruk</li>
-              <li>Följsam konstruktion som stödjer utan att “låsa” foten i onödan</li>
+              <li>{{ 'flexbrace.product.overview.design.1' | t }}</li>
+              <li>{{ 'flexbrace.product.overview.design.2' | t }}</li>
+              <li>{{ 'flexbrace.product.overview.design.3' | t }}</li>
+              <li>{{ 'flexbrace.product.overview.design.4' | t }}</li>
             </ul>
-            <p class="flexbrace-product-overview__body">
-              Målet är en skena du faktiskt vill ha på dig – inte bara en skena som fungerar i teorin.
-            </p>
+            <p class="flexbrace-product-overview__body">{{ 'flexbrace.product.overview.design.closing' | t }}</p>
           </div>
 
           <div class="flexbrace-product-overview__block">
-            <h3>Tillverkning</h3>
-            <p>
-              Designen och utformningen av Flexbrace® har tagits fram av experter inom ortopedi och hjälpmedel. Skenan
-              tillverkas i Portugal, där produktionen sker med hög precision för jämn kvalitet i varje exemplar.
-              Kombinationen av expertframtagen design och kontrollerad europeisk tillverkning ger en ortos som är både
-              funktionell och hållbar att leva med.
-            </p>
+            <h3>{{ 'flexbrace.product.overview.manufacturing.heading' | t }}</h3>
+            <p>{{ 'flexbrace.product.overview.manufacturing.body' | t }}</p>
           </div>
 
           <div class="flexbrace-product-overview__block">
-            <h3>För vem passar Flexbrace®?</h3>
-            <p>
-              Flexbrace® kan vara aktuell vid droppfot och nedsatt gångfunktion, till exempel i samband med
-              nervpåverkan, neurologisk sjukdom eller andra tillstånd som påverkar fotlyft och fotledsstabilitet.
-              Behovet ser olika ut från person till person; därför är individuell bedömning och rätt anpassning viktiga
-              delar av en bra lösning.
-            </p>
+            <h3>{{ 'flexbrace.product.overview.for_whom.heading' | t }}</h3>
+            <p>{{ 'flexbrace.product.overview.for_whom.body' | t }}</p>
           </div>
         </div>
       </div>
 
-      {%- comment -%} Specifikation {%- endcomment -%}      <div
+      {%- comment -%} Specifikation {%- endcomment -%}
+      <div
         class="flexbrace-tabs__panel"
         role="tabpanel"
         id="fb-panel-specs"
@@ -179,66 +153,66 @@
       >
         <div class="flexbrace-product-section flexbrace-product-section--surface">
           <div class="flexbrace-product-section__header">
-            <p class="product-page-eyebrow">Produkt i fokus</p>
-            <h2>Det du behöver veta</h2>
-            <p>Lätt ortos med fokus på komfort och vardagsbruk.</p>
+            <p class="product-page-eyebrow">{{ 'flexbrace.product.specs.eyebrow' | t }}</p>
+            <h2>{{ 'flexbrace.product.specs.heading' | t }}</h2>
+            <p>{{ 'flexbrace.product.specs.lead' | t }}</p>
           </div>
           <div class="flexbrace-product-specs-grid">
             <div class="flexbrace-product-specs">
-              <p class="flexbrace-product-specs__heading">Specifikation</p>
+              <p class="flexbrace-product-specs__heading">{{ 'flexbrace.product.specs.spec_heading' | t }}</p>
               <dl>
                 <div>
-                  <dt>Vikt</dt>
-                  <dd>Ca 100 g</dd>
+                  <dt>{{ 'flexbrace.product.specs.weight' | t }}</dt>
+                  <dd>{{ 'flexbrace.product.specs.weight_value' | t }}</dd>
                 </div>
                 <div>
-                  <dt>Produkttyp</dt>
-                  <dd>Ankel-fotortos (AFO)</dd>
+                  <dt>{{ 'flexbrace.product.specs.type' | t }}</dt>
+                  <dd>{{ 'flexbrace.product.specs.type_value' | t }}</dd>
                 </div>
                 <div>
-                  <dt>Komfort</dt>
-                  <dd>Följsam, låg profil</dd>
+                  <dt>{{ 'flexbrace.product.specs.comfort' | t }}</dt>
+                  <dd>{{ 'flexbrace.product.specs.comfort_value' | t }}</dd>
                 </div>
                 <div>
-                  <dt>Skor</dt>
-                  <dd>Passar i vanliga skor</dd>
+                  <dt>{{ 'flexbrace.product.specs.shoes' | t }}</dt>
+                  <dd>{{ 'flexbrace.product.specs.shoes_value' | t }}</dd>
                 </div>
                 <div>
-                  <dt>Variant</dt>
-                  <dd>Höger eller vänster fot</dd>
+                  <dt>{{ 'flexbrace.product.specs.variant' | t }}</dt>
+                  <dd>{{ 'flexbrace.product.specs.variant_value' | t }}</dd>
                 </div>
                 <div>
-                  <dt>Storlek</dt>
-                  <dd>One size fits all (38–45)</dd>
+                  <dt>{{ 'flexbrace.product.specs.size' | t }}</dt>
+                  <dd>{{ 'flexbrace.product.specs.size_value' | t }}</dd>
                 </div>
               </dl>
             </div>
             <div class="flexbrace-product-specs">
-              <p class="flexbrace-product-specs__heading">Storleksguide</p>
+              <p class="flexbrace-product-specs__heading">{{ 'flexbrace.product.specs.guide_heading' | t }}</p>
               <dl>
                 <div>
-                  <dt>Passform</dt>
-                  <dd>En storlek för hela spannet</dd>
+                  <dt>{{ 'flexbrace.product.specs.fit' | t }}</dt>
+                  <dd>{{ 'flexbrace.product.specs.fit_value' | t }}</dd>
                 </div>
                 <div>
-                  <dt>EU</dt>
-                  <dd>38–45</dd>
+                  <dt>{{ 'flexbrace.product.specs.eu' | t }}</dt>
+                  <dd>{{ 'flexbrace.product.specs.eu_value' | t }}</dd>
                 </div>
                 <div>
-                  <dt>US herr</dt>
-                  <dd>5.5–11.5</dd>
+                  <dt>{{ 'flexbrace.product.specs.us_men' | t }}</dt>
+                  <dd>{{ 'flexbrace.product.specs.us_men_value' | t }}</dd>
                 </div>
                 <div>
-                  <dt>US dam</dt>
-                  <dd>7.5–13</dd>
+                  <dt>{{ 'flexbrace.product.specs.us_women' | t }}</dt>
+                  <dd>{{ 'flexbrace.product.specs.us_women_value' | t }}</dd>
                 </div>
                 <div>
-                  <dt>UK</dt>
-                  <dd>5–10.5</dd>
+                  <dt>{{ 'flexbrace.product.specs.uk' | t }}</dt>
+                  <dd>{{ 'flexbrace.product.specs.uk_value' | t }}</dd>
                 </div>
                 <div>
-                  <dt>CM</dt>
-                  <dd>ca 24–29</dd>
+                  <dt>{{ 'flexbrace.product.specs.cm' | t }}</dt>
+                  <dd>{{ 'flexbrace.product.specs.cm_value' | t }}</dd>
                 </div>
               </dl>
             </div>
@@ -257,27 +231,27 @@
       >
         <div class="flexbrace-product-section flexbrace-product-section--surface">
           <div class="flexbrace-product-section__header">
-            <p class="product-page-eyebrow">Leverans &amp; retur</p>
-            <h2>Så funkar frakt och öppet köp</h2>
-            <p>Tydliga villkor innan du beställer – fri frakt inom EU och 90 dagars öppet köp.</p>
+            <p class="product-page-eyebrow">{{ 'flexbrace.product.delivery.eyebrow' | t }}</p>
+            <h2>{{ 'flexbrace.product.delivery.heading' | t }}</h2>
+            <p>{{ 'flexbrace.product.delivery.lead' | t }}</p>
           </div>
           <div class="flexbrace-product-specs">
             <dl>
               <div>
-                <dt>Frakt</dt>
-                <dd>Fri frakt inom EU</dd>
+                <dt>{{ 'flexbrace.product.delivery.shipping' | t }}</dt>
+                <dd>{{ 'flexbrace.product.delivery.shipping_value' | t }}</dd>
               </div>
               <div>
-                <dt>Leveranstid</dt>
-                <dd>Aktuell leveranstid visas i kassan</dd>
+                <dt>{{ 'flexbrace.product.delivery.time' | t }}</dt>
+                <dd>{{ 'flexbrace.product.delivery.time_value' | t }}</dd>
               </div>
               <div>
-                <dt>Öppet köp</dt>
-                <dd>90 dagar – returnera enligt våra returvillkor om den inte passar</dd>
+                <dt>{{ 'flexbrace.product.delivery.returns' | t }}</dt>
+                <dd>{{ 'flexbrace.product.delivery.returns_value' | t }}</dd>
               </div>
               <div>
-                <dt>Storlek</dt>
-                <dd>One size fits all (38–45)</dd>
+                <dt>{{ 'flexbrace.product.delivery.size' | t }}</dt>
+                <dd>{{ 'flexbrace.product.delivery.size_value' | t }}</dd>
               </div>
             </dl>
           </div>
@@ -295,38 +269,38 @@
       >
         <div class="flexbrace-tabs-faq">
           <div class="flexbrace-tabs-faq__intro">
-            <p class="product-page-eyebrow">Vanliga frågor</p>
-            <h2>Svar innan du beställer</h2>
-            <p>Symptom, ortostyp, heldagsbruk, mått, retur, leverans och bidrag i Sverige.</p>
+            <p class="product-page-eyebrow">{{ 'flexbrace.product.faq.eyebrow' | t }}</p>
+            <h2>{{ 'flexbrace.product.faq.heading' | t }}</h2>
+            <p>{{ 'flexbrace.product.faq.lead' | t }}</p>
           </div>
           <div class="flexbrace-tabs-faq__list">
             <details class="flexbrace-tabs-faq__item">
-              <summary>Vilka symptom passar Flexbrace för?</summary>
-              <p>Flexbrace är tänkt för dig som har svårt att lyfta foten, snubblar, tippar i fotleden eller känner dig ostadig vid gång. Rådgör gärna med vårdgivare om du är osäker.</p>
+              <summary>{{ 'flexbrace.product.faq.q1.question' | t }}</summary>
+              <p>{{ 'flexbrace.product.faq.q1.answer' | t }}</p>
             </details>
             <details class="flexbrace-tabs-faq__item">
-              <summary>Vilken typ av ortos är Flexbrace?</summary>
-              <p>En ankel-fot-ortos (AFO) som ger fotlyft och sidostöd. Lätt och lågprofilerad så den kan sitta inuti vanliga skor.</p>
+              <summary>{{ 'flexbrace.product.faq.q2.question' | t }}</summary>
+              <p>{{ 'flexbrace.product.faq.q2.answer' | t }}</p>
             </details>
             <details class="flexbrace-tabs-faq__item">
-              <summary>Kan jag använda den hela dagen?</summary>
-              <p>Många använder Flexbrace under större delen av dagen. Börja stegvis och justera banden så stödet känns stabilt utan att klämma.</p>
+              <summary>{{ 'flexbrace.product.faq.q3.question' | t }}</summary>
+              <p>{{ 'flexbrace.product.faq.q3.answer' | t }}</p>
             </details>
             <details class="flexbrace-tabs-faq__item">
-              <summary>Hur fungerar storlek och mått?</summary>
-              <p>Passformen bygger på mått eller utprovning och individuell anpassning. Välj rätt fotsida (höger/vänster) vid beställning.</p>
+              <summary>{{ 'flexbrace.product.faq.q4.question' | t }}</summary>
+              <p>{{ 'flexbrace.product.faq.q4.answer' | t }}</p>
             </details>
             <details class="flexbrace-tabs-faq__item">
-              <summary>Vad gäller för retur?</summary>
-              <p>90 dagars öppet köp. Returnera enligt våra returvillkor om den inte passar.</p>
+              <summary>{{ 'flexbrace.product.faq.q5.question' | t }}</summary>
+              <p>{{ 'flexbrace.product.faq.q5.answer' | t }}</p>
             </details>
             <details class="flexbrace-tabs-faq__item">
-              <summary>Hur lång är leveranstiden?</summary>
-              <p>Beror på anpassning och lagerläge. Aktuell tid visas i kassan. Fri frakt inom EU.</p>
+              <summary>{{ 'flexbrace.product.faq.q6.question' | t }}</summary>
+              <p>{{ 'flexbrace.product.faq.q6.answer' | t }}</p>
             </details>
             <details class="flexbrace-tabs-faq__item">
-              <summary>Kan jag få bidrag eller hjälpmedel i Sverige?</summary>
-              <p>Möjligheten till bidrag eller förskrivning varierar mellan regioner och din medicinska bedömning. Fråga din vårdgivare eller hjälpmedelscentral. Vi svarar på produktfrågor – men bedömer inte din rätt till bidrag.</p>
+              <summary>{{ 'flexbrace.product.faq.q7.question' | t }}</summary>
+              <p>{{ 'flexbrace.product.faq.q7.answer' | t }}</p>
             </details>
           </div>
         </div>
@@ -341,15 +315,12 @@
         data-panel="about"
         hidden
       >
-        <div class="flexbrace-about" aria-label="Om Flexbrace">
+        <div class="flexbrace-about" aria-label="{{ 'flexbrace.product.about.label' | t | escape }}">
           <div class="flexbrace-about__copy">
-            <p class="flexbrace-about__eyebrow">Erfarenhet</p>
-            <h2>Flexbrace® sedan 2001</h2>
-            <p>
-              Utvecklad av en auktoriserad bandagist med över 50 års erfarenhet inom ortopedteknik. Flexbrace® har
-              hjälpt användare sedan 2001.
-            </p>
-            <a class="flexbrace-about__link" href="/pages/om-oss">Läs mer om oss</a>
+            <p class="flexbrace-about__eyebrow">{{ 'flexbrace.product.about.eyebrow' | t }}</p>
+            <h2>{{ 'flexbrace.product.about.heading' | t }}</h2>
+            <p>{{ 'flexbrace.product.about.body' | t }}</p>
+            <a class="flexbrace-about__link" href="/pages/om-oss">{{ 'flexbrace.product.about.link' | t }}</a>
           </div>
         </div>
       </div>

@@ -22,7 +22,8 @@
     <meta http-equiv="refresh" content="0;url={{ redirect_product.url }}">
   </noscript>
   <p class="fb-collection-redirect">
-    <a href="{{ redirect_product.url }}">Fortsätt till {{ redirect_product.title | escape }}</a>
+    {%- assign redirect_title = redirect_product.title | escape -%}
+    <a href="{{ redirect_product.url }}">{{ 'flexbrace.redirect.continue_to' | t: title: redirect_title }}</a>
   </p>
 {%- endif -%}
 
