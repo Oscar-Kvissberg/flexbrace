@@ -34,7 +34,6 @@
     "inventory_status": "Inventory status",
     "localization_region_and_language": "Region and language selector",
     "menu": "Menu",
-    // This is the label for the header navigation menu when using screen readers, it will read "Primary navigation"
     "header_navigation_label": "Primary",
     "nested_product": "{{ product_title }} for {{ parent_title }}",
     "new_window": "Opens in a new window.",
@@ -68,53 +67,41 @@
     "price_filter_high": "High price"
   },
   "actions": {
-    // Quick add button on product cards, shortened version of add to cart
     "add": "Add",
     "add_to_cart": "Add to cart",
-    // Success message shown after adding item to cart
     "added": "Added",
-    // Button to apply discount code to cart
     "apply": "Apply",
     "back": "Back",
     "back_to": "Back to {{ title }}",
     "back_to_main_menu": "Back to main menu",
     "choose": "Choose",
-    // Button to reset current selection or input
     "clear": "Clear",
-    // Button to remove all applied product filters
     "clear_all": "Clear all",
     "close": "Close",
     "open": "Open",
-    // Continue shopping link on the cart page which takes the user back to a collection page
     "continue_shopping": "Continue shopping",
     "enter_password": "Enter password",
     "log_in_html": "Have an account? <a href=\"{{ link }}\">Log in</a> to check out faster.",
     "log_in": "Sign in",
     "log_out": "Log out",
     "open_image_in_full_screen": "Open image in full screen",
-    // Button to remove applied filters from search/collection results
     "remove": "Remove",
     "remove_discount": "Remove discount {{ code }}",
-    // Button to expand hidden product variant options
     "show_all_options": "Show all options",
     "see_items": {
       "one": "See {{ count }} item",
-      // Button to view filtered product results and close filter dialog
       "other": "See {{ count }} items"
     },
     "show_filters": "Filter",
     "show_less": "Show less",
     "show_more": "Show more",
     "sign_in_options": "Other sign in options",
-    // AR button to view 3D product model in physical space
     "view_in_your_space": "View in your space",
-    // Button to view complete collection/product list
     "view_all": "View all",
     "more": "More",
     "zoom": "Zoom",
     "zoom_media": "Zoom media {{ index }}",
     "close_dialog": "Close dialog",
-    // Button to clear search filter and restore default view
     "reset": "Reset",
     "enter_using_password": "Enter using password",
     "sign_up": "Sign up",
@@ -261,7 +248,6 @@
     "search_results_no_results_check_spelling": "No results found for \"{{ terms }}\". Check the spelling or use a different word or phrase.",
     "search_results_resource_articles": "Blog posts",
     "search_results_resource_collections": "Collections",
-    // Section heading for Shopify store pages in search results
     "search_results_resource_pages": "Pages",
     "search_results_resource_products": "Products",
     "search_results_resource_products_count": {
@@ -278,10 +264,8 @@
       "one": "1 item added to cart",
       "other": "{{ count }} items added to cart"
     },
-    // Button to go from search preview to full search results page
     "search_results_view_all": "View all",
     "search_results_view_all_button": "View all",
-    // Label for customer's note to seller during checkout
     "seller_note": "Special instructions",
     "shipping_policy": "Shipping calculated at checkout.",
     "shipping_policy_html": "<a href=\"{{ link }}\">Shipping</a> calculated at checkout.",
@@ -297,7 +281,6 @@
     "taxes_included_shipping_at_checkout_without_policy_without_discounts": "Taxes included. Shipping is calculated at checkout.",
     "unavailable": "Unavailable",
     "use_fewer_filters_html": "Try using fewer filters, or <a class=\"{{ class }}\" href=\"{{ link }}\">clear all filters</a>.",
-    // Link or button to expand additional information
     "view_more_details": "View more details",
     "volume_pricing_available": "Volume pricing available",
     "volume_pricing": "Volume pricing",
@@ -310,7 +293,6 @@
     "product_count": "Product count",
     "errors": "Errors",
     "wrong_password": "Wrong password",
-    // Legend text for gift card delivery options
     "recipient_form_send_to": "Send to",
     "recipient_form_email_label": "Recipient’s email",
     "recipient_form_email_label_my_email": "My email",
@@ -326,7 +308,6 @@
     "product_custom_property_character_count": "{{ used_chars }}/{{ max_chars }} characters used"
   },
   "fields": {
-    // Separates min and max values in price range filter
     "separator": "to"
   },
   "gift_cards": {
@@ -370,6 +351,136 @@
       "in_cart": "in cart",
       "default_title": "Default Title",
       "sticky_add_to_cart": "Quick add to cart bar"
+    }
+  },
+  "flexbrace": {
+    "product": {
+      "overview": {
+        "design": {
+          "heading": "Design and comfort",
+          "intro": "Flexbrace® is designed to be as discreet as possible and feel as light as possible:",
+          "1": "Lightweight – approximately 100 grams",
+          "2": "Discreet fit that can often be worn with regular shoes",
+          "3": "High comfort for everyday use",
+          "4": "Flexible design that provides support without unnecessarily “locking” the foot",
+          "closing": "The goal is a brace you actually want to wear – not just a brace that works in theory."
+        },
+        "manufacturing": {
+          "heading": "Manufacturing",
+          "body": "The design and development of Flexbrace® have been carried out by experts in orthopedics and assistive devices. The brace is manufactured in Italy, where production takes place with high precision to ensure consistent quality in every piece. The combination of expert-developed design and controlled European manufacturing results in an orthosis that is both functional and practical for everyday use."
+        },
+        "for_whom": {
+          "heading": "Who is Flexbrace® suitable for?",
+          "body": "Flexbrace® may be suitable for foot drop and impaired walking function, for example in connection with nerve compression, neurological disease, or other conditions that affect foot clearance and ankle stability. Needs vary from person to person; therefore, individual assessment and proper fitting are important parts of a good solution."
+        }
+      },
+      "specs": {
+        "eyebrow": "Product in focus",
+        "heading": "What you need to know",
+        "lead": "Lightweight orthotic with a focus on comfort and everyday use.",
+        "spec_heading": "Specification",
+        "weight": "Weight",
+        "weight_value": "Approx. 100 g",
+        "type": "Product type",
+        "type_value": "Ankle-foot orthosis (AFO)",
+        "comfort": "Comfort",
+        "comfort_value": "Conformable, low profile",
+        "shoes": "Shoes",
+        "shoes_value": "Fits in regular shoes",
+        "variant": "Variant",
+        "variant_value": "Right or left foot",
+        "size": "Size",
+        "size_value": "One size fits all (up to EU 45)",
+        "guide_heading": "Size guide",
+        "fit": "Fit",
+        "fit_value": "One size, up to 45 EU",
+        "eu": "EU",
+        "eu_value": "Up to 45",
+        "us_men": "US men's",
+        "us_men_value": "5.5–11.5",
+        "us_women": "US women's",
+        "us_women_value": "7.5–13",
+        "uk": "UK",
+        "uk_value": "5–10.5",
+        "cm": "CM",
+        "cm_value": "approx. 24–29"
+      },
+      "delivery": {
+        "eyebrow": "Delivery & returns",
+        "heading": "How shipping and returns work",
+        "lead": "Clear terms before you order – free shipping within the EU and a 90-day return policy.",
+        "shipping": "Shipping",
+        "shipping_value": "Free shipping within the EU",
+        "time": "Delivery time",
+        "time_value": "Current delivery time is shown at checkout",
+        "returns": "Right of return",
+        "returns_value": "90 days – return according to our return policy if it doesn't fit",
+        "size": "Size",
+        "size_value": "One size fits all (up to EU 45)"
+      },
+      "faq": {
+        "eyebrow": "Frequently asked questions",
+        "heading": "Answer before you order",
+        "lead": "Symptoms, type of orthosis, full-time use, measurements, returns, delivery and subsidies in Sweden.",
+        "q1": {
+          "question": "What symptoms is Flexbrace suitable for?",
+          "answer": "Flexbrace is designed for you if you have difficulty lifting your foot, stumble, roll your ankle, or feel unsteady when walking. Please consult a healthcare provider if you are unsure."
+        },
+        "q2": {
+          "question": "What type of orthosis is Flexbrace?",
+          "answer": "An ankle-foot orthosis (AFO) that provides foot lift and lateral support. Lightweight and low-profile so it can fit inside regular shoes."
+        },
+        "q3": {
+          "question": "Can I use it all day?",
+          "answer": "Many people wear the Flexbrace for most of the day. Start gradually and adjust the straps so that the support feels secure without pinching."
+        },
+        "q4": {
+          "question": "How do size and measurements work?",
+          "answer": "Fit is based on measurements or fitting and individual adjustment. Select the correct foot (right/left) when ordering."
+        },
+        "q5": {
+          "question": "What is the return policy?",
+          "answer": "90-day return policy. Return it according to our return terms if it doesn't fit."
+        },
+        "q6": {
+          "question": "How long is the delivery time?",
+          "answer": "Depends on customization and stock availability. Current delivery time is shown at checkout. Free shipping within the EU."
+        },
+        "q7": {
+          "question": "Can I receive grants or assistive devices in Sweden?",
+          "answer": "Eligibility for a subsidy or prescription varies between regions and depends on your medical assessment. Ask your healthcare provider or medical equipment center. We answer product-related questions—but do not assess your eligibility for a subsidy."
+        }
+      },
+      "about": {
+        "label": "About Flexbrace",
+        "eyebrow": "Experience",
+        "heading": "Flexbrace® since 2001",
+        "body": "Developed by a licensed orthotist / CPO Certified Prosthetist Orthotist with over 50 years of experience in orthotics and prosthetics. Flexbrace® has helped users since 2001.",
+        "link": "Read more about us"
+      }
+    },
+    "redirect": {
+      "continue_to": "Continue to {{ title }}"
+    },
+    "home": {
+      "hero_eyebrow": "Flexbrace® drop foot splint",
+      "hero_heading": "Lift your foot. Walk naturally again.",
+      "hero_subcopy": "Lightweight, stable and discreet heel-drop insert weighing approx. 100 g that fits in your regular shoes.",
+      "focus_eyebrow": "Product in focus",
+      "focus_heading": "Lightweight, discreet and designed for regular shoes",
+      "focus_body": "Approx. 100 g. Flexible design with a focus on comfort. Fits in most everyday shoes – without a bulky external rail.",
+      "video_heading": "See how Flexbrace works",
+      "video_body": "Short film about the construction and how the orthosis is used in everyday life – the feeling in the step before and after.",
+      "video_cta": "Buy Flexbrace",
+      "faq_eyebrow": "Pre-purchase questions",
+      "faq_heading": "Frequently asked questions"
+    },
+    "product_usps": {
+      "1": "Free shipping within the EU",
+      "2": "90-day return policy",
+      "3": "One size fits all (up to EU 45)",
+      "4": "Fits in regular shoes",
+      "5": "Developed by experts"
     }
   }
 }
