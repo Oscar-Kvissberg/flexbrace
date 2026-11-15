@@ -17,7 +17,12 @@
         width: block_settings.width,
         class_name: 'details__icon'
       %}
-      {{ block_settings.heading }}
+      {%- assign heading_prefix = block_settings.heading | strip | slice: 0, 2 -%}
+      {%- if heading_prefix == 't:' -%}
+        {{ block_settings.heading | strip | remove_first: 't:' | t }}
+      {%- else -%}
+        {{ block_settings.heading }}
+      {%- endif -%}
       <span class="svg-wrapper icon-caret icon-animated">
         {{- 'icon-caret.svg' | inline_asset_content -}}
       </span>

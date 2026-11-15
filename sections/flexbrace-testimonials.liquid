@@ -2,28 +2,34 @@
   Kundröster – testimonials grid for the homepage (above video).
 {% endcomment %}
 
-<div class="flexbrace-testimonials" aria-label="{{ section.settings.heading | default: 'Kundröster' | escape }}">
+<div class="flexbrace-testimonials" aria-label="{{ 'flexbrace.testimonials.heading' | t | escape }}">
   <header class="flexbrace-testimonials__header">
-    {% if section.settings.eyebrow != blank %}
-      <p class="flexbrace-testimonials__eyebrow">{{ section.settings.eyebrow | escape }}</p>
-    {% endif %}
-    {% if section.settings.heading != blank %}
-      <h2 class="flexbrace-testimonials__heading">{{ section.settings.heading | escape }}</h2>
-    {% endif %}
+    <p class="flexbrace-testimonials__eyebrow">{{ 'flexbrace.testimonials.eyebrow' | t }}</p>
+    <h2 class="flexbrace-testimonials__heading">{{ 'flexbrace.testimonials.heading' | t }}</h2>
   </header>
 
   <div class="flexbrace-testimonials__grid">
     {% for block in section.blocks %}
+      {%- assign quote_idx = forloop.index -%}
       <blockquote class="flexbrace-testimonials__card" {{ block.shopify_attributes }}>
-        {% if block.settings.quote != blank %}
-          <p class="flexbrace-testimonials__quote">“{{ block.settings.quote | escape }}”</p>
-        {% endif %}
-        {% if block.settings.name != blank %}
-          <cite class="flexbrace-testimonials__name">{{ block.settings.name | escape }}</cite>
-        {% endif %}
-        {% if block.settings.meta != blank %}
-          <p class="flexbrace-testimonials__meta">{{ block.settings.meta | escape }}</p>
-        {% endif %}
+        {%- if quote_idx <= 4 -%}
+          {%- capture quote_key %}flexbrace.testimonials.q{{ quote_idx }}.quote{% endcapture -%}
+          {%- capture name_key %}flexbrace.testimonials.q{{ quote_idx }}.name{% endcapture -%}
+          {%- capture meta_key %}flexbrace.testimonials.q{{ quote_idx }}.meta{% endcapture -%}
+          <p class="flexbrace-testimonials__quote">“{{ quote_key | t }}”</p>
+          <cite class="flexbrace-testimonials__name">{{ name_key | t }}</cite>
+          <p class="flexbrace-testimonials__meta">{{ meta_key | t }}</p>
+        {%- else -%}
+          {% if block.settings.quote != blank %}
+            <p class="flexbrace-testimonials__quote">“{{ block.settings.quote | escape }}”</p>
+          {% endif %}
+          {% if block.settings.name != blank %}
+            <cite class="flexbrace-testimonials__name">{{ block.settings.name | escape }}</cite>
+          {% endif %}
+          {% if block.settings.meta != blank %}
+            <p class="flexbrace-testimonials__meta">{{ block.settings.meta | escape }}</p>
+          {% endif %}
+        {%- endif -%}
       </blockquote>
     {% endfor %}
   </div>

@@ -3,8 +3,8 @@
 {% endcomment %}
 
 {% liquid
-  assign hero_heading = section.settings.heading | default: 'Om Flexbrace'
-  assign hero_text = section.settings.text
+  assign hero_heading = 'flexbrace.about.hero.heading' | t
+  assign hero_text = 'flexbrace.about.hero.text' | t
   assign overlay_opacity = section.settings.overlay_opacity | default: 30 | divided_by: 100.0
   assign show_about_hero = false
   if page.handle == 'om-oss' or page.handle == 'about' or template.suffix == 'about'

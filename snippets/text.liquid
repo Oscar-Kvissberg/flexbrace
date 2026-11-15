@@ -98,7 +98,13 @@
   </div>
 {% elsif plain_text != blank %}
   <{{ element }} {{ attributes | strip_newlines | strip }}>
-    {{ block.settings.text }}
+    {%- assign translation_candidate = visible_text | strip -%}
+    {%- assign translation_prefix = translation_candidate | slice: 0, 2 -%}
+    {%- if translation_prefix == 't:' -%}
+      <p>{{ translation_candidate | remove_first: 't:' | t }}</p>
+    {%- else -%}
+      {{ block.settings.text }}
+    {%- endif -%}
   </{{ element }}>
 {% endif %}
 

@@ -1,0 +1,9 @@
+{% comment %}
+  "Produkt i fokus" intro (locales: flexbrace.home.focus_*).
+  Pass class: 'flexbrace-focus-intro--inline' for the stacked product layout.
+{% endcomment %}
+<div class="flexbrace-focus-intro{% if class != blank %} {{ class }}{% endif %}">
+  <p class="flexbrace-focus-intro__eyebrow">{{ 'flexbrace.home.focus_eyebrow' | t }}</p>
+  <h2>{{ 'flexbrace.home.focus_heading' | t }}</h2>
+  <p>{{ 'flexbrace.home.focus_body' | t }}</p>
+</div>

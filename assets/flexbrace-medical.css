@@ -977,6 +977,24 @@ main[data-template='index'] [id$='__hero_jVaWmY'] a.button:hover {
   text-transform: uppercase;
 }
 
+.hero-heading {
+  margin: 0;
+  color: #ffffff;
+  font-family: var(--font-heading--family);
+  font-size: clamp(2.1rem, 4.2vw, 3.4rem);
+  font-weight: 700;
+  line-height: 1.12;
+  letter-spacing: -0.02em;
+}
+
+.hero-subcopy {
+  margin: 0.35rem 0 0;
+  max-width: 34rem;
+  color: rgb(232 242 247);
+  font-size: clamp(1rem, 1.5vw, 1.125rem);
+  line-height: 1.55;
+}
+
 .hero-trust {
   display: flex;
   flex-wrap: wrap;

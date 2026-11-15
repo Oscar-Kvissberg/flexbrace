@@ -61,7 +61,12 @@
                 <span class="fb-story__pain-num" aria-hidden="true">
                   {% if pain_i < 10 %}0{% endif %}{{ pain_i }}
                 </span>
-                <p>{{ block.settings.text | escape }}</p>
+                {%- if pain_i <= 5 -%}
+                  {%- capture pain_key %}flexbrace.benefits.{{ pain_i }}{% endcapture -%}
+                  <p>{{ pain_key | t }}</p>
+                {%- else -%}
+                  <p>{{ block.settings.text | escape }}</p>
+                {%- endif -%}
               </li>
             {% endif %}
           {% endfor %}
