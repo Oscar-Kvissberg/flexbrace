@@ -94,16 +94,6 @@
               </a>
             </li>
           {% endif %}
-          {%- assign company_orgnr = section.settings.company_orgnr -%}
-          {%- if company_orgnr == blank or company_orgnr == '[fyll i]' -%}
-            {%- assign company_orgnr = 'flexbrace.footer.contact.org_number_placeholder' | t -%}
-          {%- endif -%}
-          <li>{{ 'flexbrace.footer.contact.org_number' | t }}: {{ company_orgnr }}</li>
-          {%- assign company_vat = section.settings.company_vat -%}
-          {%- if company_vat == blank or company_vat == '[fyll i om ni har]' -%}
-            {%- assign company_vat = 'flexbrace.footer.contact.vat_number_placeholder' | t -%}
-          {%- endif -%}
-          <li>{{ 'flexbrace.footer.contact.vat_number' | t }}: {{ company_vat }}</li>
         </ul>
       </div>
     </div>
@@ -175,18 +165,6 @@
       "id": "company_email",
       "label": "E-post",
       "default": "anton2@egren.se"
-    },
-    {
-      "type": "text",
-      "id": "company_orgnr",
-      "label": "Org.nr",
-      "default": "[fyll i]"
-    },
-    {
-      "type": "text",
-      "id": "company_vat",
-      "label": "Momsreg.nr",
-      "default": "[fyll i om ni har]"
     },
     {
       "type": "header",
